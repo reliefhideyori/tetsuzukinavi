@@ -159,10 +159,7 @@ footer ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8
 </ul></div></div>
 
 <main class="wrap"><h1>お問い合わせ・間違いの報告</h1><p class="lead">間違いや古い情報の報告、ご意見を受け付けます。どの言語でも大丈夫です。</p><div class="notice"><p>個人のビザや契約の相談には答えられません。困ったときは、各ページの「相談先」にある公的な窓口に相談してください。</p></div>
-<form class="cform" action="https://formsubmit.co/tetsuzukinavi@gmail.com" method="POST">
-<input type="hidden" name="_subject" value="[Tetsuzuki Navi] ja">
-<input type="hidden" name="_next" value="https://tetsuzukinavi.org/ja/thanks.html">
-<input type="hidden" name="_template" value="table">
+<form class="cform" action="/api/contact" method="POST">
 <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
 <input type="hidden" name="lang" value="ja">
 <fieldset class="f"><legend style="font-weight:700">種類<span class="req">必須</span></legend><label class="opt"><input type="radio" name="kind" value="間違いの報告" required checked> 間違いの報告</label><label class="opt"><input type="radio" name="kind" value="ご意見" required> ご意見</label><label class="opt"><input type="radio" name="kind" value="その他" required> その他</label></fieldset>

@@ -159,10 +159,7 @@ footer ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8
 </ul></div></div>
 
 <main class="wrap"><h1>Kontak dan Laporan Kesalahan</h1><p class="lead">Kami menerima laporan kesalahan, informasi yang sudah lama, dan saran. Bahasa apa pun boleh.</p><div class="notice"><p>Kami tidak bisa menjawab konsultasi pribadi soal visa atau kontrak. Jika ada masalah, hubungi layanan resmi di bagian "Tempat konsultasi" di setiap halaman.</p></div>
-<form class="cform" action="https://formsubmit.co/tetsuzukinavi@gmail.com" method="POST">
-<input type="hidden" name="_subject" value="[Tetsuzuki Navi] id">
-<input type="hidden" name="_next" value="https://tetsuzukinavi.org/id/thanks.html">
-<input type="hidden" name="_template" value="table">
+<form class="cform" action="/api/contact" method="POST">
 <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
 <input type="hidden" name="lang" value="id">
 <fieldset class="f"><legend style="font-weight:700">Jenis<span class="req">wajib</span></legend><label class="opt"><input type="radio" name="kind" value="Laporan kesalahan" required checked> Laporan kesalahan</label><label class="opt"><input type="radio" name="kind" value="Saran" required> Saran</label><label class="opt"><input type="radio" name="kind" value="Lainnya" required> Lainnya</label></fieldset>

@@ -39,7 +39,7 @@ open(os.path.join(OUT, "index.html"), "w").write('<!doctype html><meta charset="
 print(sorted(os.listdir(os.path.join(OUT, "ja"))), sorted(os.listdir(os.path.join(OUT, "id"))))
 
 # ---- contact form (FormSubmit: no server, sends to the site Gmail; first submission triggers an activation email) ----
-FORM_ACTION = "https://formsubmit.co/tetsuzukinavi@gmail.com"
+FORM_ACTION = "/api/contact"
 CT = {
  "ja": dict(h1="お問い合わせ・間違いの報告", lead="間違いや古い情報の報告、ご意見を受け付けます。どの言語でも大丈夫です。",
    note="個人のビザや契約の相談には答えられません。困ったときは、各ページの「相談先」にある公的な窓口に相談してください。",
@@ -62,9 +62,6 @@ for lang in ("ja", "id"):
     radios = "".join(f'<label class="opt"><input type="radio" name="kind" value="{v}" required{" checked" if i == 0 else ""}> {v}</label>' for i, v in enumerate(c["k"]))
     form = f'''<main class="wrap"><h1>{c["h1"]}</h1><p class="lead">{c["lead"]}</p><div class="notice"><p>{c["note"]}</p></div>
 <form class="cform" action="{FORM_ACTION}" method="POST">
-<input type="hidden" name="_subject" value="[Tetsuzuki Navi] {lang}">
-<input type="hidden" name="_next" value="https://tetsuzukinavi.org/{lang}/thanks.html">
-<input type="hidden" name="_template" value="table">
 <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
 <input type="hidden" name="lang" value="{lang}">
 <fieldset class="f"><legend style="font-weight:700">{c["kind"]}<span class="req">{c["req"]}</span></legend>{radios}</fieldset>
