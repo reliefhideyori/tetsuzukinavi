@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="id">
+<head>
+<link rel="alternate" hreflang="ja" href="https://tetsuzukinavi.org/ja/arrival.html">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dua Minggu Pertama di Jepang</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap">
+<style>
+/* Digital Agency Design System (DADS) based: body 16px/1.7, 8px grid, text #1a1a1a, key blue #0017c1,
+   focus = black outline + yellow. Mobile first, one column, max 40rem. Calm palette for trust. */
+:root {
+  --bg: #ffffff; --bg-sub: #f2f2f2; --bg-soft: #f6f8fc; --fg: #1a1a1a; --fg-sub: #4d4d4d; --line: #cccccc; --line-strong: #666666;
+  --key: #0017c1; --key-fg: #ffffff; --key-bg: #e8f1fe; --key-dark: #00118f;
+  --error: #ec0000; --error-bg: #fdeeee; --ok: #197a4b; --ok-bg: #e6f5ec;
+  --c-social: #3460fb; --c-tax: #9a6fd8; --c-costs: #b8b8b8; --c-left: #197a4b;
+  --focus: #ffd43d;
+  --font: "Noto Sans", "Segoe UI", Roboto, sans-serif;
+  --s1: 8px; --s2: 16px; --s3: 24px; --s5: 40px; --s8: 64px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121212; --bg-sub: #1f1f1f; --bg-soft: #171b26; --fg: #f0f0f0; --fg-sub: #b3b3b3; --line: #3d3d3d; --line-strong: #8a8a8a;
+    --key: #8fb3ff; --key-fg: #0b1230; --key-bg: #1a2240; --key-dark: #0b1a66; --error: #ff7a7a; --error-bg: #3a1c1c;
+    --ok: #6fd39f; --ok-bg: #16301f; --c-social: #7d9bff; --c-tax: #b99be6; --c-costs: #5c5c5c; --c-left: #4fbf86; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #121212; --bg-sub: #1f1f1f; --bg-soft: #171b26; --fg: #f0f0f0; --fg-sub: #b3b3b3; --line: #3d3d3d; --line-strong: #8a8a8a;
+  --key: #8fb3ff; --key-fg: #0b1230; --key-bg: #1a2240; --key-dark: #0b1a66; --error: #ff7a7a; --error-bg: #3a1c1c;
+  --ok: #6fd39f; --ok-bg: #16301f; --c-social: #7d9bff; --c-tax: #b99be6; --c-costs: #5c5c5c; --c-left: #4fbf86; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font); font-size: 16px; line-height: 1.7; letter-spacing: .02em; }
+.wrap { max-width: 40rem; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+p { margin: 0 0 var(--s2); } p:last-child { margin-bottom: 0; }
+a { color: var(--key); text-underline-offset: 3px; }
+button, input, select { font: inherit; letter-spacing: inherit; color: inherit; }
+:focus-visible { outline: 4px solid var(--fg); outline-offset: 2px; box-shadow: 0 0 0 2px var(--focus); }
+.small { font-size: 14px; color: var(--fg-sub); }
+
+/* Site header: calm, official-looking */
+.site { background: var(--key-dark); color: #fff; }
+.site .wrap { display: flex; align-items: center; justify-content: space-between; gap: var(--s2); min-height: 56px; }
+.brand { color: #fff; text-decoration: none; font-weight: 700; font-size: 18px; display: flex; align-items: center; gap: 10px; }
+.brand svg { width: 24px; height: 24px; flex: none; }
+.brand small { display: block; font-weight: 400; font-size: 12px; opacity: .85; line-height: 1.4; }
+.lang { color: #fff; font-size: 14px; border: 1px solid rgba(255,255,255,.6); border-radius: 6px; padding: 6px 10px; text-decoration: none; white-space: nowrap; min-height: 36px; display: inline-flex; align-items: center; }
+.badges { background: var(--bg-soft); border-bottom: 1px solid var(--line); }
+.badges ul { list-style: none; margin: 0 auto; padding: 8px 0; display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 14px; color: var(--fg-sub); }
+.badges li { display: inline-flex; align-items: center; gap: 6px; }
+.badges svg { width: 16px; height: 16px; fill: var(--ok); flex: none; }
+
+main { padding-top: var(--s3); padding-bottom: var(--s8); }
+.crumb { font-size: 14px; color: var(--fg-sub); margin: 0 0 var(--s2); }
+.crumb ol { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0 4px; }
+.crumb li + li::before { content: "＞"; margin-right: 4px; }
+h1 { font-size: 24px; line-height: 1.5; margin: 0 0 var(--s1); }
+.lead { color: var(--fg-sub); }
+.updated { font-size: 14px; color: var(--fg-sub); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: var(--s1) 0; margin: var(--s2) 0 var(--s3); }
+.notice { border: 1px solid var(--key); border-left-width: 6px; padding: var(--s2); margin-bottom: var(--s3); }
+.notice.warn { border-color: var(--error); background: var(--error-bg); }
+.notice h2, .notice h3 { margin-top: 0; font-size: 17px; border: 0; padding: 0; }
+.toc { background: var(--bg-sub); padding: var(--s2); margin-bottom: var(--s5); }
+.toc h2 { font-size: 16px; margin: 0 0 var(--s1); border: 0; padding: 0; }
+.toc ol { margin: 0; padding-left: 1.5em; } .toc li { padding: 2px 0; }
+section { margin-bottom: var(--s5); scroll-margin-top: var(--s2); }
+h2 { font-size: 20px; line-height: 1.5; margin: 0 0 var(--s2); padding-bottom: var(--s1); border-bottom: 2px solid var(--fg); }
+h3 { font-size: 17px; line-height: 1.6; margin: var(--s3) 0 var(--s1); }
+ul, ol { margin: 0 0 var(--s2); padding-left: 1.5em; } li { margin-bottom: 4px; }
+
+/* Form (DADS: label above field, 48px fields, 8px radius) */
+.calc { border: 1px solid var(--line-strong); border-radius: 8px; padding: var(--s2); }
+.field { margin-bottom: var(--s3); }
+.field > label, .field > .lbl { display: block; font-weight: 700; margin-bottom: 4px; }
+.field .hint { font-size: 14px; color: var(--fg-sub); margin: 0 0 var(--s1); }
+select, input[type="number"] { width: 100%; min-height: 48px; padding: 8px 12px; border: 1px solid var(--line-strong); border-radius: 8px; background: var(--bg); font-variant-numeric: tabular-nums; }
+input[type="number"] { text-align: right; }
+.unit { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 8px; }
+.unit span { font-size: 14px; color: var(--fg-sub); min-width: 3em; }
+.seg { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.seg button { min-height: 48px; border: 1px solid var(--line-strong); border-radius: 8px; background: var(--bg); padding: 8px; }
+.seg button[aria-pressed="true"] { border: 2px solid var(--key); background: var(--key-bg); font-weight: 700; color: var(--key); }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s2); }
+.grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
+.grid3 label, .costs label { font-size: 14px; font-weight: 400; display: block; margin-bottom: 4px; }
+.costs { display: grid; grid-template-columns: 1fr 1fr; gap: 12px var(--s2); }
+fieldset { border: 0; margin: 0 0 var(--s3); padding: 0; }
+legend { font-weight: 700; margin-bottom: 4px; padding: 0; }
+.minw { font-size: 14px; color: var(--fg-sub); margin-top: 4px; }
+
+/* Result */
+.res { margin-top: var(--s3); border-top: 2px solid var(--fg); padding-top: var(--s2); }
+.res h3 { margin-top: 0; }
+.big { background: var(--ok-bg); border-left: 6px solid var(--ok); padding: var(--s2); margin-bottom: var(--s2); }
+.big .k { font-size: 14px; color: var(--fg-sub); }
+.big .v { font-size: 32px; font-weight: 700; line-height: 1.3; font-variant-numeric: tabular-nums; }
+.big .v2 { font-size: 16px; font-variant-numeric: tabular-nums; }
+.big.neg { background: var(--error-bg); border-color: var(--error); }
+.bar { display: flex; height: 16px; border-radius: 4px; overflow: hidden; margin: var(--s2) 0 var(--s1); background: var(--bg-sub); gap: 2px; }
+.bar i { display: block; height: 100%; }
+.legend { list-style: none; padding: 0; margin: 0 0 var(--s2); display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 14px; }
+.legend li { display: inline-flex; align-items: center; gap: 6px; margin: 0; }
+.legend b { width: 12px; height: 12px; border-radius: 2px; display: inline-block; }
+table { width: 100%; border-collapse: collapse; margin-bottom: var(--s2); font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 10px var(--s1); border-bottom: 1px solid var(--line); vertical-align: top; }
+td.n { text-align: right; white-space: nowrap; }
+tr.sum th, tr.sum td { font-weight: 700; border-bottom: 1px solid var(--line-strong); }
+tr.sub th { font-weight: 400; padding-left: var(--s3); font-size: 14px; } tr.sub td { font-size: 14px; color: var(--fg-sub); }
+.alert { display: none; border-left: 6px solid var(--error); background: var(--error-bg); padding: var(--s2); margin-bottom: var(--s2); }
+.alert.show { display: block; }
+
+dl.rows { margin: 0 0 var(--s2); border-top: 1px solid var(--line); }
+dl.rows div { display: grid; grid-template-columns: 9em 1fr; gap: var(--s1) var(--s2); padding: 12px 0; border-bottom: 1px solid var(--line); }
+dl.rows dt { font-weight: 700; } dl.rows dd { margin: 0; }
+details { border-bottom: 1px solid var(--line); } details:first-of-type { border-top: 1px solid var(--line); }
+summary { list-style: none; cursor: pointer; padding: 12px 32px 12px 0; position: relative; font-weight: 700; min-height: 48px; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: ""; position: absolute; right: 8px; top: 20px; width: 8px; height: 8px; border-right: 2px solid var(--fg); border-bottom: 2px solid var(--fg); transform: rotate(45deg); }
+details[open] summary::after { transform: rotate(-135deg); top: 24px; }
+details .ans { padding: 0 0 var(--s2); }
+ul.check { list-style: none; padding: 0; }
+ul.check li { position: relative; padding: 10px 0 10px 32px; border-bottom: 1px solid var(--line); margin: 0; }
+ul.check li::before { content: ""; position: absolute; left: 0; top: 13px; width: 18px; height: 18px; border: 2px solid var(--fg); border-radius: 4px; }
+.contact { border: 1px solid var(--line); border-radius: 8px; padding: var(--s2); margin-bottom: var(--s2); }
+.contact h3 { margin-top: 0; }
+.tel { font-size: 20px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.trust { background: var(--bg-sub); padding: var(--s2); font-size: 14px; }
+.trust h2 { font-size: 17px; border: 0; padding: 0; }
+.trust h3 { font-size: 14px; margin-top: var(--s2); }
+.trust ol, .trust ul { margin-bottom: 0; }
+.trust a { word-break: break-all; }
+.money { background: var(--bg); border: 1px solid var(--ok); border-left-width: 6px; padding: 12px var(--s2); font-size: 14px; margin-bottom: var(--s2); }
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 var(--s3); border-radius: 8px; font-weight: 700; border: 1px solid var(--key); background: var(--bg); color: var(--key); text-decoration: none; margin-top: var(--s2); }
+footer { border-top: 1px solid var(--line); padding: var(--s3) 0 var(--s5); font-size: 14px; color: var(--fg-sub); }
+footer ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 24px; }
+@media (max-width: 480px) {
+  dl.rows div { grid-template-columns: 1fr; gap: 0; }
+  .big .v { font-size: 28px; }
+}
+</style>
+<style>
+ol.steps { list-style: none; padding: 0; counter-reset: st; }
+ol.steps li { position: relative; padding: 0 0 var(--s2) 40px; margin: 0; }
+ol.steps li::before { counter-increment: st; content: counter(st); position: absolute; left: 0; top: 0; width: 28px; height: 28px; border: 2px solid var(--key); color: var(--key); border-radius: 50%; display: grid; place-items: center; font-size: 14px; font-weight: 700; }
+ol.steps li:not(:last-child)::after { content: ""; position: absolute; left: 14px; top: 32px; bottom: 4px; border-left: 2px solid var(--line); }
+ol.steps b { display: block; }
+ol.steps .when { display: inline-block; font-size: 12px; font-weight: 700; color: var(--key); border: 1px solid var(--key); border-radius: 4px; padding: 0 6px; margin-bottom: 4px; }
+.fact { border-left: 6px solid var(--key); background: var(--bg-soft); padding: var(--s2); margin-bottom: var(--s2); }
+.fact h3 { margin-top: 0; }
+.cmp { overflow-x: auto; margin-bottom: var(--s2); }
+.cmp table { min-width: 34rem; font-size: 14px; }
+.cmp th[scope=row] { background: var(--bg-sub); white-space: nowrap; }
+.cmp thead th { font-size: 14px; }
+.cmp-note { font-size: 14px; color: var(--fg-sub); }
+.related a { display: block; padding: 12px 0; border-bottom: 1px solid var(--line); font-weight: 700; }
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/id/">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M12 2 3 6v6c0 5 3.8 9.3 9 10 5.2-.7 9-5 9-10V6l-9-4Zm-1.2 14.2-3.5-3.5 1.4-1.4 2.1 2.1 4.9-4.9 1.4 1.4-6.3 6.3Z"/></svg>
+      <span>Tetsuzuki Navi<small>Panduan informasi resmi untuk tinggal dan bekerja di Jepang</small></span>
+    </a>
+    <a class="lang" href="/ja/arrival.html" hreflang="ja">日本語</a>
+  </div>
+</header>
+<div class="badges"><div class="wrap"><ul>
+  <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Hanya sumber resmi</li>
+  <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Dicek tiap minggu</li>
+  <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Tanpa komisi</li>
+</ul></div></div>
+
+<main class="wrap">
+<nav class="crumb" aria-label="breadcrumb"><ol><li><a href="/id/">Tetsuzuki Navi</a></li><li><a href="/id/contact.html?page=arrival.html">Bekerja di Jepang</a></li><li>Setelah tiba</li></ol></nav>
+<h1>Yang Harus Dilakukan di Dua Minggu Pertama di Jepang</h1><p class="lead">Urutan prosedur yang perlu dilakukan dalam dua minggu setelah tiba di Jepang. Yang ada batas waktunya ditulis lebih dulu.</p><p class="updated">Terakhir dicek: 5 November 2026 (dicek tiap minggu)  /  Sumber: informasi resmi kementerian dan lembaga publik Jepang (daftar di bagian bawah)</p>
+<div class="notice"><h2>Yang ada batas waktunya</h2><p>Setelah tempat tinggal ditentukan, lapor alamat ke kantor kota/kecamatan (shiyakusho/kuyakusho) <b>dalam 14 hari</b>.<sup><a href="#src">[1][2]</a></sup> Wajib membawa kartu izin tinggal (zairyu card). Tidak ada biaya.</p></div>
+<nav class="toc"><h2>Isi halaman ini</h2><ol><li><a href="#s1">Urutan yang harus dilakukan</a></li><li><a href="#s2">Yang perlu diingat</a></li><li><a href="#s3">Tempat konsultasi</a></li><li><a href="#s4">Halaman terkait</a></li></ol></nav>
+<section id="s1"><h2>Urutan yang harus dilakukan</h2><ol class="steps"><li><span class="when">Bandara</span><b>Terima kartu izin tinggal (zairyu card)</b>Kartu diberikan di bandara saat masuk Jepang.<sup><a href="#src">[1]</a></sup> Selalu bawa kartu ini selama di Jepang.</li><li><span class="when">Dalam 14 hari</span><b>Lapor alamat di kantor kota/kecamatan</b>Bawa zairyu card ke loket kota/kecamatan tempat tinggal. Laporan ini sekaligus dihitung sebagai laporan alamat ke imigrasi. Tidak ada biaya.<sup><a href="#src">[2]</a></sup></li><li><span class="when">Saat lapor alamat</span><b>Cek asuransi kesehatan dan pensiun</b>Jika ikut asuransi sosial dari perusahaan, perusahaan yang mengurus. Jika tidak, urus asuransi kesehatan nasional (kokumin kenko hoken) dan pensiun nasional (kokumin nenkin) di kantor yang sama pada hari yang sama agar lebih mudah.</li><li><span class="when">1–2 minggu</span><b>Siapkan rekening bank dan HP</b>Rekening bank dibutuhkan untuk menerima gaji. Tanyakan ke perusahaan dokumen apa yang dibutuhkan (misalnya zairyu card setelah lapor alamat).</li><li><span class="when">Hari gajian pertama</span><b>Cek slip gaji</b>Bandingkan potongan asuransi dan pajak dengan hasil kalkulator gaji bersih. Jika ada potongan tanpa penjelasan, konsultasikan.</li></ol></section>
+<section id="s2"><h2>Yang perlu diingat</h2><dl class="rows"><div><dt>Perubahan data zairyu card</dt><dd>Jika nama, kewarganegaraan, dll. berubah, laporkan ke imigrasi dalam 14 hari.<sup><a href="#src">[3]</a></sup></dd></div><div><dt>Pajak penduduk</dt><dd>Tahun pertama tidak ada. Mulai Juni tahun kedua dipotong dari gaji.</dd></div><div><dt>Pindah rumah</dt><dd>Jika pindah, lapor lagi di kota/kecamatan baru dalam 14 hari.<sup><a href="#src">[1]</a></sup></dd></div></dl></section>
+<section id="s3"><h2>Tempat konsultasi</h2><div class="fact"><h3>Layanan Konsultasi untuk Pekerja Asing (MHLW) 0570-001-715</h3><p>Bahasa Indonesia: Selasa dan Kamis 10.00–15.00 (kecuali 12.00–13.00). Bisa konsultasi soal gaji dan syarat kerja.<sup><a href="#src">[4]</a></sup></p></div></section>
+<section id="s4"><h2>Halaman terkait</h2><div class="related"><a href="/id/gaji.html">Berapa uang yang benar-benar tersisa di Jepang (kalkulator gaji bersih)</a><a href="/ja/shinjuku-juminzei.html">Pajak penduduk (contoh Shinjuku, saat ini dalam bahasa Jepang)</a><a href="/id/visa.html">Perbedaan Tokutei Ginou, magang, dan Ikusei Shuro</a></div></section>
+<aside class="trust" id="src"><h2>Tentang informasi ini</h2><div class="money"><b>Pendapatan situs ini hanya dari iklan.</b> Kami tidak menerima komisi dari LPK, agen, atau perusahaan.</div><h3>Sumber (dicek: 5 November 2026)</h3><ol><li>住所の届出（中央区、外国人の方）<br><a href="https://www.city.chuo.lg.jp/a0012/kurashi/touroku/foreigners/gaikokujinnjumin.html">https://www.city.chuo.lg.jp/a0012/kurashi/touroku/foreigners/gaikokujinnjumin.html</a></li><li>住居地の届出（出入国在留管理庁）<br><a href="https://www.moj.go.jp/isa/applications/procedures/nyuukokukanri10_00022.html">https://www.moj.go.jp/isa/applications/procedures/nyuukokukanri10_00022.html</a></li><li>在留カード記載事項の変更届出（出入国在留管理庁）<br><a href="https://www.moj.go.jp/isa/applications/procedures/nyuukokukanri10_00009.html">https://www.moj.go.jp/isa/applications/procedures/nyuukokukanri10_00009.html</a></li><li>外国人労働者向け相談ダイヤル（厚生労働省）<br><a href="https://www.mhlw.go.jp/content/001708139.pdf">https://www.mhlw.go.jp/content/001708139.pdf</a></li></ol><h3>Riwayat perubahan</h3><ul><li>5 November 2026  Versi 1 diterbitkan</li></ul><a class="btn" href="/id/contact.html?page=arrival.html">Laporkan jika ada kesalahan</a></aside></main>
+<footer><div class="wrap"><ul><li><a href="/id/about.html">Pengelola dan kebijakan</a></li><li>Tetsuzuki Navi</li></ul></div></footer></body></html>

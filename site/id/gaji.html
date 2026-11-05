@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="id">
+<head>
+<link rel="alternate" hreflang="ja" href="https://tetsuzukinavi.org/ja/gaji.html">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gaji Bersih di Jepang</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap">
+<style>
+/* Digital Agency Design System (DADS) based: body 16px/1.7, 8px grid, text #1a1a1a, key blue #0017c1,
+   focus = black outline + yellow. Mobile first, one column, max 40rem. Calm palette for trust. */
+:root {
+  --bg: #ffffff; --bg-sub: #f2f2f2; --bg-soft: #f6f8fc; --fg: #1a1a1a; --fg-sub: #4d4d4d; --line: #cccccc; --line-strong: #666666;
+  --key: #0017c1; --key-fg: #ffffff; --key-bg: #e8f1fe; --key-dark: #00118f;
+  --error: #ec0000; --error-bg: #fdeeee; --ok: #197a4b; --ok-bg: #e6f5ec;
+  --c-social: #3460fb; --c-tax: #9a6fd8; --c-costs: #b8b8b8; --c-left: #197a4b;
+  --focus: #ffd43d;
+  --font: "Noto Sans", "Segoe UI", Roboto, sans-serif;
+  --s1: 8px; --s2: 16px; --s3: 24px; --s5: 40px; --s8: 64px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121212; --bg-sub: #1f1f1f; --bg-soft: #171b26; --fg: #f0f0f0; --fg-sub: #b3b3b3; --line: #3d3d3d; --line-strong: #8a8a8a;
+    --key: #8fb3ff; --key-fg: #0b1230; --key-bg: #1a2240; --key-dark: #0b1a66; --error: #ff7a7a; --error-bg: #3a1c1c;
+    --ok: #6fd39f; --ok-bg: #16301f; --c-social: #7d9bff; --c-tax: #b99be6; --c-costs: #5c5c5c; --c-left: #4fbf86; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #121212; --bg-sub: #1f1f1f; --bg-soft: #171b26; --fg: #f0f0f0; --fg-sub: #b3b3b3; --line: #3d3d3d; --line-strong: #8a8a8a;
+  --key: #8fb3ff; --key-fg: #0b1230; --key-bg: #1a2240; --key-dark: #0b1a66; --error: #ff7a7a; --error-bg: #3a1c1c;
+  --ok: #6fd39f; --ok-bg: #16301f; --c-social: #7d9bff; --c-tax: #b99be6; --c-costs: #5c5c5c; --c-left: #4fbf86; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font); font-size: 16px; line-height: 1.7; letter-spacing: .02em; }
+.wrap { max-width: 40rem; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+p { margin: 0 0 var(--s2); } p:last-child { margin-bottom: 0; }
+a { color: var(--key); text-underline-offset: 3px; }
+button, input, select { font: inherit; letter-spacing: inherit; color: inherit; }
+:focus-visible { outline: 4px solid var(--fg); outline-offset: 2px; box-shadow: 0 0 0 2px var(--focus); }
+.small { font-size: 14px; color: var(--fg-sub); }
+
+/* Site header: calm, official-looking */
+.site { background: var(--key-dark); color: #fff; }
+.site .wrap { display: flex; align-items: center; justify-content: space-between; gap: var(--s2); min-height: 56px; }
+.brand { color: #fff; text-decoration: none; font-weight: 700; font-size: 18px; display: flex; align-items: center; gap: 10px; }
+.brand svg { width: 24px; height: 24px; flex: none; }
+.brand small { display: block; font-weight: 400; font-size: 12px; opacity: .85; line-height: 1.4; }
+.lang { color: #fff; font-size: 14px; border: 1px solid rgba(255,255,255,.6); border-radius: 6px; padding: 6px 10px; text-decoration: none; white-space: nowrap; min-height: 36px; display: inline-flex; align-items: center; }
+.badges { background: var(--bg-soft); border-bottom: 1px solid var(--line); }
+.badges ul { list-style: none; margin: 0 auto; padding: 8px 0; display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 14px; color: var(--fg-sub); }
+.badges li { display: inline-flex; align-items: center; gap: 6px; }
+.badges svg { width: 16px; height: 16px; fill: var(--ok); flex: none; }
+
+main { padding-top: var(--s3); padding-bottom: var(--s8); }
+.crumb { font-size: 14px; color: var(--fg-sub); margin: 0 0 var(--s2); }
+.crumb ol { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0 4px; }
+.crumb li + li::before { content: "＞"; margin-right: 4px; }
+h1 { font-size: 24px; line-height: 1.5; margin: 0 0 var(--s1); }
+.lead { color: var(--fg-sub); }
+.updated { font-size: 14px; color: var(--fg-sub); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: var(--s1) 0; margin: var(--s2) 0 var(--s3); }
+.notice { border: 1px solid var(--key); border-left-width: 6px; padding: var(--s2); margin-bottom: var(--s3); }
+.notice.warn { border-color: var(--error); background: var(--error-bg); }
+.notice h2, .notice h3 { margin-top: 0; font-size: 17px; border: 0; padding: 0; }
+.toc { background: var(--bg-sub); padding: var(--s2); margin-bottom: var(--s5); }
+.toc h2 { font-size: 16px; margin: 0 0 var(--s1); border: 0; padding: 0; }
+.toc ol { margin: 0; padding-left: 1.5em; } .toc li { padding: 2px 0; }
+section { margin-bottom: var(--s5); scroll-margin-top: var(--s2); }
+h2 { font-size: 20px; line-height: 1.5; margin: 0 0 var(--s2); padding-bottom: var(--s1); border-bottom: 2px solid var(--fg); }
+h3 { font-size: 17px; line-height: 1.6; margin: var(--s3) 0 var(--s1); }
+ul, ol { margin: 0 0 var(--s2); padding-left: 1.5em; } li { margin-bottom: 4px; }
+
+/* Form (DADS: label above field, 48px fields, 8px radius) */
+.calc { border: 1px solid var(--line-strong); border-radius: 8px; padding: var(--s2); }
+.field { margin-bottom: var(--s3); }
+.field > label, .field > .lbl { display: block; font-weight: 700; margin-bottom: 4px; }
+.field .hint { font-size: 14px; color: var(--fg-sub); margin: 0 0 var(--s1); }
+select, input[type="number"] { width: 100%; min-height: 48px; padding: 8px 12px; border: 1px solid var(--line-strong); border-radius: 8px; background: var(--bg); font-variant-numeric: tabular-nums; }
+input[type="number"] { text-align: right; }
+.unit { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 8px; }
+.unit span { font-size: 14px; color: var(--fg-sub); min-width: 3em; }
+.seg { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.seg button { min-height: 48px; border: 1px solid var(--line-strong); border-radius: 8px; background: var(--bg); padding: 8px; }
+.seg button[aria-pressed="true"] { border: 2px solid var(--key); background: var(--key-bg); font-weight: 700; color: var(--key); }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s2); }
+.grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
+.grid3 label, .costs label { font-size: 14px; font-weight: 400; display: block; margin-bottom: 4px; }
+.costs { display: grid; grid-template-columns: 1fr 1fr; gap: 12px var(--s2); }
+fieldset { border: 0; margin: 0 0 var(--s3); padding: 0; }
+legend { font-weight: 700; margin-bottom: 4px; padding: 0; }
+.minw { font-size: 14px; color: var(--fg-sub); margin-top: 4px; }
+
+/* Result */
+.res { margin-top: var(--s3); border-top: 2px solid var(--fg); padding-top: var(--s2); }
+.res h3 { margin-top: 0; }
+.big { background: var(--ok-bg); border-left: 6px solid var(--ok); padding: var(--s2); margin-bottom: var(--s2); }
+.big .k { font-size: 14px; color: var(--fg-sub); }
+.big .v { font-size: 32px; font-weight: 700; line-height: 1.3; font-variant-numeric: tabular-nums; }
+.big .v2 { font-size: 16px; font-variant-numeric: tabular-nums; }
+.big.neg { background: var(--error-bg); border-color: var(--error); }
+.bar { display: flex; height: 16px; border-radius: 4px; overflow: hidden; margin: var(--s2) 0 var(--s1); background: var(--bg-sub); gap: 2px; }
+.bar i { display: block; height: 100%; }
+.legend { list-style: none; padding: 0; margin: 0 0 var(--s2); display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 14px; }
+.legend li { display: inline-flex; align-items: center; gap: 6px; margin: 0; }
+.legend b { width: 12px; height: 12px; border-radius: 2px; display: inline-block; }
+table { width: 100%; border-collapse: collapse; margin-bottom: var(--s2); font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 10px var(--s1); border-bottom: 1px solid var(--line); vertical-align: top; }
+td.n { text-align: right; white-space: nowrap; }
+tr.sum th, tr.sum td { font-weight: 700; border-bottom: 1px solid var(--line-strong); }
+tr.sub th { font-weight: 400; padding-left: var(--s3); font-size: 14px; } tr.sub td { font-size: 14px; color: var(--fg-sub); }
+.alert { display: none; border-left: 6px solid var(--error); background: var(--error-bg); padding: var(--s2); margin-bottom: var(--s2); }
+.alert.show { display: block; }
+
+dl.rows { margin: 0 0 var(--s2); border-top: 1px solid var(--line); }
+dl.rows div { display: grid; grid-template-columns: 9em 1fr; gap: var(--s1) var(--s2); padding: 12px 0; border-bottom: 1px solid var(--line); }
+dl.rows dt { font-weight: 700; } dl.rows dd { margin: 0; }
+details { border-bottom: 1px solid var(--line); } details:first-of-type { border-top: 1px solid var(--line); }
+summary { list-style: none; cursor: pointer; padding: 12px 32px 12px 0; position: relative; font-weight: 700; min-height: 48px; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: ""; position: absolute; right: 8px; top: 20px; width: 8px; height: 8px; border-right: 2px solid var(--fg); border-bottom: 2px solid var(--fg); transform: rotate(45deg); }
+details[open] summary::after { transform: rotate(-135deg); top: 24px; }
+details .ans { padding: 0 0 var(--s2); }
+ul.check { list-style: none; padding: 0; }
+ul.check li { position: relative; padding: 10px 0 10px 32px; border-bottom: 1px solid var(--line); margin: 0; }
+ul.check li::before { content: ""; position: absolute; left: 0; top: 13px; width: 18px; height: 18px; border: 2px solid var(--fg); border-radius: 4px; }
+.contact { border: 1px solid var(--line); border-radius: 8px; padding: var(--s2); margin-bottom: var(--s2); }
+.contact h3 { margin-top: 0; }
+.tel { font-size: 20px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.trust { background: var(--bg-sub); padding: var(--s2); font-size: 14px; }
+.trust h2 { font-size: 17px; border: 0; padding: 0; }
+.trust h3 { font-size: 14px; margin-top: var(--s2); }
+.trust ol, .trust ul { margin-bottom: 0; }
+.trust a { word-break: break-all; }
+.money { background: var(--bg); border: 1px solid var(--ok); border-left-width: 6px; padding: 12px var(--s2); font-size: 14px; margin-bottom: var(--s2); }
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 var(--s3); border-radius: 8px; font-weight: 700; border: 1px solid var(--key); background: var(--bg); color: var(--key); text-decoration: none; margin-top: var(--s2); }
+footer { border-top: 1px solid var(--line); padding: var(--s3) 0 var(--s5); font-size: 14px; color: var(--fg-sub); }
+footer ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 24px; }
+@media (max-width: 480px) {
+  dl.rows div { grid-template-columns: 1fr; gap: 0; }
+  .big .v { font-size: 28px; }
+}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/id/">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M12 2 3 6v6c0 5 3.8 9.3 9 10 5.2-.7 9-5 9-10V6l-9-4Zm-1.2 14.2-3.5-3.5 1.4-1.4 2.1 2.1 4.9-4.9 1.4 1.4-6.3 6.3Z"/></svg>
+      <span>Tetsuzuki Navi<small>Panduan informasi resmi untuk tinggal dan bekerja di Jepang</small></span>
+    </a>
+    <a class="lang" href="/ja/gaji.html" hreflang="ja">日本語</a>
+  </div>
+</header>
+<div class="badges"><div class="wrap"><ul>
+  <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Hanya sumber resmi</li>
+  <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Dicek tiap minggu</li>
+  <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Tanpa komisi</li>
+</ul></div></div>
+
+<main class="wrap">
+  <nav class="crumb" aria-label="breadcrumb"><ol><li><a href="/id/">Tetsuzuki Navi</a></li><li><a href="/id/contact.html?page=gaji.html">Bekerja di Jepang</a></li><li>Uang</li></ol></nav>
+  <h1>Berapa Uang yang Benar-benar Tersisa di Jepang (Kalkulator Gaji Bersih)</h1>
+  <p class="lead">Hitung berapa yang tersisa setiap bulan setelah gaji di lowongan dipotong pajak, asuransi, asrama, dan lainnya. Gunakan sebelum berangkat ke Jepang lewat Tokutei Ginou (SSW) atau magang.</p>
+  <p class="updated">Terakhir dicek: 5 November 2026 (dicek tiap minggu)  /  Sumber: informasi resmi Kementerian Kesehatan, Tenaga Kerja dan Kesejahteraan Jepang (MHLW), Kyokai Kenpo, Badan Pajak Nasional, dan lainnya (daftar di bagian bawah)</p>
+
+  <div class="notice">
+    <h2>Yang perlu diketahui dulu</h2>
+    <p>"Gaji 200.000 yen per bulan" di lowongan <b>bukan</b> berarti Anda menerima 200.000 yen. Gaji otomatis dipotong <b>asuransi sosial dan pajak</b>, dan kadang juga <b>biaya asrama dan listrik/air</b>. Mulai tahun kedua di Jepang, <b>pajak penduduk (juminzei)</b> juga mulai dipotong, jadi gaji bersih turun.</p>
+  </div>
+
+  <nav class="toc" aria-labelledby="toc-h">
+    <h2 id="toc-h">Isi halaman ini</h2>
+    <ol>
+      <li><a href="#s1">Hitung gaji bersih</a></li>
+      <li><a href="#s2">Potongan dari gaji</a></li>
+      <li><a href="#s3">Salah paham yang sering terjadi</a></li>
+      <li><a href="#s4">Yang harus dicek sebelum tanda tangan kontrak</a></li>
+      <li><a href="#s5">Tempat konsultasi jika ada masalah</a></li>
+    </ol>
+  </nav>
+
+  <section id="s1" aria-labelledby="h-s1">
+    <h2 id="h-s1">Hitung gaji bersih</h2>
+    <form class="calc" id="calc" onsubmit="return false">
+      <div class="field">
+        <label for="pref">Prefektur tempat bekerja</label>
+        <p class="hint">Upah minimum dan iuran asuransi kesehatan berbeda tiap prefektur.</p>
+        <select id="pref"></select>
+      </div>
+      <fieldset>
+        <legend>Cara gaji ditentukan</legend>
+        <div class="seg" role="group">
+          <button type="button" id="m-h" aria-pressed="true">Per jam</button>
+          <button type="button" id="m-m" aria-pressed="false">Per bulan</button>
+        </div>
+      </fieldset>
+      <div class="field" id="f-wage">
+        <label for="wage">Upah per jam (yen)</label>
+        <input type="number" id="wage" inputmode="numeric" min="0" step="1">
+        <p class="minw" id="minw"></p>
+      </div>
+      <div class="field" id="f-msal" hidden>
+        <label for="msal">Gaji per bulan (yen, tanpa lembur)</label>
+        <input type="number" id="msal" inputmode="numeric" min="0" step="1000" value="200000">
+      </div>
+      <div class="field grid3">
+        <div><label for="hours">Jam kerja per hari</label><input type="number" id="hours" inputmode="decimal" min="0" max="12" step="0.5" value="8"></div>
+        <div><label for="days">Hari kerja per bulan</label><input type="number" id="days" inputmode="numeric" min="0" max="31" value="21"></div>
+        <div><label for="ot">Jam lembur per bulan</label><input type="number" id="ot" inputmode="numeric" min="0" max="100" value="0"></div>
+      </div>
+      <fieldset>
+        <legend>Usia</legend>
+        <div class="seg" role="group">
+          <button type="button" id="a1" aria-pressed="true">39 tahun ke bawah</button>
+          <button type="button" id="a2" aria-pressed="false">40–64 tahun</button>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Tahun ke berapa bekerja di Jepang</legend>
+        <div class="seg" role="group">
+          <button type="button" id="y1" aria-pressed="true">Tahun pertama</button>
+          <button type="button" id="y2" aria-pressed="false">Tahun kedua dst.</button>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Biaya hidup per bulan (yen)</legend>
+        <p class="hint small">Angka ini hanya contoh. Ganti dengan angka di kontrak atau lowongan Anda.</p>
+        <div class="costs">
+          <div><label for="rent">Asrama / sewa</label><input type="number" id="rent" inputmode="numeric" min="0" step="1000" value="30000"></div>
+          <div><label for="util">Listrik, gas, air</label><input type="number" id="util" inputmode="numeric" min="0" step="1000" value="8000"></div>
+          <div><label for="food">Makan</label><input type="number" id="food" inputmode="numeric" min="0" step="1000" value="30000"></div>
+          <div><label for="phone">HP / internet</label><input type="number" id="phone" inputmode="numeric" min="0" step="500" value="3000"></div>
+          <div><label for="other">Lainnya</label><input type="number" id="other" inputmode="numeric" min="0" step="1000" value="10000"></div>
+        </div>
+      </fieldset>
+      <div class="field" style="margin-bottom:0">
+        <label for="rate">Kurs (1 yen = berapa rupiah)</label>
+        <input type="number" id="rate" inputmode="decimal" min="0" step="1">
+        <p class="hint" style="margin-top:4px">Perkiraan per 4 November 2026: sekitar 114 rupiah. Saat mengirim uang, cek kurs dari perusahaan pengiriman.</p>
+      </div>
+
+      <div class="res" aria-live="polite">
+        <h3>Hasil (perkiraan per bulan)</h3>
+        <div class="alert" id="below">Upah per jam ini di bawah upah minimum. Di Jepang, upah minimum juga berlaku untuk pekerja asing, jadi syarat ini melanggar hukum. Konsultasikan sebelum tanda tangan kontrak.</div>
+        <div class="big" id="bigbox">
+          <div class="k">Uang tersisa per bulan</div>
+          <div class="v" id="o-left">—</div>
+          <div class="v2" id="o-left-rp"></div>
+          <div class="v2 small" id="o-year"></div>
+        </div>
+        <div class="alert" id="neg">Biaya hidup lebih besar dari gaji bersih. Anda akan minus setiap bulan.</div>
+        <div class="bar" aria-hidden="true"><i id="b-social" style="background:var(--c-social)"></i><i id="b-tax" style="background:var(--c-tax)"></i><i id="b-costs" style="background:var(--c-costs)"></i><i id="b-left" style="background:var(--c-left)"></i></div>
+        <ul class="legend">
+          <li><b style="background:var(--c-social)"></b>Asuransi</li>
+          <li><b style="background:var(--c-tax)"></b>Pajak</li>
+          <li><b style="background:var(--c-costs)"></b>Biaya hidup</li>
+          <li><b style="background:var(--c-left)"></b>Tersisa</li>
+        </ul>
+        <table>
+          <caption class="small" style="text-align:left;caption-side:top;padding-bottom:4px">Rincian potongan</caption>
+          <tbody>
+            <tr class="sum"><th>Gaji kotor</th><td class="n" id="o-gross"></td></tr>
+            <tr><th>Iuran asuransi sosial</th><td class="n" id="o-social"></td></tr>
+            <tr class="sub"><th>Asuransi kesehatan</th><td class="n" id="o-health"></td></tr>
+            <tr class="sub"><th>Iuran dukungan anak</th><td class="n" id="o-shien"></td></tr>
+            <tr class="sub" id="row-kaigo"><th>Asuransi perawatan lansia</th><td class="n" id="o-kaigo"></td></tr>
+            <tr class="sub"><th>Pensiun karyawan (kosei nenkin)</th><td class="n" id="o-pension"></td></tr>
+            <tr class="sub"><th>Asuransi ketenagakerjaan</th><td class="n" id="o-koyo"></td></tr>
+            <tr><th>Pajak</th><td class="n" id="o-tax"></td></tr>
+            <tr class="sub"><th>Pajak penghasilan</th><td class="n" id="o-itax"></td></tr>
+            <tr class="sub"><th>Pajak penduduk (juminzei)</th><td class="n" id="o-jtax"></td></tr>
+            <tr class="sum"><th>Gaji bersih (yang ditransfer)</th><td class="n" id="o-net"></td></tr>
+            <tr><th>Biaya hidup</th><td class="n" id="o-costs"></td></tr>
+            <tr class="sum"><th>Uang tersisa per bulan</th><td class="n" id="o-left2"></td></tr>
+          </tbody>
+        </table>
+        <p class="small">Ini hanya perkiraan. Jumlah sebenarnya tergantung cara hitung perusahaan, bonus, tanggungan keluarga, dan kota tempat tinggal. Pajak penghasilan dihitung dari pajak setahun dibagi 12, jadi bisa sedikit berbeda dari potongan bulanan (selisihnya disesuaikan di akhir tahun / nenmatsu chosei).</p>
+      </div>
+    </form>
+  </section>
+
+  <section id="s2" aria-labelledby="h-s2">
+    <h2 id="h-s2">Potongan dari gaji</h2>
+    <p>Karyawan di Jepang otomatis dipotong biaya berikut dari gajinya. Semuanya ditentukan oleh hukum, bukan oleh perusahaan.</p>
+    <dl class="rows">
+      <div><dt>Asuransi kesehatan</dt><dd>Biaya berobat jadi hanya 30%. Iuran dibayar setengah oleh perusahaan, setengah oleh Anda. Tarifnya berbeda tiap prefektur, sekitar 9,4–10,6% (Anda membayar setengahnya).<sup><a href="#src">[2]</a></sup></dd></div>
+      <div><dt>Iuran dukungan anak</dt><dd>Iuran baru mulai April 2026. Tarif sama di seluruh Jepang 0,23%, Anda membayar setengahnya.<sup><a href="#src">[2]</a></sup></dd></div>
+      <div><dt>Asuransi perawatan lansia</dt><dd>Hanya untuk usia 40–64 tahun. Tarif 1,62%, Anda membayar setengahnya.<sup><a href="#src">[2]</a></sup></dd></div>
+      <div><dt>Pensiun karyawan (kosei nenkin)</dt><dd>Tarif 18,3%, Anda membayar setengahnya yaitu 9,15%. Ini potongan terbesar. <b>Sebagian bisa dikembalikan saat pulang ke negara asal</b> (dattai ichijikin). Bisa diklaim jika ikut minimal 6 bulan, dihitung maksimal 5 tahun. Harus diklaim dalam 2 tahun setelah meninggalkan Jepang.<sup><a href="#src">[5]</a></sup></dd></div>
+      <div><dt>Asuransi ketenagakerjaan</dt><dd>Asuransi untuk tunjangan jika kehilangan pekerjaan, dll. Bagian Anda 0,5% (April 2026–Maret 2027).<sup><a href="#src">[3]</a></sup></dd></div>
+      <div><dt>Pajak penghasilan</dt><dd>Pajak negara atas penghasilan. Mulai tahun 2026, orang yang hanya punya gaji tidak kena pajak ini sampai penghasilan 1,78 juta yen per tahun.<sup><a href="#src">[4]</a></sup></dd></div>
+      <div><dt>Pajak penduduk (juminzei)</dt><dd>Pajak yang dibayar ke kota tempat tinggal. Dihitung dari penghasilan tahun sebelumnya, jadi <b>tahun pertama tidak ada. Mulai Juni tahun kedua</b> gaji dipotong. Pada tahun pulang ke negara asal pun tetap harus dibayar. <a href="/ja/shinjuku-juminzei.html">Penjelasan lengkap pajak penduduk (contoh: Shinjuku, saat ini dalam bahasa Jepang)</a></dd></div>
+    </dl>
+  </section>
+
+  <section id="s3" aria-labelledby="h-s3">
+    <h2 id="h-s3">Salah paham yang sering terjadi</h2>
+    <details><summary>"Gaji 200.000 yen" berarti terima 200.000 yen?</summary><div class="ans"><p>Tidak. Bahkan di tahun pertama, sekitar 30.000 yen dipotong untuk asuransi dan pajak. Setelah dipotong asrama dan lainnya, sering kali yang tersisa sekitar 100.000 yen. Cek dengan kalkulator di atas.</p></div></details>
+    <details><summary>Gaji bersih tahun pertama dan kedua sama?</summary><div class="ans"><p>Tidak. Mulai Juni tahun kedua pajak penduduk dipotong, jadi gaji bersih turun beberapa ribu sampai sekitar 10.000 yen per bulan. Jangan membuat rencana hidup berdasarkan gaji tahun pertama.</p></div></details>
+    <details><summary>Perusahaan boleh memotong gaji untuk apa saja?</summary><div class="ans"><p>Tidak. Pada prinsipnya gaji harus dibayar penuh. Selain pajak dan asuransi sosial, perusahaan hanya boleh memotong hal yang disepakati secara tertulis antara perusahaan dan perwakilan pekerja, seperti biaya asrama (Undang-Undang Standar Ketenagakerjaan Pasal 24). Jika ada potongan tanpa penjelasan, konsultasikan.</p></div></details>
+    <details><summary>Lembur tidak menambah gaji?</summary><div class="ans"><p>Tidak. Lembur di atas 8 jam per hari atau 40 jam per minggu harus dibayar minimal 1,25 kali upah biasa (UU Standar Ketenagakerjaan Pasal 37). Masukkan ke "jam lembur" di kalkulator.</p></div></details>
+    <details><summary>Pekerja asing boleh dibayar di bawah upah minimum?</summary><div class="ans"><p>Tidak. Upah minimum berlaku untuk semua orang yang bekerja di Jepang, apa pun kewarganegaraannya. Untuk Tokutei Ginou, gaji harus sama atau lebih tinggi dari orang Jepang yang melakukan pekerjaan yang sama.</p></div></details>
+  </section>
+
+  <section id="s4" aria-labelledby="h-s4">
+    <h2 id="h-s4">Yang harus dicek sebelum tanda tangan kontrak</h2>
+    <p>Sebelum berangkat ke Jepang, cek hal berikut di kontrak kerja (koyo joken sho). Jika ada kata yang tidak dipahami, tanyakan sebelum tanda tangan.</p>
+    <ul class="check">
+      <li>Apakah gaji bulanan atau per jam tertulis? Apakah lebih tinggi dari upah minimum prefektur tempat kerja?</li><li>Apakah potongan seperti asrama dan listrik/air tertulis beserta jumlahnya?</li><li>Apakah jam kerja per hari, hari libur, dan ada/tidaknya lembur tertulis?</li><li>Apakah Anda mendapat kontrak dalam bahasa yang Anda pahami?</li><li>Berapa biaya yang harus dibayar sebelum berangkat (biaya pelatihan, biaya agen, dll.) dan untuk apa?</li>
+    </ul>
+    <div class="notice"><p>Situs ini tidak merekomendasikan perusahaan, LPK, atau agen tertentu. Untuk menanyakan apakah kontrak Anda benar, hubungi tempat konsultasi resmi di bawah.</p></div>
+  </section>
+
+  <section id="s5" aria-labelledby="h-s5">
+    <h2 id="h-s5">Tempat konsultasi jika ada masalah</h2>
+    <div class="contact">
+      <h3>Layanan Konsultasi untuk Pekerja Asing (MHLW)</h3>
+      <p class="tel"><a href="tel:0570001715">0570-001-715</a></p>
+      <p>Bahasa Indonesia: Selasa dan Kamis 10.00–15.00 (kecuali 12.00–13.00). Bisa konsultasi soal gaji dan syarat kerja. Gratis, tetapi ada biaya telepon.<sup><a href="#src">[6]</a></sup></p>
+    </div>
+    <div class="contact">
+      <h3>Hotline Konsultasi Syarat Kerja (MHLW)</h3>
+      <p class="tel"><a href="tel:0120565455">0120-565-455</a></p>
+      <p>Telepon gratis. Tersedia dalam bahasa Indonesia, tetapi hari layanan berbeda tiap bahasa. Cek di halaman resmi.</p>
+    </div>
+    <p class="small">Layanan ini bisa digunakan selama di Jepang. Untuk kontrak atau LPK sebelum berangkat, tanyakan ke lembaga pemerintah Indonesia (BP2MI / Kementerian P2MI).</p>
+  </section>
+
+  <aside class="trust" id="src" aria-labelledby="h-tr">
+    <h2 id="h-tr">Tentang informasi ini</h2>
+    <div class="money"><b>Pendapatan situs ini hanya dari iklan.</b> Kami tidak menerima komisi dari LPK, agen, atau perusahaan. Tidak ada pendaftaran email atau konsultasi berbayar.</div>
+    <h3>Sumber (tanggal dicek)</h3>
+    <ol>
+<li>令和8年度 地域別最低賃金 答申状況（厚生労働省）（2026-11-05）<br><a href="https://www.mhlw.go.jp/content/11302000/001745621.pdf">https://www.mhlw.go.jp/content/11302000/001745621.pdf</a></li>
+<li>令和8年度 都道府県単位保険料率・介護保険料率・子ども・子育て支援金率（協会けんぽ）（2026-11-05）<br><a href="https://www.kyoukaikenpo.or.jp/g7/cat330/sb3130/r08/">https://www.kyoukaikenpo.or.jp/g7/cat330/sb3130/r08/</a></li>
+<li>令和8年度の雇用保険料率（山形労働局）（2026-11-05）<br><a href="https://jsite.mhlw.go.jp/yamagata-roudoukyoku/koyouhoken-20260316.html">https://jsite.mhlw.go.jp/yamagata-roudoukyoku/koyouhoken-20260316.html</a></li>
+<li>令和8年度税制改正の解説（財務省）（2026-11-05）<br><a href="https://www.mof.go.jp/tax_policy/tax_reform/outline/fy2026/explanation/PDF/p0003-0010.pdf">https://www.mof.go.jp/tax_policy/tax_reform/outline/fy2026/explanation/PDF/p0003-0010.pdf</a></li>
+<li>脱退一時金の制度（日本年金機構、2026年4月1日更新）（2026-11-05）<br><a href="https://www.nenkin.go.jp/service/jukyu/seido/sonota-kyufu/dattai-ichiji/20150406.html">https://www.nenkin.go.jp/service/jukyu/seido/sonota-kyufu/dattai-ichiji/20150406.html</a></li>
+<li>外国人労働者向け相談ダイヤル（厚生労働省）（2026-11-05）<br><a href="https://www.mhlw.go.jp/content/001708139.pdf">https://www.mhlw.go.jp/content/001708139.pdf</a></li>
+<li>為替レート JPY/IDR（Trading Economics、2026年11月4日）（2026-11-05）<br><a href="https://id.tradingeconomics.com/jpyidr:cur">https://id.tradingeconomics.com/jpyidr:cur</a></li>
+    </ol>
+    <h3>Riwayat perubahan</h3>
+    <ul><li>5 November 2026  Versi 1 diterbitkan. Sudah memakai upah minimum, tarif asuransi, dan perubahan pajak penghasilan tahun 2026.</li></ul>
+    <a class="btn" href="/id/contact.html?page=gaji.html">Laporkan jika ada kesalahan</a>
+  </aside>
+</main>
+<footer><div class="wrap">
+  <ul><li><a href="/id/about.html">Pengelola dan kebijakan</a></li><li><a href="/id/contact.html?page=gaji.html">Laporkan jika ada kesalahan</a></li><li>Tetsuzuki Navi</li></ul>
+</div></footer>
+
+<script>
+const PREFS = [{"n": "Hokkaido", "w": 1131, "d": "2026-10-01", "k": 10.28}, {"n": "Aomori", "w": 1090, "d": "2026-10-29", "k": 9.85}, {"n": "Iwate", "w": 1090, "d": "2026-12-01", "k": 9.51}, {"n": "Miyagi", "w": 1098, "d": "2026-10-01", "k": 10.1}, {"n": "Akita", "w": 1090, "d": "2026-10-14", "k": 10.01}, {"n": "Yamagata", "w": 1092, "d": "2026-10-30", "k": 9.75}, {"n": "Fukushima", "w": 1094, "d": "2026-10-16", "k": 9.5}, {"n": "Ibaraki", "w": 1136, "d": "2026-10-18", "k": 9.52}, {"n": "Tochigi", "w": 1125, "d": "2026-10-01", "k": 9.82}, {"n": "Gunma", "w": 1120, "d": "2026-10-03", "k": 9.68}, {"n": "Saitama", "w": 1196, "d": "2026-10-01", "k": 9.67}, {"n": "Chiba", "w": 1195, "d": "2026-10-01", "k": 9.73}, {"n": "Tokyo", "w": 1280, "d": "2026-10-01", "k": 9.85}, {"n": "Kanagawa", "w": 1279, "d": "2026-10-01", "k": 9.92}, {"n": "Niigata", "w": 1108, "d": "2026-10-01", "k": 9.21}, {"n": "Toyama", "w": 1119, "d": "2026-10-01", "k": 9.59}, {"n": "Ishikawa", "w": 1113, "d": "2026-10-03", "k": 9.7}, {"n": "Fukui", "w": 1112, "d": "2026-10-04", "k": 9.71}, {"n": "Yamanashi", "w": 1113, "d": "2026-11-01", "k": 9.55}, {"n": "Nagano", "w": 1117, "d": "2026-10-02", "k": 9.63}, {"n": "Gifu", "w": 1121, "d": "2026-10-01", "k": 9.8}, {"n": "Shizuoka", "w": 1154, "d": "2026-10-15", "k": 9.61}, {"n": "Aichi", "w": 1195, "d": "2026-10-01", "k": 9.93}, {"n": "Mie", "w": 1143, "d": "2026-10-01", "k": 9.77}, {"n": "Shiga", "w": 1136, "d": "2026-10-03", "k": 9.88}, {"n": "Kyoto", "w": 1180, "d": "2026-11-16", "k": 9.89}, {"n": "Osaka", "w": 1231, "d": "2026-10-01", "k": 10.13}, {"n": "Hyogo", "w": 1172, "d": "2026-10-01", "k": 10.12}, {"n": "Nara", "w": 1107, "d": "2026-10-04", "k": 9.91}, {"n": "Wakayama", "w": 1101, "d": "2026-10-03", "k": 10.06}, {"n": "Tottori", "w": 1090, "d": "2026-10-03", "k": 9.86}, {"n": "Shimane", "w": 1092, "d": "2026-10-10", "k": 9.94}, {"n": "Okayama", "w": 1104, "d": "2026-10-02", "k": 10.05}, {"n": "Hiroshima", "w": 1141, "d": "2026-10-11", "k": 9.78}, {"n": "Yamaguchi", "w": 1101, "d": "2026-10-08", "k": 10.15}, {"n": "Tokushima", "w": 1103, "d": "2026-11-01", "k": 10.24}, {"n": "Kagawa", "w": 1092, "d": "2026-10-01", "k": 10.02}, {"n": "Ehime", "w": 1093, "d": "2026-11-01", "k": 9.98}, {"n": "Kochi", "w": 1086, "d": "2026-10-29", "k": 10.05}, {"n": "Fukuoka", "w": 1114, "d": "2026-10-04", "k": 10.11}, {"n": "Saga", "w": 1095, "d": "2026-11-15", "k": 10.55}, {"n": "Nagasaki", "w": 1087, "d": "2026-11-02", "k": 10.06}, {"n": "Kumamoto", "w": 1092, "d": "2026-12-01", "k": 10.08}, {"n": "Oita", "w": 1096, "d": "2026-11-01", "k": 10.08}, {"n": "Miyazaki", "w": 1085, "d": "2026-10-24", "k": 9.77}, {"n": "Kagoshima", "w": 1090, "d": "2026-10-25", "k": 10.13}, {"n": "Okinawa", "w": 1086, "d": "2026-12-02", "k": 9.44}];
+const R = {"kaigo": 1.62, "shien": 0.23, "pension": 18.3, "koyo_worker": 0.5, "jpy_idr": 114};
+const L = {"yen": " yen", "rp": "", "minw": "Upah minimum", "per_h": " yen/jam"};
+const $ = id => document.getElementById(id);
+const state = { mode: "h", age40: false, year2: false };
+const fmt = n => Math.round(n).toLocaleString("en-US");
+const yen = n => (L.yen === "円" ? fmt(n) + "円" : "¥" + fmt(n));
+const rp = n => "Rp " + fmt(n).replace(/,/g, ".");
+
+// Pref select (default Tokyo)
+PREFS.forEach((p, i) => { const o = document.createElement("option"); o.value = i; o.textContent = p.n; $("pref").appendChild(o); });
+$("pref").value = PREFS.findIndex(p => p.w === 1280);
+$("rate").value = R.jpy_idr;
+
+function setMinw() {
+  const p = PREFS[$("pref").value];
+  const [y, m, dd] = p.d.split("-").map(Number);
+  const MON = ["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
+  $("minw").textContent = (L.yen === "円")
+    ? `この都道府県の最低賃金：${fmt(p.w)}円／時間（${y}年${m}月${dd}日から）`
+    : `Upah minimum prefektur ini: ¥${fmt(p.w)}/jam (mulai ${dd} ${MON[m - 1]} ${y})`;
+}
+function num(id) { const v = parseFloat($(id).value); return isFinite(v) && v > 0 ? v : 0; }
+
+// Tax helpers (2026 rules). Annual amounts in yen.
+function kyuyoKojo(a, minimum) {
+  let f;
+  if (a <= 1900000) f = 650000;
+  else if (a <= 3600000) f = a * 0.3 + 80000;
+  else if (a <= 6600000) f = a * 0.2 + 440000;
+  else if (a <= 8500000) f = a * 0.1 + 1100000;
+  else f = 1950000;
+  return Math.min(a, Math.max(minimum, f));
+}
+function incomeTax(taxable) {
+  const b = [[1950000,.05,0],[3300000,.10,97500],[6950000,.20,427500],[9000000,.23,636000],[18000000,.33,1536000],[40000000,.40,2796000],[Infinity,.45,4796000]];
+  for (const [lim, r, d] of b) if (taxable <= lim) return Math.max(0, taxable * r - d) * 1.021;
+}
+
+function calc() {
+  const p = PREFS[$("pref").value];
+  const h = num("hours") || 8, d = num("days") || 21, ot = num("ot");
+  let base, hourly;
+  if (state.mode === "h") { hourly = num("wage"); base = hourly * h * d; }
+  else { base = num("msal"); hourly = (h * d) ? base / (h * d) : 0; }
+  const gross = base + hourly * 1.25 * ot;
+  $("below").classList.toggle("show", hourly > 0 && hourly < p.w);
+
+  const health = Math.round(gross * p.k / 200);
+  const shien = Math.round(gross * R.shien / 200);
+  const kaigo = state.age40 ? Math.round(gross * R.kaigo / 200) : 0;
+  const pension = Math.round(gross * R.pension / 200);
+  const koyo = Math.round(gross * R.koyo_worker / 100);
+  const social = health + shien + kaigo + pension + koyo;
+
+  const A = gross * 12, S = social * 12;
+  const shotoku = A - kyuyoKojo(A, 740000);
+  const kiso = shotoku <= 4890000 ? 1040000 : shotoku <= 6550000 ? 670000 : 620000;
+  const taxable = Math.floor(Math.max(0, shotoku - S - kiso) / 1000) * 1000;
+  const itax = Math.round(incomeTax(taxable) / 12);
+
+  let jtax = 0;
+  if (state.year2) {
+    const jt = Math.floor(Math.max(0, shotoku - S - 430000) / 1000) * 1000;
+    const shotokuwari = jt > 0 ? Math.max(0, jt * 0.10 - 2500) : 0;
+    const kintou = shotoku > 450000 ? 5000 : 0;
+    jtax = Math.round((shotokuwari + kintou) / 12);
+  }
+  const tax = itax + jtax;
+  const net = gross - social - tax;
+  const costs = num("rent") + num("util") + num("food") + num("phone") + num("other");
+  const left = net - costs;
+  const rate = num("rate");
+
+  $("o-gross").textContent = yen(gross);
+  $("o-health").textContent = "−" + yen(health);
+  $("o-shien").textContent = "−" + yen(shien);
+  $("o-kaigo").textContent = "−" + yen(kaigo);
+  $("row-kaigo").hidden = !state.age40;
+  $("o-pension").textContent = "−" + yen(pension);
+  $("o-koyo").textContent = "−" + yen(koyo);
+  $("o-social").textContent = "−" + yen(social);
+  $("o-itax").textContent = "−" + yen(itax);
+  $("o-jtax").textContent = state.year2 ? "−" + yen(jtax) : (L.yen === "円" ? "1年目は0円" : "Tahun pertama ¥0");
+  $("o-tax").textContent = "−" + yen(tax);
+  $("o-net").textContent = yen(net);
+  $("o-costs").textContent = "−" + yen(costs);
+  $("o-left2").textContent = yen(left);
+  $("o-left").textContent = yen(left);
+  $("o-left-rp").textContent = rate ? "≈ " + rp(left * rate) : "";
+  $("o-year").textContent = (L.yen === "円" ? "1年で約" + yen(left * 12) : "Setahun sekitar " + yen(left * 12)) + (rate ? (L.yen === "円" ? "（≈ " + rp(left * 12 * rate) + "）" : " (≈ " + rp(left * 12 * rate) + ")") : "");
+  $("bigbox").classList.toggle("neg", left < 0);
+  $("neg").classList.toggle("show", left < 0);
+
+  const tot = Math.max(gross, 1);
+  const seg = (id, v) => { $(id).style.width = Math.max(0, v) / tot * 100 + "%"; };
+  seg("b-social", social); seg("b-tax", tax); seg("b-costs", Math.min(costs, Math.max(0, net))); seg("b-left", Math.max(0, left));
+}
+
+function press(onId, offId, cb) {
+  $(onId).addEventListener("click", () => { $(onId).setAttribute("aria-pressed", "true"); $(offId).setAttribute("aria-pressed", "false"); cb(); calc(); });
+}
+press("m-h", "m-m", () => { state.mode = "h"; $("f-wage").hidden = false; $("f-msal").hidden = true; });
+press("m-m", "m-h", () => { state.mode = "m"; $("f-wage").hidden = true; $("f-msal").hidden = false; });
+press("a1", "a2", () => { state.age40 = false; });
+press("a2", "a1", () => { state.age40 = true; });
+press("y1", "y2", () => { state.year2 = false; });
+press("y2", "y1", () => { state.year2 = true; });
+$("pref").addEventListener("change", () => { $("wage").value = PREFS[$("pref").value].w; setMinw(); calc(); });
+document.querySelectorAll("#calc input").forEach(i => i.addEventListener("input", calc));
+$("wage").value = PREFS[$("pref").value].w;
+setMinw(); calc();
+</script>
+</body>
+</html>

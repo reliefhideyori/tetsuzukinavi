@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<link rel="alternate" hreflang="id" href="https://tetsuzukinavi.org/id/gaji.html">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>日本で手元に残るお金</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap">
+<style>
+/* Digital Agency Design System (DADS) based: body 16px/1.7, 8px grid, text #1a1a1a, key blue #0017c1,
+   focus = black outline + yellow. Mobile first, one column, max 40rem. Calm palette for trust. */
+:root {
+  --bg: #ffffff; --bg-sub: #f2f2f2; --bg-soft: #f6f8fc; --fg: #1a1a1a; --fg-sub: #4d4d4d; --line: #cccccc; --line-strong: #666666;
+  --key: #0017c1; --key-fg: #ffffff; --key-bg: #e8f1fe; --key-dark: #00118f;
+  --error: #ec0000; --error-bg: #fdeeee; --ok: #197a4b; --ok-bg: #e6f5ec;
+  --c-social: #3460fb; --c-tax: #9a6fd8; --c-costs: #b8b8b8; --c-left: #197a4b;
+  --focus: #ffd43d;
+  --font: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+  --s1: 8px; --s2: 16px; --s3: 24px; --s5: 40px; --s8: 64px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121212; --bg-sub: #1f1f1f; --bg-soft: #171b26; --fg: #f0f0f0; --fg-sub: #b3b3b3; --line: #3d3d3d; --line-strong: #8a8a8a;
+    --key: #8fb3ff; --key-fg: #0b1230; --key-bg: #1a2240; --key-dark: #0b1a66; --error: #ff7a7a; --error-bg: #3a1c1c;
+    --ok: #6fd39f; --ok-bg: #16301f; --c-social: #7d9bff; --c-tax: #b99be6; --c-costs: #5c5c5c; --c-left: #4fbf86; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #121212; --bg-sub: #1f1f1f; --bg-soft: #171b26; --fg: #f0f0f0; --fg-sub: #b3b3b3; --line: #3d3d3d; --line-strong: #8a8a8a;
+  --key: #8fb3ff; --key-fg: #0b1230; --key-bg: #1a2240; --key-dark: #0b1a66; --error: #ff7a7a; --error-bg: #3a1c1c;
+  --ok: #6fd39f; --ok-bg: #16301f; --c-social: #7d9bff; --c-tax: #b99be6; --c-costs: #5c5c5c; --c-left: #4fbf86; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font); font-size: 16px; line-height: 1.7; letter-spacing: .02em; }
+.wrap { max-width: 40rem; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+p { margin: 0 0 var(--s2); } p:last-child { margin-bottom: 0; }
+a { color: var(--key); text-underline-offset: 3px; }
+button, input, select { font: inherit; letter-spacing: inherit; color: inherit; }
+:focus-visible { outline: 4px solid var(--fg); outline-offset: 2px; box-shadow: 0 0 0 2px var(--focus); }
+.small { font-size: 14px; color: var(--fg-sub); }
+
+/* Site header: calm, official-looking */
+.site { background: var(--key-dark); color: #fff; }
+.site .wrap { display: flex; align-items: center; justify-content: space-between; gap: var(--s2); min-height: 56px; }
+.brand { color: #fff; text-decoration: none; font-weight: 700; font-size: 18px; display: flex; align-items: center; gap: 10px; }
+.brand svg { width: 24px; height: 24px; flex: none; }
+.brand small { display: block; font-weight: 400; font-size: 12px; opacity: .85; line-height: 1.4; }
+.lang { color: #fff; font-size: 14px; border: 1px solid rgba(255,255,255,.6); border-radius: 6px; padding: 6px 10px; text-decoration: none; white-space: nowrap; min-height: 36px; display: inline-flex; align-items: center; }
+.badges { background: var(--bg-soft); border-bottom: 1px solid var(--line); }
+.badges ul { list-style: none; margin: 0 auto; padding: 8px 0; display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 14px; color: var(--fg-sub); }
+.badges li { display: inline-flex; align-items: center; gap: 6px; }
+.badges svg { width: 16px; height: 16px; fill: var(--ok); flex: none; }
+
+main { padding-top: var(--s3); padding-bottom: var(--s8); }
+.crumb { font-size: 14px; color: var(--fg-sub); margin: 0 0 var(--s2); }
+.crumb ol { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0 4px; }
+.crumb li + li::before { content: "＞"; margin-right: 4px; }
+h1 { font-size: 24px; line-height: 1.5; margin: 0 0 var(--s1); }
+.lead { color: var(--fg-sub); }
+.updated { font-size: 14px; color: var(--fg-sub); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: var(--s1) 0; margin: var(--s2) 0 var(--s3); }
+.notice { border: 1px solid var(--key); border-left-width: 6px; padding: var(--s2); margin-bottom: var(--s3); }
+.notice.warn { border-color: var(--error); background: var(--error-bg); }
+.notice h2, .notice h3 { margin-top: 0; font-size: 17px; border: 0; padding: 0; }
+.toc { background: var(--bg-sub); padding: var(--s2); margin-bottom: var(--s5); }
+.toc h2 { font-size: 16px; margin: 0 0 var(--s1); border: 0; padding: 0; }
+.toc ol { margin: 0; padding-left: 1.5em; } .toc li { padding: 2px 0; }
+section { margin-bottom: var(--s5); scroll-margin-top: var(--s2); }
+h2 { font-size: 20px; line-height: 1.5; margin: 0 0 var(--s2); padding-bottom: var(--s1); border-bottom: 2px solid var(--fg); }
+h3 { font-size: 17px; line-height: 1.6; margin: var(--s3) 0 var(--s1); }
+ul, ol { margin: 0 0 var(--s2); padding-left: 1.5em; } li { margin-bottom: 4px; }
+
+/* Form (DADS: label above field, 48px fields, 8px radius) */
+.calc { border: 1px solid var(--line-strong); border-radius: 8px; padding: var(--s2); }
+.field { margin-bottom: var(--s3); }
+.field > label, .field > .lbl { display: block; font-weight: 700; margin-bottom: 4px; }
+.field .hint { font-size: 14px; color: var(--fg-sub); margin: 0 0 var(--s1); }
+select, input[type="number"] { width: 100%; min-height: 48px; padding: 8px 12px; border: 1px solid var(--line-strong); border-radius: 8px; background: var(--bg); font-variant-numeric: tabular-nums; }
+input[type="number"] { text-align: right; }
+.unit { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 8px; }
+.unit span { font-size: 14px; color: var(--fg-sub); min-width: 3em; }
+.seg { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.seg button { min-height: 48px; border: 1px solid var(--line-strong); border-radius: 8px; background: var(--bg); padding: 8px; }
+.seg button[aria-pressed="true"] { border: 2px solid var(--key); background: var(--key-bg); font-weight: 700; color: var(--key); }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s2); }
+.grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
+.grid3 label, .costs label { font-size: 14px; font-weight: 400; display: block; margin-bottom: 4px; }
+.costs { display: grid; grid-template-columns: 1fr 1fr; gap: 12px var(--s2); }
+fieldset { border: 0; margin: 0 0 var(--s3); padding: 0; }
+legend { font-weight: 700; margin-bottom: 4px; padding: 0; }
+.minw { font-size: 14px; color: var(--fg-sub); margin-top: 4px; }
+
+/* Result */
+.res { margin-top: var(--s3); border-top: 2px solid var(--fg); padding-top: var(--s2); }
+.res h3 { margin-top: 0; }
+.big { background: var(--ok-bg); border-left: 6px solid var(--ok); padding: var(--s2); margin-bottom: var(--s2); }
+.big .k { font-size: 14px; color: var(--fg-sub); }
+.big .v { font-size: 32px; font-weight: 700; line-height: 1.3; font-variant-numeric: tabular-nums; }
+.big .v2 { font-size: 16px; font-variant-numeric: tabular-nums; }
+.big.neg { background: var(--error-bg); border-color: var(--error); }
+.bar { display: flex; height: 16px; border-radius: 4px; overflow: hidden; margin: var(--s2) 0 var(--s1); background: var(--bg-sub); gap: 2px; }
+.bar i { display: block; height: 100%; }
+.legend { list-style: none; padding: 0; margin: 0 0 var(--s2); display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 14px; }
+.legend li { display: inline-flex; align-items: center; gap: 6px; margin: 0; }
+.legend b { width: 12px; height: 12px; border-radius: 2px; display: inline-block; }
+table { width: 100%; border-collapse: collapse; margin-bottom: var(--s2); font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 10px var(--s1); border-bottom: 1px solid var(--line); vertical-align: top; }
+td.n { text-align: right; white-space: nowrap; }
+tr.sum th, tr.sum td { font-weight: 700; border-bottom: 1px solid var(--line-strong); }
+tr.sub th { font-weight: 400; padding-left: var(--s3); font-size: 14px; } tr.sub td { font-size: 14px; color: var(--fg-sub); }
+.alert { display: none; border-left: 6px solid var(--error); background: var(--error-bg); padding: var(--s2); margin-bottom: var(--s2); }
+.alert.show { display: block; }
+
+dl.rows { margin: 0 0 var(--s2); border-top: 1px solid var(--line); }
+dl.rows div { display: grid; grid-template-columns: 9em 1fr; gap: var(--s1) var(--s2); padding: 12px 0; border-bottom: 1px solid var(--line); }
+dl.rows dt { font-weight: 700; } dl.rows dd { margin: 0; }
+details { border-bottom: 1px solid var(--line); } details:first-of-type { border-top: 1px solid var(--line); }
+summary { list-style: none; cursor: pointer; padding: 12px 32px 12px 0; position: relative; font-weight: 700; min-height: 48px; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: ""; position: absolute; right: 8px; top: 20px; width: 8px; height: 8px; border-right: 2px solid var(--fg); border-bottom: 2px solid var(--fg); transform: rotate(45deg); }
+details[open] summary::after { transform: rotate(-135deg); top: 24px; }
+details .ans { padding: 0 0 var(--s2); }
+ul.check { list-style: none; padding: 0; }
+ul.check li { position: relative; padding: 10px 0 10px 32px; border-bottom: 1px solid var(--line); margin: 0; }
+ul.check li::before { content: ""; position: absolute; left: 0; top: 13px; width: 18px; height: 18px; border: 2px solid var(--fg); border-radius: 4px; }
+.contact { border: 1px solid var(--line); border-radius: 8px; padding: var(--s2); margin-bottom: var(--s2); }
+.contact h3 { margin-top: 0; }
+.tel { font-size: 20px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.trust { background: var(--bg-sub); padding: var(--s2); font-size: 14px; }
+.trust h2 { font-size: 17px; border: 0; padding: 0; }
+.trust h3 { font-size: 14px; margin-top: var(--s2); }
+.trust ol, .trust ul { margin-bottom: 0; }
+.trust a { word-break: break-all; }
+.money { background: var(--bg); border: 1px solid var(--ok); border-left-width: 6px; padding: 12px var(--s2); font-size: 14px; margin-bottom: var(--s2); }
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 var(--s3); border-radius: 8px; font-weight: 700; border: 1px solid var(--key); background: var(--bg); color: var(--key); text-decoration: none; margin-top: var(--s2); }
+footer { border-top: 1px solid var(--line); padding: var(--s3) 0 var(--s5); font-size: 14px; color: var(--fg-sub); }
+footer ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 24px; }
+@media (max-width: 480px) {
+  dl.rows div { grid-template-columns: 1fr; gap: 0; }
+  .big .v { font-size: 28px; }
+}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/ja/">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M12 2 3 6v6c0 5 3.8 9.3 9 10 5.2-.7 9-5 9-10V6l-9-4Zm-1.2 14.2-3.5-3.5 1.4-1.4 2.1 2.1 4.9-4.9 1.4 1.4-6.3 6.3Z"/></svg>
+      <span>手続きナビ<small>日本で暮らす・働くための公式情報ガイド</small></span>
+    </a>
+    <a class="lang" href="/id/gaji.html" hreflang="id">Bahasa Indonesia</a>
+  </div>
+</header>
+<div class="badges"><div class="wrap"><ul>
+  <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>公式の情報だけ</li>
+  <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>毎週確認</li>
+  <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>紹介料なし</li>
+</ul></div></div>
+
+<main class="wrap">
+  <nav class="crumb" aria-label="breadcrumb"><ol><li><a href="/ja/">手続きナビ</a></li><li><a href="/ja/contact.html?page=gaji.html">日本で働く</a></li><li>お金</li></ol></nav>
+  <h1>日本で本当に手元に残るお金（手取り計算）</h1>
+  <p class="lead">求人の「月給」から、税金・保険・寮費などを引いて、毎月いくら残るかを計算します。特定技能・技能実習で日本に来る前に使ってください。</p>
+  <p class="updated">最終確認日：2026年11月5日（毎週確認）　／　出典：厚生労働省・協会けんぽ・国税庁などの公式情報（ページの最後に一覧）</p>
+
+  <div class="notice">
+    <h2>はじめに知っておくこと</h2>
+    <p>求人に書かれた「月給20万円」は、20万円もらえるという意味ではありません。給料からは<b>社会保険料と税金</b>が自動で引かれ、さらに<b>寮費や光熱費</b>が引かれることがあります。日本に来て2年目からは<b>住民税</b>も始まるので、手取りが減ります。</p>
+  </div>
+
+  <nav class="toc" aria-labelledby="toc-h">
+    <h2 id="toc-h">このページの内容</h2>
+    <ol>
+      <li><a href="#s1">手取りを計算する</a></li>
+      <li><a href="#s2">給料から引かれるお金</a></li>
+      <li><a href="#s3">よくある勘違い</a></li>
+      <li><a href="#s4">契約の前に確認すること</a></li>
+      <li><a href="#s5">困ったときの相談先</a></li>
+    </ol>
+  </nav>
+
+  <section id="s1" aria-labelledby="h-s1">
+    <h2 id="h-s1">手取りを計算する</h2>
+    <form class="calc" id="calc" onsubmit="return false">
+      <div class="field">
+        <label for="pref">働く都道府県</label>
+        <p class="hint">最低賃金と健康保険料が都道府県で変わります。</p>
+        <select id="pref"></select>
+      </div>
+      <fieldset>
+        <legend>給料の決め方</legend>
+        <div class="seg" role="group">
+          <button type="button" id="m-h" aria-pressed="true">時給</button>
+          <button type="button" id="m-m" aria-pressed="false">月給</button>
+        </div>
+      </fieldset>
+      <div class="field" id="f-wage">
+        <label for="wage">時給（円）</label>
+        <input type="number" id="wage" inputmode="numeric" min="0" step="1">
+        <p class="minw" id="minw"></p>
+      </div>
+      <div class="field" id="f-msal" hidden>
+        <label for="msal">月給（円・残業代を除く）</label>
+        <input type="number" id="msal" inputmode="numeric" min="0" step="1000" value="200000">
+      </div>
+      <div class="field grid3">
+        <div><label for="hours">1日の労働時間</label><input type="number" id="hours" inputmode="decimal" min="0" max="12" step="0.5" value="8"></div>
+        <div><label for="days">1か月の労働日数</label><input type="number" id="days" inputmode="numeric" min="0" max="31" value="21"></div>
+        <div><label for="ot">1か月の残業時間</label><input type="number" id="ot" inputmode="numeric" min="0" max="100" value="0"></div>
+      </div>
+      <fieldset>
+        <legend>年齢</legend>
+        <div class="seg" role="group">
+          <button type="button" id="a1" aria-pressed="true">39歳以下</button>
+          <button type="button" id="a2" aria-pressed="false">40〜64歳</button>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>日本で働いて何年目か</legend>
+        <div class="seg" role="group">
+          <button type="button" id="y1" aria-pressed="true">1年目</button>
+          <button type="button" id="y2" aria-pressed="false">2年目から</button>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>毎月の生活費（円）</legend>
+        <p class="hint small">金額は例です。契約書や求人に書かれた金額に変えてください。</p>
+        <div class="costs">
+          <div><label for="rent">寮費・家賃</label><input type="number" id="rent" inputmode="numeric" min="0" step="1000" value="30000"></div>
+          <div><label for="util">電気・ガス・水道</label><input type="number" id="util" inputmode="numeric" min="0" step="1000" value="8000"></div>
+          <div><label for="food">食費</label><input type="number" id="food" inputmode="numeric" min="0" step="1000" value="30000"></div>
+          <div><label for="phone">スマホ・ネット</label><input type="number" id="phone" inputmode="numeric" min="0" step="500" value="3000"></div>
+          <div><label for="other">その他</label><input type="number" id="other" inputmode="numeric" min="0" step="1000" value="10000"></div>
+        </div>
+      </fieldset>
+      <div class="field" style="margin-bottom:0">
+        <label for="rate">為替レート（1円＝何ルピア）</label>
+        <input type="number" id="rate" inputmode="decimal" min="0" step="1">
+        <p class="hint" style="margin-top:4px">2026年11月4日の目安は約114ルピアです。送金するときは送金会社のレートを確認してください。</p>
+      </div>
+
+      <div class="res" aria-live="polite">
+        <h3>計算結果（毎月の目安）</h3>
+        <div class="alert" id="below">この時給は最低賃金より低いです。日本では外国人にも最低賃金が適用されるので、この条件は違法です。契約する前に相談してください。</div>
+        <div class="big" id="bigbox">
+          <div class="k">毎月残るお金</div>
+          <div class="v" id="o-left">—</div>
+          <div class="v2" id="o-left-rp"></div>
+          <div class="v2 small" id="o-year"></div>
+        </div>
+        <div class="alert" id="neg">生活費が手取りより多く、毎月赤字になります。</div>
+        <div class="bar" aria-hidden="true"><i id="b-social" style="background:var(--c-social)"></i><i id="b-tax" style="background:var(--c-tax)"></i><i id="b-costs" style="background:var(--c-costs)"></i><i id="b-left" style="background:var(--c-left)"></i></div>
+        <ul class="legend">
+          <li><b style="background:var(--c-social)"></b>社会保険</li>
+          <li><b style="background:var(--c-tax)"></b>税金</li>
+          <li><b style="background:var(--c-costs)"></b>生活費</li>
+          <li><b style="background:var(--c-left)"></b>残るお金</li>
+        </ul>
+        <table>
+          <caption class="small" style="text-align:left;caption-side:top;padding-bottom:4px">引かれるお金の内訳</caption>
+          <tbody>
+            <tr class="sum"><th>給料の総額</th><td class="n" id="o-gross"></td></tr>
+            <tr><th>社会保険料</th><td class="n" id="o-social"></td></tr>
+            <tr class="sub"><th>健康保険</th><td class="n" id="o-health"></td></tr>
+            <tr class="sub"><th>子ども・子育て支援金</th><td class="n" id="o-shien"></td></tr>
+            <tr class="sub" id="row-kaigo"><th>介護保険</th><td class="n" id="o-kaigo"></td></tr>
+            <tr class="sub"><th>厚生年金</th><td class="n" id="o-pension"></td></tr>
+            <tr class="sub"><th>雇用保険</th><td class="n" id="o-koyo"></td></tr>
+            <tr><th>税金</th><td class="n" id="o-tax"></td></tr>
+            <tr class="sub"><th>所得税</th><td class="n" id="o-itax"></td></tr>
+            <tr class="sub"><th>住民税</th><td class="n" id="o-jtax"></td></tr>
+            <tr class="sum"><th>手取り（振り込まれる額）</th><td class="n" id="o-net"></td></tr>
+            <tr><th>生活費</th><td class="n" id="o-costs"></td></tr>
+            <tr class="sum"><th>毎月残るお金</th><td class="n" id="o-left2"></td></tr>
+          </tbody>
+        </table>
+        <p class="small">これは目安です。実際の額は、会社の計算方法、賞与、家族の扶養、市区町村によって変わります。所得税は1年分を12で割った額で、毎月の天引きとは少し違うことがあります（年末調整で精算されます）。</p>
+      </div>
+    </form>
+  </section>
+
+  <section id="s2" aria-labelledby="h-s2">
+    <h2 id="h-s2">給料から引かれるお金</h2>
+    <p>日本の会社員は、次のお金が給料から自動で引かれます。どれも法律で決まっていて、会社が勝手に決めることはできません。</p>
+    <dl class="rows">
+      <div><dt>健康保険</dt><dd>病院で払うお金が3割になります。保険料は会社と半分ずつ払います。料率は都道府県で違い、約9.4〜10.6%（本人はその半分）です。<sup><a href="#src">[2]</a></sup></dd></div>
+      <div><dt>子ども・子育て支援金</dt><dd>2026年4月分から始まった新しいお金です。全国同じ0.23%で、本人はその半分です。<sup><a href="#src">[2]</a></sup></dd></div>
+      <div><dt>介護保険</dt><dd>40歳から64歳の人だけ払います。1.62%で、本人はその半分です。<sup><a href="#src">[2]</a></sup></dd></div>
+      <div><dt>厚生年金</dt><dd>18.3%で、本人はその半分の9.15%です。一番大きい天引きです。<b>帰国するときに一部が戻ります</b>（脱退一時金）。6か月以上加入していれば請求でき、計算の上限は5年分です。日本を出てから2年以内に請求が必要です。<sup><a href="#src">[5]</a></sup></dd></div>
+      <div><dt>雇用保険</dt><dd>仕事を失ったときの手当などのための保険です。本人負担は0.5%です（2026年4月〜2027年3月）。<sup><a href="#src">[3]</a></sup></dd></div>
+      <div><dt>所得税</dt><dd>収入にかかる国の税金です。2026年分から、給料だけの人は年収178万円までかかりません。<sup><a href="#src">[4]</a></sup></dd></div>
+      <div><dt>住民税</dt><dd>住んでいる市区町村に払う税金です。前の年の収入で決まるので、<b>1年目はかかりません。2年目の6月から</b>天引きが始まります。帰国する年も払う必要があります。 <a href="/ja/shinjuku-juminzei.html">住民税の詳しい説明（新宿区の例）</a></dd></div>
+    </dl>
+  </section>
+
+  <section id="s3" aria-labelledby="h-s3">
+    <h2 id="h-s3">よくある勘違い</h2>
+    <details><summary>「月給20万円」なら20万円もらえる？</summary><div class="ans"><p>いいえ。社会保険料と税金で、1年目でも約3万円が引かれます。寮費などを引くと、残るのは10万円前後のことが多いです。上の計算機で確かめてください。</p></div></details>
+    <details><summary>1年目と2年目の手取りは同じ？</summary><div class="ans"><p>いいえ。2年目の6月から住民税が始まるので、毎月数千円〜1万円ほど減ります。1年目の手取りで生活の計画を立てないでください。</p></div></details>
+    <details><summary>会社は給料から何でも引ける？</summary><div class="ans"><p>いいえ。給料は全額を払うのが原則です。税金と社会保険料のほかに引けるのは、会社と働く人の代表が書面で約束したもの（寮費など）だけです（労働基準法第24条）。説明のない天引きがあれば相談してください。</p></div></details>
+    <details><summary>残業しても給料は同じ？</summary><div class="ans"><p>いいえ。1日8時間・週40時間を超えた残業には、通常の1.25倍以上の賃金が払われます（労働基準法第37条）。計算機の「残業時間」に入れると反映されます。</p></div></details>
+    <details><summary>外国人は最低賃金より安くてもいい？</summary><div class="ans"><p>いいえ。最低賃金は国籍に関係なく、日本で働くすべての人に適用されます。特定技能では、同じ仕事をする日本人と同じ以上の給料が必要です。</p></div></details>
+  </section>
+
+  <section id="s4" aria-labelledby="h-s4">
+    <h2 id="h-s4">契約の前に確認すること</h2>
+    <p>日本に来る前に、雇用契約書（雇用条件書）で次のことを確認してください。わからない言葉があれば、サインする前に質問してください。</p>
+    <ul class="check">
+      <li>月給または時給が書かれているか。働く都道府県の最低賃金より高いか</li><li>寮費・光熱費など、給料から引かれるものと金額が書かれているか</li><li>1日の労働時間、休日、残業の有無が書かれているか</li><li>自分が読める言語の契約書をもらえるか</li><li>日本に来る前に払うお金（研修費・手数料など）がいくらで、何のためか</li>
+    </ul>
+    <div class="notice"><p>このサイトは、特定の会社・LPK・仲介業者を紹介しません。個別の契約が正しいかどうかは、下の公的な相談先に聞いてください。</p></div>
+  </section>
+
+  <section id="s5" aria-labelledby="h-s5">
+    <h2 id="h-s5">困ったときの相談先</h2>
+    <div class="contact">
+      <h3>外国人労働者向け相談ダイヤル（厚生労働省）</h3>
+      <p class="tel"><a href="tel:0570001715">0570-001-715</a></p>
+      <p>インドネシア語：火曜・木曜 10:00〜15:00（12:00〜13:00を除く）。給料や労働条件の相談ができます。無料ですが通話料がかかります。<sup><a href="#src">[6]</a></sup></p>
+    </div>
+    <div class="contact">
+      <h3>労働条件相談ほっとライン（厚生労働省）</h3>
+      <p class="tel"><a href="tel:0120565455">0120-565-455</a></p>
+      <p>無料で電話できます。インドネシア語にも対応していますが、言語によって曜日が違うので、公式ページで確認してください。</p>
+    </div>
+    <p class="small">日本にいる間に使える相談先です。日本に来る前の契約やLPKについては、インドネシアの政府機関（BP2MI／P2MI省）に確認してください。</p>
+  </section>
+
+  <aside class="trust" id="src" aria-labelledby="h-tr">
+    <h2 id="h-tr">この情報について</h2>
+    <div class="money"><b>このサイトの収入は広告だけです。</b>LPK、仲介業者、会社から紹介料は受け取っていません。メール登録や有料相談もありません。</div>
+    <h3>出典（確認日）</h3>
+    <ol>
+<li>令和8年度 地域別最低賃金 答申状況（厚生労働省）（2026-11-05）<br><a href="https://www.mhlw.go.jp/content/11302000/001745621.pdf">https://www.mhlw.go.jp/content/11302000/001745621.pdf</a></li>
+<li>令和8年度 都道府県単位保険料率・介護保険料率・子ども・子育て支援金率（協会けんぽ）（2026-11-05）<br><a href="https://www.kyoukaikenpo.or.jp/g7/cat330/sb3130/r08/">https://www.kyoukaikenpo.or.jp/g7/cat330/sb3130/r08/</a></li>
+<li>令和8年度の雇用保険料率（山形労働局）（2026-11-05）<br><a href="https://jsite.mhlw.go.jp/yamagata-roudoukyoku/koyouhoken-20260316.html">https://jsite.mhlw.go.jp/yamagata-roudoukyoku/koyouhoken-20260316.html</a></li>
+<li>令和8年度税制改正の解説（財務省）（2026-11-05）<br><a href="https://www.mof.go.jp/tax_policy/tax_reform/outline/fy2026/explanation/PDF/p0003-0010.pdf">https://www.mof.go.jp/tax_policy/tax_reform/outline/fy2026/explanation/PDF/p0003-0010.pdf</a></li>
+<li>脱退一時金の制度（日本年金機構、2026年4月1日更新）（2026-11-05）<br><a href="https://www.nenkin.go.jp/service/jukyu/seido/sonota-kyufu/dattai-ichiji/20150406.html">https://www.nenkin.go.jp/service/jukyu/seido/sonota-kyufu/dattai-ichiji/20150406.html</a></li>
+<li>外国人労働者向け相談ダイヤル（厚生労働省）（2026-11-05）<br><a href="https://www.mhlw.go.jp/content/001708139.pdf">https://www.mhlw.go.jp/content/001708139.pdf</a></li>
+<li>為替レート JPY/IDR（Trading Economics、2026年11月4日）（2026-11-05）<br><a href="https://id.tradingeconomics.com/jpyidr:cur">https://id.tradingeconomics.com/jpyidr:cur</a></li>
+    </ol>
+    <h3>変更履歴</h3>
+    <ul><li>2026年11月5日　第1版を公開。2026年度の最低賃金・保険料率・所得税の改正を反映。</li></ul>
+    <a class="btn" href="/ja/contact.html?page=gaji.html">間違いを見つけたら教えてください</a>
+  </aside>
+</main>
+<footer><div class="wrap">
+  <ul><li><a href="/ja/about.html">運営者と方針</a></li><li><a href="/ja/contact.html?page=gaji.html">間違いを見つけたら教えてください</a></li><li>手続きナビ</li></ul>
+</div></footer>
+
+<script>
+const PREFS = [{"n": "北海道", "w": 1131, "d": "2026-10-01", "k": 10.28}, {"n": "青森", "w": 1090, "d": "2026-10-29", "k": 9.85}, {"n": "岩手", "w": 1090, "d": "2026-12-01", "k": 9.51}, {"n": "宮城", "w": 1098, "d": "2026-10-01", "k": 10.1}, {"n": "秋田", "w": 1090, "d": "2026-10-14", "k": 10.01}, {"n": "山形", "w": 1092, "d": "2026-10-30", "k": 9.75}, {"n": "福島", "w": 1094, "d": "2026-10-16", "k": 9.5}, {"n": "茨城", "w": 1136, "d": "2026-10-18", "k": 9.52}, {"n": "栃木", "w": 1125, "d": "2026-10-01", "k": 9.82}, {"n": "群馬", "w": 1120, "d": "2026-10-03", "k": 9.68}, {"n": "埼玉", "w": 1196, "d": "2026-10-01", "k": 9.67}, {"n": "千葉", "w": 1195, "d": "2026-10-01", "k": 9.73}, {"n": "東京", "w": 1280, "d": "2026-10-01", "k": 9.85}, {"n": "神奈川", "w": 1279, "d": "2026-10-01", "k": 9.92}, {"n": "新潟", "w": 1108, "d": "2026-10-01", "k": 9.21}, {"n": "富山", "w": 1119, "d": "2026-10-01", "k": 9.59}, {"n": "石川", "w": 1113, "d": "2026-10-03", "k": 9.7}, {"n": "福井", "w": 1112, "d": "2026-10-04", "k": 9.71}, {"n": "山梨", "w": 1113, "d": "2026-11-01", "k": 9.55}, {"n": "長野", "w": 1117, "d": "2026-10-02", "k": 9.63}, {"n": "岐阜", "w": 1121, "d": "2026-10-01", "k": 9.8}, {"n": "静岡", "w": 1154, "d": "2026-10-15", "k": 9.61}, {"n": "愛知", "w": 1195, "d": "2026-10-01", "k": 9.93}, {"n": "三重", "w": 1143, "d": "2026-10-01", "k": 9.77}, {"n": "滋賀", "w": 1136, "d": "2026-10-03", "k": 9.88}, {"n": "京都", "w": 1180, "d": "2026-11-16", "k": 9.89}, {"n": "大阪", "w": 1231, "d": "2026-10-01", "k": 10.13}, {"n": "兵庫", "w": 1172, "d": "2026-10-01", "k": 10.12}, {"n": "奈良", "w": 1107, "d": "2026-10-04", "k": 9.91}, {"n": "和歌山", "w": 1101, "d": "2026-10-03", "k": 10.06}, {"n": "鳥取", "w": 1090, "d": "2026-10-03", "k": 9.86}, {"n": "島根", "w": 1092, "d": "2026-10-10", "k": 9.94}, {"n": "岡山", "w": 1104, "d": "2026-10-02", "k": 10.05}, {"n": "広島", "w": 1141, "d": "2026-10-11", "k": 9.78}, {"n": "山口", "w": 1101, "d": "2026-10-08", "k": 10.15}, {"n": "徳島", "w": 1103, "d": "2026-11-01", "k": 10.24}, {"n": "香川", "w": 1092, "d": "2026-10-01", "k": 10.02}, {"n": "愛媛", "w": 1093, "d": "2026-11-01", "k": 9.98}, {"n": "高知", "w": 1086, "d": "2026-10-29", "k": 10.05}, {"n": "福岡", "w": 1114, "d": "2026-10-04", "k": 10.11}, {"n": "佐賀", "w": 1095, "d": "2026-11-15", "k": 10.55}, {"n": "長崎", "w": 1087, "d": "2026-11-02", "k": 10.06}, {"n": "熊本", "w": 1092, "d": "2026-12-01", "k": 10.08}, {"n": "大分", "w": 1096, "d": "2026-11-01", "k": 10.08}, {"n": "宮崎", "w": 1085, "d": "2026-10-24", "k": 9.77}, {"n": "鹿児島", "w": 1090, "d": "2026-10-25", "k": 10.13}, {"n": "沖縄", "w": 1086, "d": "2026-12-02", "k": 9.44}];
+const R = {"kaigo": 1.62, "shien": 0.23, "pension": 18.3, "koyo_worker": 0.5, "jpy_idr": 114};
+const L = {"yen": "円", "rp": "ルピア", "minw": "最低賃金", "per_h": "円／時間"};
+const $ = id => document.getElementById(id);
+const state = { mode: "h", age40: false, year2: false };
+const fmt = n => Math.round(n).toLocaleString("en-US");
+const yen = n => (L.yen === "円" ? fmt(n) + "円" : "¥" + fmt(n));
+const rp = n => "Rp " + fmt(n).replace(/,/g, ".");
+
+// Pref select (default Tokyo)
+PREFS.forEach((p, i) => { const o = document.createElement("option"); o.value = i; o.textContent = p.n; $("pref").appendChild(o); });
+$("pref").value = PREFS.findIndex(p => p.w === 1280);
+$("rate").value = R.jpy_idr;
+
+function setMinw() {
+  const p = PREFS[$("pref").value];
+  const [y, m, dd] = p.d.split("-").map(Number);
+  const MON = ["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
+  $("minw").textContent = (L.yen === "円")
+    ? `この都道府県の最低賃金：${fmt(p.w)}円／時間（${y}年${m}月${dd}日から）`
+    : `Upah minimum prefektur ini: ¥${fmt(p.w)}/jam (mulai ${dd} ${MON[m - 1]} ${y})`;
+}
+function num(id) { const v = parseFloat($(id).value); return isFinite(v) && v > 0 ? v : 0; }
+
+// Tax helpers (2026 rules). Annual amounts in yen.
+function kyuyoKojo(a, minimum) {
+  let f;
+  if (a <= 1900000) f = 650000;
+  else if (a <= 3600000) f = a * 0.3 + 80000;
+  else if (a <= 6600000) f = a * 0.2 + 440000;
+  else if (a <= 8500000) f = a * 0.1 + 1100000;
+  else f = 1950000;
+  return Math.min(a, Math.max(minimum, f));
+}
+function incomeTax(taxable) {
+  const b = [[1950000,.05,0],[3300000,.10,97500],[6950000,.20,427500],[9000000,.23,636000],[18000000,.33,1536000],[40000000,.40,2796000],[Infinity,.45,4796000]];
+  for (const [lim, r, d] of b) if (taxable <= lim) return Math.max(0, taxable * r - d) * 1.021;
+}
+
+function calc() {
+  const p = PREFS[$("pref").value];
+  const h = num("hours") || 8, d = num("days") || 21, ot = num("ot");
+  let base, hourly;
+  if (state.mode === "h") { hourly = num("wage"); base = hourly * h * d; }
+  else { base = num("msal"); hourly = (h * d) ? base / (h * d) : 0; }
+  const gross = base + hourly * 1.25 * ot;
+  $("below").classList.toggle("show", hourly > 0 && hourly < p.w);
+
+  const health = Math.round(gross * p.k / 200);
+  const shien = Math.round(gross * R.shien / 200);
+  const kaigo = state.age40 ? Math.round(gross * R.kaigo / 200) : 0;
+  const pension = Math.round(gross * R.pension / 200);
+  const koyo = Math.round(gross * R.koyo_worker / 100);
+  const social = health + shien + kaigo + pension + koyo;
+
+  const A = gross * 12, S = social * 12;
+  const shotoku = A - kyuyoKojo(A, 740000);
+  const kiso = shotoku <= 4890000 ? 1040000 : shotoku <= 6550000 ? 670000 : 620000;
+  const taxable = Math.floor(Math.max(0, shotoku - S - kiso) / 1000) * 1000;
+  const itax = Math.round(incomeTax(taxable) / 12);
+
+  let jtax = 0;
+  if (state.year2) {
+    const jt = Math.floor(Math.max(0, shotoku - S - 430000) / 1000) * 1000;
+    const shotokuwari = jt > 0 ? Math.max(0, jt * 0.10 - 2500) : 0;
+    const kintou = shotoku > 450000 ? 5000 : 0;
+    jtax = Math.round((shotokuwari + kintou) / 12);
+  }
+  const tax = itax + jtax;
+  const net = gross - social - tax;
+  const costs = num("rent") + num("util") + num("food") + num("phone") + num("other");
+  const left = net - costs;
+  const rate = num("rate");
+
+  $("o-gross").textContent = yen(gross);
+  $("o-health").textContent = "−" + yen(health);
+  $("o-shien").textContent = "−" + yen(shien);
+  $("o-kaigo").textContent = "−" + yen(kaigo);
+  $("row-kaigo").hidden = !state.age40;
+  $("o-pension").textContent = "−" + yen(pension);
+  $("o-koyo").textContent = "−" + yen(koyo);
+  $("o-social").textContent = "−" + yen(social);
+  $("o-itax").textContent = "−" + yen(itax);
+  $("o-jtax").textContent = state.year2 ? "−" + yen(jtax) : (L.yen === "円" ? "1年目は0円" : "Tahun pertama ¥0");
+  $("o-tax").textContent = "−" + yen(tax);
+  $("o-net").textContent = yen(net);
+  $("o-costs").textContent = "−" + yen(costs);
+  $("o-left2").textContent = yen(left);
+  $("o-left").textContent = yen(left);
+  $("o-left-rp").textContent = rate ? "≈ " + rp(left * rate) : "";
+  $("o-year").textContent = (L.yen === "円" ? "1年で約" + yen(left * 12) : "Setahun sekitar " + yen(left * 12)) + (rate ? (L.yen === "円" ? "（≈ " + rp(left * 12 * rate) + "）" : " (≈ " + rp(left * 12 * rate) + ")") : "");
+  $("bigbox").classList.toggle("neg", left < 0);
+  $("neg").classList.toggle("show", left < 0);
+
+  const tot = Math.max(gross, 1);
+  const seg = (id, v) => { $(id).style.width = Math.max(0, v) / tot * 100 + "%"; };
+  seg("b-social", social); seg("b-tax", tax); seg("b-costs", Math.min(costs, Math.max(0, net))); seg("b-left", Math.max(0, left));
+}
+
+function press(onId, offId, cb) {
+  $(onId).addEventListener("click", () => { $(onId).setAttribute("aria-pressed", "true"); $(offId).setAttribute("aria-pressed", "false"); cb(); calc(); });
+}
+press("m-h", "m-m", () => { state.mode = "h"; $("f-wage").hidden = false; $("f-msal").hidden = true; });
+press("m-m", "m-h", () => { state.mode = "m"; $("f-wage").hidden = true; $("f-msal").hidden = false; });
+press("a1", "a2", () => { state.age40 = false; });
+press("a2", "a1", () => { state.age40 = true; });
+press("y1", "y2", () => { state.year2 = false; });
+press("y2", "y1", () => { state.year2 = true; });
+$("pref").addEventListener("change", () => { $("wage").value = PREFS[$("pref").value].w; setMinw(); calc(); });
+document.querySelectorAll("#calc input").forEach(i => i.addEventListener("input", calc));
+$("wage").value = PREFS[$("pref").value].w;
+setMinw(); calc();
+</script>
+</body>
+</html>

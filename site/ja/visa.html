@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<link rel="alternate" hreflang="id" href="https://tetsuzukinavi.org/id/visa.html">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>特定技能・技能実習・育成就労の違い</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap">
+<style>
+/* Digital Agency Design System (DADS) based: body 16px/1.7, 8px grid, text #1a1a1a, key blue #0017c1,
+   focus = black outline + yellow. Mobile first, one column, max 40rem. Calm palette for trust. */
+:root {
+  --bg: #ffffff; --bg-sub: #f2f2f2; --bg-soft: #f6f8fc; --fg: #1a1a1a; --fg-sub: #4d4d4d; --line: #cccccc; --line-strong: #666666;
+  --key: #0017c1; --key-fg: #ffffff; --key-bg: #e8f1fe; --key-dark: #00118f;
+  --error: #ec0000; --error-bg: #fdeeee; --ok: #197a4b; --ok-bg: #e6f5ec;
+  --c-social: #3460fb; --c-tax: #9a6fd8; --c-costs: #b8b8b8; --c-left: #197a4b;
+  --focus: #ffd43d;
+  --font: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+  --s1: 8px; --s2: 16px; --s3: 24px; --s5: 40px; --s8: 64px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121212; --bg-sub: #1f1f1f; --bg-soft: #171b26; --fg: #f0f0f0; --fg-sub: #b3b3b3; --line: #3d3d3d; --line-strong: #8a8a8a;
+    --key: #8fb3ff; --key-fg: #0b1230; --key-bg: #1a2240; --key-dark: #0b1a66; --error: #ff7a7a; --error-bg: #3a1c1c;
+    --ok: #6fd39f; --ok-bg: #16301f; --c-social: #7d9bff; --c-tax: #b99be6; --c-costs: #5c5c5c; --c-left: #4fbf86; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #121212; --bg-sub: #1f1f1f; --bg-soft: #171b26; --fg: #f0f0f0; --fg-sub: #b3b3b3; --line: #3d3d3d; --line-strong: #8a8a8a;
+  --key: #8fb3ff; --key-fg: #0b1230; --key-bg: #1a2240; --key-dark: #0b1a66; --error: #ff7a7a; --error-bg: #3a1c1c;
+  --ok: #6fd39f; --ok-bg: #16301f; --c-social: #7d9bff; --c-tax: #b99be6; --c-costs: #5c5c5c; --c-left: #4fbf86; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font); font-size: 16px; line-height: 1.7; letter-spacing: .02em; }
+.wrap { max-width: 40rem; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+p { margin: 0 0 var(--s2); } p:last-child { margin-bottom: 0; }
+a { color: var(--key); text-underline-offset: 3px; }
+button, input, select { font: inherit; letter-spacing: inherit; color: inherit; }
+:focus-visible { outline: 4px solid var(--fg); outline-offset: 2px; box-shadow: 0 0 0 2px var(--focus); }
+.small { font-size: 14px; color: var(--fg-sub); }
+
+/* Site header: calm, official-looking */
+.site { background: var(--key-dark); color: #fff; }
+.site .wrap { display: flex; align-items: center; justify-content: space-between; gap: var(--s2); min-height: 56px; }
+.brand { color: #fff; text-decoration: none; font-weight: 700; font-size: 18px; display: flex; align-items: center; gap: 10px; }
+.brand svg { width: 24px; height: 24px; flex: none; }
+.brand small { display: block; font-weight: 400; font-size: 12px; opacity: .85; line-height: 1.4; }
+.lang { color: #fff; font-size: 14px; border: 1px solid rgba(255,255,255,.6); border-radius: 6px; padding: 6px 10px; text-decoration: none; white-space: nowrap; min-height: 36px; display: inline-flex; align-items: center; }
+.badges { background: var(--bg-soft); border-bottom: 1px solid var(--line); }
+.badges ul { list-style: none; margin: 0 auto; padding: 8px 0; display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 14px; color: var(--fg-sub); }
+.badges li { display: inline-flex; align-items: center; gap: 6px; }
+.badges svg { width: 16px; height: 16px; fill: var(--ok); flex: none; }
+
+main { padding-top: var(--s3); padding-bottom: var(--s8); }
+.crumb { font-size: 14px; color: var(--fg-sub); margin: 0 0 var(--s2); }
+.crumb ol { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0 4px; }
+.crumb li + li::before { content: "＞"; margin-right: 4px; }
+h1 { font-size: 24px; line-height: 1.5; margin: 0 0 var(--s1); }
+.lead { color: var(--fg-sub); }
+.updated { font-size: 14px; color: var(--fg-sub); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: var(--s1) 0; margin: var(--s2) 0 var(--s3); }
+.notice { border: 1px solid var(--key); border-left-width: 6px; padding: var(--s2); margin-bottom: var(--s3); }
+.notice.warn { border-color: var(--error); background: var(--error-bg); }
+.notice h2, .notice h3 { margin-top: 0; font-size: 17px; border: 0; padding: 0; }
+.toc { background: var(--bg-sub); padding: var(--s2); margin-bottom: var(--s5); }
+.toc h2 { font-size: 16px; margin: 0 0 var(--s1); border: 0; padding: 0; }
+.toc ol { margin: 0; padding-left: 1.5em; } .toc li { padding: 2px 0; }
+section { margin-bottom: var(--s5); scroll-margin-top: var(--s2); }
+h2 { font-size: 20px; line-height: 1.5; margin: 0 0 var(--s2); padding-bottom: var(--s1); border-bottom: 2px solid var(--fg); }
+h3 { font-size: 17px; line-height: 1.6; margin: var(--s3) 0 var(--s1); }
+ul, ol { margin: 0 0 var(--s2); padding-left: 1.5em; } li { margin-bottom: 4px; }
+
+/* Form (DADS: label above field, 48px fields, 8px radius) */
+.calc { border: 1px solid var(--line-strong); border-radius: 8px; padding: var(--s2); }
+.field { margin-bottom: var(--s3); }
+.field > label, .field > .lbl { display: block; font-weight: 700; margin-bottom: 4px; }
+.field .hint { font-size: 14px; color: var(--fg-sub); margin: 0 0 var(--s1); }
+select, input[type="number"] { width: 100%; min-height: 48px; padding: 8px 12px; border: 1px solid var(--line-strong); border-radius: 8px; background: var(--bg); font-variant-numeric: tabular-nums; }
+input[type="number"] { text-align: right; }
+.unit { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 8px; }
+.unit span { font-size: 14px; color: var(--fg-sub); min-width: 3em; }
+.seg { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.seg button { min-height: 48px; border: 1px solid var(--line-strong); border-radius: 8px; background: var(--bg); padding: 8px; }
+.seg button[aria-pressed="true"] { border: 2px solid var(--key); background: var(--key-bg); font-weight: 700; color: var(--key); }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s2); }
+.grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
+.grid3 label, .costs label { font-size: 14px; font-weight: 400; display: block; margin-bottom: 4px; }
+.costs { display: grid; grid-template-columns: 1fr 1fr; gap: 12px var(--s2); }
+fieldset { border: 0; margin: 0 0 var(--s3); padding: 0; }
+legend { font-weight: 700; margin-bottom: 4px; padding: 0; }
+.minw { font-size: 14px; color: var(--fg-sub); margin-top: 4px; }
+
+/* Result */
+.res { margin-top: var(--s3); border-top: 2px solid var(--fg); padding-top: var(--s2); }
+.res h3 { margin-top: 0; }
+.big { background: var(--ok-bg); border-left: 6px solid var(--ok); padding: var(--s2); margin-bottom: var(--s2); }
+.big .k { font-size: 14px; color: var(--fg-sub); }
+.big .v { font-size: 32px; font-weight: 700; line-height: 1.3; font-variant-numeric: tabular-nums; }
+.big .v2 { font-size: 16px; font-variant-numeric: tabular-nums; }
+.big.neg { background: var(--error-bg); border-color: var(--error); }
+.bar { display: flex; height: 16px; border-radius: 4px; overflow: hidden; margin: var(--s2) 0 var(--s1); background: var(--bg-sub); gap: 2px; }
+.bar i { display: block; height: 100%; }
+.legend { list-style: none; padding: 0; margin: 0 0 var(--s2); display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 14px; }
+.legend li { display: inline-flex; align-items: center; gap: 6px; margin: 0; }
+.legend b { width: 12px; height: 12px; border-radius: 2px; display: inline-block; }
+table { width: 100%; border-collapse: collapse; margin-bottom: var(--s2); font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 10px var(--s1); border-bottom: 1px solid var(--line); vertical-align: top; }
+td.n { text-align: right; white-space: nowrap; }
+tr.sum th, tr.sum td { font-weight: 700; border-bottom: 1px solid var(--line-strong); }
+tr.sub th { font-weight: 400; padding-left: var(--s3); font-size: 14px; } tr.sub td { font-size: 14px; color: var(--fg-sub); }
+.alert { display: none; border-left: 6px solid var(--error); background: var(--error-bg); padding: var(--s2); margin-bottom: var(--s2); }
+.alert.show { display: block; }
+
+dl.rows { margin: 0 0 var(--s2); border-top: 1px solid var(--line); }
+dl.rows div { display: grid; grid-template-columns: 9em 1fr; gap: var(--s1) var(--s2); padding: 12px 0; border-bottom: 1px solid var(--line); }
+dl.rows dt { font-weight: 700; } dl.rows dd { margin: 0; }
+details { border-bottom: 1px solid var(--line); } details:first-of-type { border-top: 1px solid var(--line); }
+summary { list-style: none; cursor: pointer; padding: 12px 32px 12px 0; position: relative; font-weight: 700; min-height: 48px; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: ""; position: absolute; right: 8px; top: 20px; width: 8px; height: 8px; border-right: 2px solid var(--fg); border-bottom: 2px solid var(--fg); transform: rotate(45deg); }
+details[open] summary::after { transform: rotate(-135deg); top: 24px; }
+details .ans { padding: 0 0 var(--s2); }
+ul.check { list-style: none; padding: 0; }
+ul.check li { position: relative; padding: 10px 0 10px 32px; border-bottom: 1px solid var(--line); margin: 0; }
+ul.check li::before { content: ""; position: absolute; left: 0; top: 13px; width: 18px; height: 18px; border: 2px solid var(--fg); border-radius: 4px; }
+.contact { border: 1px solid var(--line); border-radius: 8px; padding: var(--s2); margin-bottom: var(--s2); }
+.contact h3 { margin-top: 0; }
+.tel { font-size: 20px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.trust { background: var(--bg-sub); padding: var(--s2); font-size: 14px; }
+.trust h2 { font-size: 17px; border: 0; padding: 0; }
+.trust h3 { font-size: 14px; margin-top: var(--s2); }
+.trust ol, .trust ul { margin-bottom: 0; }
+.trust a { word-break: break-all; }
+.money { background: var(--bg); border: 1px solid var(--ok); border-left-width: 6px; padding: 12px var(--s2); font-size: 14px; margin-bottom: var(--s2); }
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 var(--s3); border-radius: 8px; font-weight: 700; border: 1px solid var(--key); background: var(--bg); color: var(--key); text-decoration: none; margin-top: var(--s2); }
+footer { border-top: 1px solid var(--line); padding: var(--s3) 0 var(--s5); font-size: 14px; color: var(--fg-sub); }
+footer ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 24px; }
+@media (max-width: 480px) {
+  dl.rows div { grid-template-columns: 1fr; gap: 0; }
+  .big .v { font-size: 28px; }
+}
+</style>
+<style>
+ol.steps { list-style: none; padding: 0; counter-reset: st; }
+ol.steps li { position: relative; padding: 0 0 var(--s2) 40px; margin: 0; }
+ol.steps li::before { counter-increment: st; content: counter(st); position: absolute; left: 0; top: 0; width: 28px; height: 28px; border: 2px solid var(--key); color: var(--key); border-radius: 50%; display: grid; place-items: center; font-size: 14px; font-weight: 700; }
+ol.steps li:not(:last-child)::after { content: ""; position: absolute; left: 14px; top: 32px; bottom: 4px; border-left: 2px solid var(--line); }
+ol.steps b { display: block; }
+ol.steps .when { display: inline-block; font-size: 12px; font-weight: 700; color: var(--key); border: 1px solid var(--key); border-radius: 4px; padding: 0 6px; margin-bottom: 4px; }
+.fact { border-left: 6px solid var(--key); background: var(--bg-soft); padding: var(--s2); margin-bottom: var(--s2); }
+.fact h3 { margin-top: 0; }
+.cmp { overflow-x: auto; margin-bottom: var(--s2); }
+.cmp table { min-width: 34rem; font-size: 14px; }
+.cmp th[scope=row] { background: var(--bg-sub); white-space: nowrap; }
+.cmp thead th { font-size: 14px; }
+.cmp-note { font-size: 14px; color: var(--fg-sub); }
+.related a { display: block; padding: 12px 0; border-bottom: 1px solid var(--line); font-weight: 700; }
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/ja/">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M12 2 3 6v6c0 5 3.8 9.3 9 10 5.2-.7 9-5 9-10V6l-9-4Zm-1.2 14.2-3.5-3.5 1.4-1.4 2.1 2.1 4.9-4.9 1.4 1.4-6.3 6.3Z"/></svg>
+      <span>手続きナビ<small>日本で暮らす・働くための公式情報ガイド</small></span>
+    </a>
+    <a class="lang" href="/id/visa.html" hreflang="id">Bahasa Indonesia</a>
+  </div>
+</header>
+<div class="badges"><div class="wrap"><ul>
+  <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>公式の情報だけ</li>
+  <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>毎週確認</li>
+  <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>紹介料なし</li>
+</ul></div></div>
+
+<main class="wrap">
+<nav class="crumb" aria-label="breadcrumb"><ol><li><a href="/ja/">手続きナビ</a></li><li><a href="/ja/contact.html?page=visa.html">日本で働く</a></li><li>在留資格</li></ol></nav>
+<h1>特定技能・技能実習・育成就労の違い</h1><p class="lead">日本で働くための3つの制度について、期間、家族、日本語、転職、お金の違いを公式の資料からまとめました。</p><p class="updated">最終確認日：2026年11月5日（毎週確認）　／　出典：日本の省庁・公的機関の公式情報（ページの最後に一覧）</p>
+<div class="notice"><h2>いちばん大事なこと</h2><p>技能実習は、<b>2027年4月から「育成就労」という新しい制度に変わる予定</b>です。<sup><a href="#src">[2]</a></sup>これから申し込む人は、どちらの制度で行くのかを必ず確認してください。</p></div>
+<nav class="toc"><h2>このページの内容</h2><ol><li><a href="#s1">3つの制度の比較</a></li><li><a href="#s2">それぞれの制度</a></li><li><a href="#s3">お金について知っておくこと</a></li><li><a href="#s4">関連するページ</a></li></ol></nav>
+<section id="s1"><h2>3つの制度の比較</h2><div class="cmp" role="region" tabindex="0"><table><thead><tr><th></th><th scope="col">特定技能1号</th><th scope="col">特定技能2号</th><th scope="col">育成就労（2027年4月から）</th></tr></thead><tbody><tr><th scope="row">働ける期間</th><td>通算5年まで</td><td>更新の回数に上限なし</td><td>原則3年</td></tr><tr><th scope="row">家族</th><td>原則つれて来られない</td><td>つれて来られる</td><td>原則つれて来られない</td></tr><tr><th scope="row">必要な日本語</th><td>A2くらい</td><td>B1くらい</td><td>働き始める前にA1くらい、終わるまでにA2くらい</td></tr><tr><th scope="row">必要な技能</th><td>試験などで確認</td><td>より高い試験などで確認</td><td>終わるまでに特定技能1号の水準</td></tr><tr><th scope="row">会社を変えること</th><td>同じ分野の中で変えられる（手続きが必要）</td><td>同じ分野の中で変えられる（手続きが必要）</td><td>1〜2年働いた後、試験に合格するなど条件を満たせば変えられる</td></tr></tbody></table></div><p class="cmp-note">出典：[1] 基本方針の概要、[2] 鹿児島県の説明。日本語のA1・A2・B1は、ヨーロッパの言語の基準（CEFR）のレベルです。</p></section>
+<section id="s2"><h2>それぞれの制度</h2><div class="fact"><h3>特定技能1号</h3><p>人手が足りない分野で、すぐに働ける人のための制度です。日本語と技能の試験に合格して行くのが基本です。期間は通算5年までで、家族は原則つれて来られません。<sup><a href="#src">[1]</a></sup></p></div><div class="fact"><h3>特定技能2号</h3><p>より熟練した人のための制度です。期間の更新に上限がなく、家族もつれて来られます。<sup><a href="#src">[1]</a></sup></p></div><div class="fact"><h3>技能実習（現在の制度）</h3><p>日本で技能を学ぶための制度です。会社を変えることは原則できません。2027年4月から育成就労に変わる予定です。<sup><a href="#src">[2]</a></sup></p></div><div class="fact"><h3>育成就労（2027年4月から）</h3><p>3年間で特定技能1号の水準まで育てる制度です。同じ会社で1〜2年（分野ごとに決まる）働いた後、技能や日本語の試験に合格するなどの条件を満たせば、自分の希望で会社を変えられます。<sup><a href="#src">[2]</a></sup></p></div></section>
+<section id="s3"><h2>お金について知っておくこと</h2><div class="fact"><h3>特定技能では保証金・違約金は認められていません</h3><p>日本の受入れ機関は、保証金を取ったり違約金の契約を結んだりしていないことが条件です。生活の支援にかかる費用を、働く本人に払わせてもいけません。<sup><a href="#src">[5]</a></sup></p></div><div class="fact"><h3>技能実習2号を良好に終えた人は試験が免除されます</h3><p>技能実習2号を良好に修了した人は、特定技能1号へ移るときに技能と日本語の試験が免除されます。<sup><a href="#src">[4]</a></sup></p></div><p>どの制度でも、日本の最低賃金は外国人にも適用されます。毎月いくら残るかは手取り計算機で確かめてください。</p></section>
+<section id="s4"><h2>関連するページ</h2><div class="related"><a href="/ja/gaji.html">日本で本当に手元に残るお金（手取り計算）</a><a href="/ja/lpk.html">LPK・仲介業者を選ぶ前に、公式情報で確認できること</a><a href="/ja/test.html">JLPTとJFT-Basicの受け方</a></div></section>
+<aside class="trust" id="src"><h2>この情報について</h2><div class="money"><b>このサイトの収入は広告だけです。</b>LPK、仲介業者、会社から紹介料は受け取っていません。</div><h3>出典（確認日：2026年11月5日）</h3><ol><li>基本方針の概要（出入国在留管理庁・厚生労働省、特定技能・育成就労の有識者会議 資料3-1）<br><a href="https://www.moj.go.jp/isa/content/001432243.pdf">https://www.moj.go.jp/isa/content/001432243.pdf</a></li><li>育成就労制度について（鹿児島県、2026年3月23日更新）<br><a href="https://www.pref.kagoshima.jp/af21/gaikokujinzai-ikuseisyuro.html">https://www.pref.kagoshima.jp/af21/gaikokujinzai-ikuseisyuro.html</a></li><li>特定技能制度（出入国在留管理庁）<br><a href="https://www.moj.go.jp/isa/applications/ssw/index.html">https://www.moj.go.jp/isa/applications/ssw/index.html</a></li><li>在留資格「特定技能」について（出入国在留管理庁）<br><a href="https://www.np.emb-japan.go.jp/files/100057542.pdf">https://www.np.emb-japan.go.jp/files/100057542.pdf</a></li><li>特定技能外国人を受け入れる際の注意点（出入国在留管理庁）<br><a href="https://www.moj.go.jp/isa/policies/ssw/chuui.html">https://www.moj.go.jp/isa/policies/ssw/chuui.html</a></li></ol><h3>変更履歴</h3><ul><li>2026年11月5日　第1版を公開</li></ul><a class="btn" href="/ja/contact.html?page=visa.html">間違いを見つけたら教えてください</a></aside></main>
+<footer><div class="wrap"><ul><li><a href="/ja/about.html">運営者と方針</a></li><li>手続きナビ</li></ul></div></footer></body></html>

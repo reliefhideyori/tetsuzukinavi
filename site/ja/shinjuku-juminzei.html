@@ -1,0 +1,391 @@
+<title>新宿区 住民税 日本語版</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap">
+<style>
+/* Design rules follow the Digital Agency Design System (DADS):
+   body 16px / line-height 1.7 (Std-16N-170), supplementary 14px, headings from the Std scale,
+   text #1a1a1a, key blue #0017c1, error red #ec0000, focus = black outline + yellow #ffd43d,
+   8px spacing grid, tap targets >= 44px. Mobile first: one column, max 40rem. */
+:root {
+  --bg: #ffffff; --bg-sub: #f2f2f2; --fg: #1a1a1a; --fg-sub: #4d4d4d; --line: #cccccc; --line-strong: #666666;
+  --key: #0017c1; --key-fg: #ffffff; --key-bg: #e8f1fe;
+  --error: #ec0000; --error-bg: #fdeeee;
+  --ok: #197a4b; --ok-bg: #e6f5ec;
+  --focus: #ffd43d;
+  --font: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+  --s1: 8px; --s2: 16px; --s3: 24px; --s5: 40px; --s8: 64px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121212; --bg-sub: #1f1f1f; --fg: #f0f0f0; --fg-sub: #b3b3b3; --line: #3d3d3d; --line-strong: #8a8a8a;
+    --key: #8fb3ff; --key-fg: #0b1230; --key-bg: #1a2240; --error: #ff7a7a; --error-bg: #3a1c1c;
+    --ok: #6fd39f; --ok-bg: #16301f; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #121212; --bg-sub: #1f1f1f; --fg: #f0f0f0; --fg-sub: #b3b3b3; --line: #3d3d3d; --line-strong: #8a8a8a;
+  --key: #8fb3ff; --key-fg: #0b1230; --key-bg: #1a2240; --error: #ff7a7a; --error-bg: #3a1c1c;
+  --ok: #6fd39f; --ok-bg: #16301f; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font);
+  font-size: 16px; line-height: 1.7; letter-spacing: .02em;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: var(--s2) var(--s8);
+}
+main { max-width: 40rem; margin: 0 auto; }
+p { margin: 0 0 var(--s2); }
+p:last-child { margin-bottom: 0; }
+a { color: var(--key); text-underline-offset: 3px; }
+button { font: inherit; letter-spacing: inherit; cursor: pointer; }
+:focus-visible { outline: 4px solid var(--fg); outline-offset: 2px; box-shadow: 0 0 0 2px var(--focus); }
+.small { font-size: 14px; color: var(--fg-sub); }
+
+/* Header */
+.crumb { font-size: 14px; color: var(--fg-sub); margin: 0 0 var(--s2); }
+.crumb ol { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0 4px; }
+.crumb li + li::before { content: "＞"; margin-right: 4px; color: var(--fg-sub); }
+h1 { font-size: 24px; line-height: 1.5; margin: 0 0 var(--s1); letter-spacing: .02em; }
+.lead { color: var(--fg-sub); }
+.updated { font-size: 14px; color: var(--fg-sub); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: var(--s1) 0; margin: var(--s2) 0 var(--s3); }
+
+/* Table of contents */
+.toc { background: var(--bg-sub); padding: var(--s2); margin-bottom: var(--s5); }
+.toc h2 { font-size: 16px; margin: 0 0 var(--s1); border: 0; padding: 0; }
+.toc ol { margin: 0; padding-left: 1.5em; }
+.toc li { padding: 2px 0; }
+
+/* Sections */
+section { margin-bottom: var(--s5); scroll-margin-top: var(--s2); }
+h2 { font-size: 20px; line-height: 1.5; margin: 0 0 var(--s2); padding-bottom: var(--s1); border-bottom: 2px solid var(--fg); }
+h3 { font-size: 17px; line-height: 1.6; margin: var(--s3) 0 var(--s1); }
+ul, ol { margin: 0 0 var(--s2); padding-left: 1.5em; }
+li { margin-bottom: 4px; }
+.scope { display: inline-block; font-size: 12px; line-height: 1.6; font-weight: 700; border: 1px solid currentColor; border-radius: 4px; padding: 0 6px; margin-left: 4px; vertical-align: 2px; color: var(--fg-sub); white-space: nowrap; }
+.scope.ward { color: var(--key); }
+sup a { font-size: 12px; text-decoration: none; }
+
+/* Notice (key point box) */
+.notice { border: 1px solid var(--key); border-left-width: 6px; padding: var(--s2); margin-bottom: var(--s3); }
+.notice.warn { border-color: var(--error); }
+.notice h3 { margin-top: 0; }
+
+/* Definition-style rows */
+dl.rows { margin: 0 0 var(--s2); border-top: 1px solid var(--line); }
+dl.rows div { display: grid; grid-template-columns: 7.5em 1fr; gap: var(--s1) var(--s2); padding: 12px 0; border-bottom: 1px solid var(--line); }
+dl.rows dt { font-weight: 700; }
+dl.rows dd { margin: 0; }
+.tel { font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+table { width: 100%; border-collapse: collapse; margin-bottom: var(--s2); font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 12px var(--s1); border-bottom: 1px solid var(--line); }
+thead th { background: var(--bg-sub); font-size: 14px; border-bottom: 1px solid var(--line-strong); }
+
+/* Checker */
+fieldset { border: 0; margin: 0 0 var(--s3); padding: 0; }
+legend { font-weight: 700; margin-bottom: var(--s1); padding: 0; }
+.opts { display: grid; gap: var(--s1); }
+.opts button { min-height: 48px; text-align: left; padding: 10px var(--s2); border: 1px solid var(--line-strong); border-radius: 8px; background: var(--bg); color: var(--fg); }
+.opts button[aria-pressed="true"] { border: 2px solid var(--key); background: var(--key-bg); font-weight: 700; padding: 9px 15px; }
+.result { display: none; padding: var(--s2); margin-top: var(--s1); border-left: 6px solid var(--key); background: var(--key-bg); }
+.result.show { display: block; }
+.result.pay { border-color: var(--error); background: var(--error-bg); }
+.result.free { border-color: var(--ok); background: var(--ok-bg); }
+.result strong { display: block; margin-bottom: 4px; }
+
+/* Accordion (misconceptions) */
+details { border-bottom: 1px solid var(--line); }
+details:first-of-type { border-top: 1px solid var(--line); }
+summary { list-style: none; cursor: pointer; padding: 12px 32px 12px 0; position: relative; font-weight: 700; min-height: 48px; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: ""; position: absolute; right: 8px; top: 20px; width: 8px; height: 8px; border-right: 2px solid var(--fg); border-bottom: 2px solid var(--fg); transform: rotate(45deg); }
+details[open] summary::after { transform: rotate(-135deg); top: 24px; }
+details .ans { padding: 0 0 var(--s2); }
+
+/* Steps */
+ol.steps { list-style: none; padding: 0; counter-reset: st; }
+ol.steps li { position: relative; padding: 0 0 var(--s2) 40px; margin: 0; }
+ol.steps li::before { counter-increment: st; content: counter(st); position: absolute; left: 0; top: 0; width: 28px; height: 28px; border: 2px solid var(--fg); border-radius: 50%; display: grid; place-items: center; font-size: 14px; font-weight: 700; }
+ol.steps li:not(:last-child)::after { content: ""; position: absolute; left: 14px; top: 32px; bottom: 4px; border-left: 2px solid var(--line); }
+ol.steps li.bad::before { border-color: var(--error); color: var(--error); }
+ol.steps b { display: block; }
+
+/* Buttons */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 0 var(--s3); border-radius: 8px; font-weight: 700; border: 1px solid var(--key); }
+.btn.primary { background: var(--key); color: var(--key-fg); }
+.btn.secondary { background: var(--bg); color: var(--key); }
+@media (max-width: 480px) { .btn.block { width: 100%; } }
+
+/* Phrases for the counter */
+.phrase { border-bottom: 1px solid var(--line); padding: 12px 0; display: grid; grid-template-columns: 1fr auto; gap: 4px var(--s2); align-items: center; }
+.phrase:first-of-type { border-top: 1px solid var(--line); }
+.phrase .jp { font-weight: 700; margin: 0; }
+.phrase .tr { grid-column: 1; margin: 0; font-size: 14px; color: var(--fg-sub); }
+.speak { grid-column: 2; grid-row: 1 / span 2; min-width: 44px; min-height: 44px; border: 1px solid var(--key); background: var(--bg); color: var(--key); border-radius: 8px; padding: 0 12px; font-size: 14px; display: inline-flex; align-items: center; gap: 4px; }
+.speak[aria-pressed="true"] { background: var(--key); color: var(--key-fg); }
+.speak svg { width: 16px; height: 16px; fill: currentColor; }
+
+/* Trust */
+.trust { background: var(--bg-sub); padding: var(--s2); font-size: 14px; }
+.trust h2 { font-size: 17px; border: 0; padding: 0; }
+.trust h3 { font-size: 14px; margin-top: var(--s2); }
+.trust ol, .trust ul { margin-bottom: 0; }
+.trust a { word-break: break-all; }
+
+/* Counter mode: only the Japanese phrases, large, for ward staff */
+body.counter main > *:not(#s-counter) { display: none; }
+body.counter #s-counter .rd-only, body.counter .phrase .tr, body.counter .speak { display: none; }
+body.counter .phrase .jp { font-size: 24px; line-height: 1.5; }
+#exit { display: none; }
+body.counter #exit { display: inline-flex; margin-bottom: var(--s2); }
+@media (max-width: 480px) {
+  dl.rows div { grid-template-columns: 1fr; gap: 0; }
+}
+</style>
+
+<main>
+  <nav class="crumb" aria-label="現在地">
+    <ol><li>手続きナビ</li><li>東京都 新宿区</li><li>税金</li><li>住民税</li></ol>
+  </nav>
+
+  <h1>住民税（新宿区）</h1>
+  <p class="lead">払う人、届く書類、払い方、払えないとき、帰国するときの手続き</p>
+  <p class="updated">最終確認日：2026年11月4日（毎週確認）　／　出典：新宿区・江東区の公式ページ（ページの最後に一覧）</p>
+
+  <div class="notice" role="note">
+    <h3>はじめに知っておくこと</h3>
+    <ul>
+      <li>住民税は<b>去年の給料</b>にかかる税金です。日本に来た次の年の6月に、初めて届きます。</li>
+      <li>アルバイトや学生でも、去年の給料が<b>110万円を超えた</b>人は払います。</li>
+      <li>払えないときは、<b>放っておかずに区に相談</b>してください。分けて払えます。</li>
+    </ul>
+  </div>
+
+  <nav class="toc" aria-labelledby="toc-h">
+    <h2 id="toc-h">このページの内容</h2>
+    <ol>
+      <li><a href="#s1">払う人（30秒チェック）</a></li>
+      <li><a href="#s2">届く書類と金額</a></li>
+      <li><a href="#s3">期限と払い方</a></li>
+      <li><a href="#s4">よくある勘違い</a></li>
+      <li><a href="#s5">払えないとき・遅れたとき</a></li>
+      <li><a href="#s6">引っ越し・帰国するとき</a></li>
+      <li><a href="#s-counter">窓口・電話で使える日本語</a></li>
+      <li><a href="#s8">問い合わせ先</a></li>
+    </ol>
+  </nav>
+
+  <section id="s1" aria-labelledby="h1-1">
+    <h2 id="h1-1">1. 払う人</h2>
+    <p>1月1日に新宿区に住んでいて、去年の給料が一定より多い人が払います。<span class="scope">全国共通</span><sup><a href="#src2">[2]</a></sup> 3つの質問に答えると、自分が払うかどうか分かります。</p>
+    <div id="checker">
+      <fieldset data-q="jan">
+        <legend>質問1　今年の1月1日、新宿区に住んでいましたか？</legend>
+        <div class="opts"><button type="button" data-v="yes" aria-pressed="false">はい</button><button type="button" data-v="no" aria-pressed="false">いいえ</button></div>
+      </fieldset>
+      <fieldset data-q="income" hidden>
+        <legend>質問2　去年1年間の給料（税金を引く前）は全部でいくらでしたか？</legend>
+        <div class="opts"><button type="button" data-v="low" aria-pressed="false">110万円以下</button><button type="button" data-v="high" aria-pressed="false">110万円より多い</button><button type="button" data-v="unknown" aria-pressed="false">わからない</button></div>
+        <p class="small">目安：時給1,200円で週28時間働くと、1年で約175万円です。</p>
+      </fieldset>
+      <fieldset data-q="slip" hidden>
+        <legend>質問3　給料明細に「住民税」の行があり、お金が引かれていますか？</legend>
+        <div class="opts"><button type="button" data-v="yes" aria-pressed="false">はい</button><button type="button" data-v="no" aria-pressed="false">いいえ・わからない</button></div>
+      </fieldset>
+      <div class="result" id="res" aria-live="polite"></div>
+    </div>
+    <p class="small">110万円は、収入が給料だけで、養っている家族がいない人の目安です。<span class="scope">全国共通</span><sup><a href="#src4">[4]</a></sup></p>
+  </section>
+
+  <section id="s2" aria-labelledby="h1-2">
+    <h2 id="h1-2">2. 届く書類と金額</h2>
+    <p>新宿区は毎年6月10日ごろ、次の書類を封筒で送ります。払わなくてよい人には送りません。<span class="scope ward">新宿区</span><sup><a href="#src3">[3]</a></sup></p>
+    <p><b>「特別区民税・都民税・森林環境税 税額決定・納税通知書」</b></p>
+    <p>金額は次の2つの合計です。実際の金額は通知書に書いてあります。</p>
+    <dl class="rows">
+      <div><dt>均等割</dt><dd>だれでも同じ、年5,000円（区民税3,000円、都民税1,000円、森林環境税1,000円）<sup><a href="#src2">[2]</a></sup></dd></div>
+      <div><dt>所得割</dt><dd>給料から決まった金額（控除）を引いた残りの10%（区民税6%、都民税4%）<sup><a href="#src2">[2]</a></sup></dd></div>
+    </dl>
+  </section>
+
+  <section id="s3" aria-labelledby="h1-3">
+    <h2 id="h1-3">3. 期限と払い方</h2>
+    <p>封筒には払込用紙が4枚入っています。1年分を4回に分けて払います。<span class="scope">東京23区</span><sup><a href="#src1">[1]</a></sup></p>
+    <table>
+      <thead><tr><th scope="col">回</th><th scope="col">期限</th></tr></thead>
+      <tbody>
+        <tr><td>1回目</td><td>6月30日</td></tr>
+        <tr><td>2回目</td><td>8月31日</td></tr>
+        <tr><td>3回目</td><td>10月31日</td></tr>
+        <tr><td>4回目</td><td>次の年の1月31日</td></tr>
+      </tbody>
+    </table>
+    <p class="small">期限が土日・祝日のときは、次の平日が期限です。</p>
+    <h3>払う場所</h3>
+    <dl class="rows">
+      <div><dt>コンビニ</dt><dd>用紙をレジに出します。30万円までの用紙が使えます。夜も払えます。<sup><a href="#src1">[1]</a></sup></dd></div>
+      <div><dt>スマホのアプリ</dt><dd>支払いアプリで用紙のバーコードを読みます。<sup><a href="#src1">[1]</a></sup></dd></div>
+      <div><dt>銀行・郵便局</dt><dd>窓口に用紙を出します。平日の昼だけです。</dd></div>
+      <div><dt>口座振替</dt><dd>申し込むと、毎回口座から自動で引かれます。</dd></div>
+    </dl>
+  </section>
+
+  <section id="s4" aria-labelledby="h1-4">
+    <h2 id="h1-4">4. よくある勘違い</h2>
+    <details><summary>日本に来た年に届かなかったから、払わなくていい？</summary><div class="ans"><p>いいえ。住民税は去年の給料にかかるので、来日した年は届かないのが普通です。次の年の6月から届きます。<sup><a href="#src2">[2]</a></sup></p></div></details>
+    <details><summary>学生は払わなくていい？</summary><div class="ans"><p>いいえ。学生でも給料が110万円を超えると払います。週28時間のアルバイトなら、多くの人が超えます。<sup><a href="#src4">[4]</a></sup></p></div></details>
+    <details><summary>会社が払ってくれている？</summary><div class="ans"><p>給料明細に「住民税」の行がなければ、会社は払っていません。自分で払う封筒が届きます。</p></div></details>
+    <details><summary>引っ越したら、前の区の分はなくなる？</summary><div class="ans"><p>いいえ。1月1日に住んでいた区が、その年の1年分を請求します。途中で引っ越しても変わりません。<sup><a href="#src2">[2]</a></sup></p></div></details>
+    <details><summary>国に帰れば払わなくていい？</summary><div class="ans"><p>いいえ。帰国しても残りを払う必要があります。出国前の手続きは<a href="#s6">6章</a>を見てください。<sup><a href="#src5">[5]</a></sup></p></div></details>
+  </section>
+
+  <section id="s5" aria-labelledby="h1-5">
+    <h2 id="h1-5">5. 払えないとき・遅れたとき</h2>
+    <div class="notice warn" role="note"><p><b>まず電話で相談してください。</b>分けて払う相談ができます。期限から6か月以内に申し込むと、差し押さえを待ってもらえる制度もあります。<span class="scope ward">新宿区</span><sup><a href="#src6">[6]</a></sup></p></div>
+    <h3>払わないままにすると</h3>
+    <ol class="steps">
+      <li><b>期限の次の日から</b>延滞金（遅れた分の追加のお金）が増えます。<sup><a href="#src6">[6]</a></sup></li>
+      <li><b>督促状が届く</b>区の納付案内センターから、電話やSMSでも連絡が来ます。<sup><a href="#src6">[6]</a></sup></li>
+      <li class="bad"><b>督促状から10日たつと</b>預金などの財産を差し押さえられることがあります。<sup><a href="#src6">[6]</a></sup></li>
+      <li class="bad"><b>ビザの手続きで</b>在留資格の更新や永住の申請では、税金を払った証明を出すことがあります。未納があると不利になります。</li>
+    </ol>
+    <h3>相談先</h3>
+    <dl class="rows">
+      <div><dt>電話</dt><dd>納税相談 <span class="tel">03-5273-4534</span>（平日）</dd></div>
+      <div><dt>日曜の相談</dt><dd>月1回、日曜も開いています。9:00〜17:00（受付16:30まで）、区役所本庁舎6階。日にちは区のページで確認してください。<sup><a href="#src7">[7]</a></sup></dd></div>
+    </dl>
+  </section>
+
+  <section id="s6" aria-labelledby="h1-6">
+    <h2 id="h1-6">6. 引っ越し・帰国するとき</h2>
+    <h3>区外へ引っ越すとき</h3>
+    <p>その年の分は、引っ越した後も新宿区に払います。<sup><a href="#src2">[2]</a></sup></p>
+    <h3>日本を出るとき</h3>
+    <p>出国した後も、残りを払う必要があります。出国前に次のどちらかをしてください。<span class="scope">全国共通</span><sup><a href="#src5">[5]</a></sup></p>
+    <dl class="rows">
+      <div><dt>全部払う</dt><dd>区の税務課で残りの金額を聞いて、出国前に払います。</dd></div>
+      <div><dt>代わりの人を決める</dt><dd>日本に住む人を「納税管理人」として区に届けます。用紙の受け取りや支払いを、その人がします。</dd></div>
+    </dl>
+    <p class="small">1月2日〜6月に出国する人は、次の年の分も来ることがあります。そのときも納税管理人の届けが必要です。<sup><a href="#src5">[5]</a></sup></p>
+  </section>
+
+  <section id="s-counter" aria-labelledby="h1-7">
+    <h2 id="h1-7">7. 窓口・電話で使える日本語</h2>
+    <p class="rd-only">「聞く」で日本語を読み上げます。窓口では「窓口で見せる」を押すと、日本語だけが大きく表示されます。</p>
+    <p class="rd-only"><button class="btn primary block" id="counter" type="button">窓口で見せる</button></p>
+    <button class="btn secondary block" id="exit" type="button">元の表示に戻る</button>
+    <div class="phrases">
+      <div class="phrase"><p class="jp">住民税の支払いについて相談したいです。</p><p class="tr">（ここに読者の言語の訳）</p><button class="speak" type="button" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9v6h4l5 4V5L7 9H3zm13.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4z"/></svg>聞く</button></div>
+      <div class="phrase"><p class="jp">一度に払えません。分けて払えますか。</p><p class="tr">（ここに読者の言語の訳）</p><button class="speak" type="button" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9v6h4l5 4V5L7 9H3zm13.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4z"/></svg>聞く</button></div>
+      <div class="phrase"><p class="jp">払込用紙をなくしました。もう一度送ってください。</p><p class="tr">（ここに読者の言語の訳）</p><button class="speak" type="button" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9v6h4l5 4V5L7 9H3zm13.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4z"/></svg>聞く</button></div>
+      <div class="phrase"><p class="jp">国に帰ります。残りの住民税はいくらですか。</p><p class="tr">（ここに読者の言語の訳）</p><button class="speak" type="button" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9v6h4l5 4V5L7 9H3zm13.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4z"/></svg>聞く</button></div>
+      <div class="phrase"><p class="jp">納税管理人の届けをしたいです。</p><p class="tr">（ここに読者の言語の訳）</p><button class="speak" type="button" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9v6h4l5 4V5L7 9H3zm13.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4z"/></svg>聞く</button></div>
+      <div class="phrase"><p class="jp">日本語が少ししかわかりません。ゆっくり話してください。</p><p class="tr">（ここに読者の言語の訳）</p><button class="speak" type="button" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9v6h4l5 4V5L7 9H3zm13.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4z"/></svg>聞く</button></div>
+    </div>
+  </section>
+
+  <section id="s8" aria-labelledby="h1-8">
+    <h2 id="h1-8">8. 問い合わせ先（新宿区）</h2>
+    <dl class="rows">
+      <div><dt>金額のこと</dt><dd>税務課 課税第一係 <span class="tel">03-5273-4107</span><br>課税第二係 <span class="tel">03-5273-4108</span></dd></div>
+      <div><dt>払い方・用紙</dt><dd>税務課 収納管理係 <span class="tel">03-5273-4139</span></dd></div>
+      <div><dt>払えないとき</dt><dd>納税相談 <span class="tel">03-5273-4534</span></dd></div>
+    </dl>
+  </section>
+
+  <aside class="trust" aria-labelledby="t1">
+    <h2 id="t1">この情報について</h2>
+    <p>区や国の公式ページの内容を、文ごとに番号で出典を付けてまとめています。「全国共通」「東京23区」はほかの区でも同じルール、「新宿区」は新宿区だけの情報です。毎週、出典ページに変更がないか確認します。</p>
+    <h3>出典</h3>
+    <ol>
+      <li id="src1"><a href="https://www.city.shinjuku.lg.jp/hoken/file04_04_00001.html" target="_blank" rel="noopener">納付のご案内（新宿区）</a> 2026年9月24日更新</li>
+      <li id="src2"><a href="https://www.city.shinjuku.lg.jp/hoken/file04_03_00001.html" target="_blank" rel="noopener">住民税について（新宿区）</a> 2025年2月17日更新、<a href="https://www.city.shinjuku.lg.jp/content/000398961.pdf" target="_blank" rel="noopener">税額の算出方法等（新宿区・PDF）</a></li>
+      <li id="src3"><a href="https://www.city.shinjuku.lg.jp/content/000457235.pdf" target="_blank" rel="noopener">広報新宿 2026年6月5日号（PDF）</a></li>
+      <li id="src4"><a href="https://www.city.koto.lg.jp/060502/kurashi/zekin/kuminze/kaise/8kaisei.html" target="_blank" rel="noopener">令和8年度の税制改正（江東区）</a> 2025年10月22日更新</li>
+      <li id="src5"><a href="https://www.city.koto.lg.jp/060502/kurashi/zekin/kuminze/nouzeikanrinin.html" target="_blank" rel="noopener">納税管理人（江東区）</a> 2026年1月5日更新</li>
+      <li id="src6"><a href="https://www.city.shinjuku.lg.jp/hoken/zeimu01_000001_00055.html" target="_blank" rel="noopener">納税相談（新宿区）</a> 2026年4月1日更新</li>
+      <li id="src7"><a href="https://www.city.shinjuku.lg.jp/hoken/zeimu01_000102.html" target="_blank" rel="noopener">休日納付相談（新宿区）</a> 2026年8月7日更新</li>
+    </ol>
+    <h3>変更履歴</h3>
+    <ul>
+      <li>2026年11月4日　第3版：デザインを国のデザインシステムに合わせ、見出しを固定の章立てに変更</li>
+      <li>2026年11月4日　第2版：読者の状況から書き直し</li>
+      <li>2026年11月4日　第1版</li>
+    </ul>
+    <p style="margin-top:16px"><button class="btn secondary block" id="suggest" type="button">まちがいを報告する</button></p>
+    <p class="small" id="suggest-msg" hidden>（見本）ここに報告フォームが入ります。AIが公式ページと照らし合わせ、正しければ更新して、変更履歴に載せます。</p>
+  </aside>
+</main>
+
+<script>
+(function () {
+  /* 30-second checker */
+  var state = {};
+  var box = document.getElementById('checker');
+  var res = document.getElementById('res');
+  function q(name) { return box.querySelector('[data-q="' + name + '"]'); }
+  function show(cls, html) { res.className = 'result show ' + cls; res.innerHTML = html; }
+  function hide() { res.className = 'result'; res.innerHTML = ''; }
+  function render() {
+    q('income').hidden = state.jan !== 'yes';
+    q('slip').hidden = !(state.jan === 'yes' && (state.income === 'high' || state.income === 'unknown'));
+    if (!state.jan) return hide();
+    if (state.jan === 'no') return show('', '<strong>新宿区からは届きません。</strong>1月1日に住んでいた市区町村から届きます。その市区町村のページを見てください。');
+    if (!state.income) return hide();
+    if (state.income === 'low') return show('free', '<strong>払わなくてよい可能性が高いです。</strong>その場合、封筒は届きません。届いたときは、書いてある金額を払ってください。');
+    if (!state.slip) return hide();
+    if (state.slip === 'yes') return show('', '<strong>会社が給料から払っています。</strong>自分で払う必要はありません。会社をやめると、残りを自分で払う封筒が届きます。');
+    var lead = state.income === 'unknown' ? '<strong>払う可能性が高いです。</strong>週20時間以上アルバイトをしていたなら、110万円を超えていることが多いです。' : '<strong>自分で払います。</strong>';
+    show('pay', lead + '6月に封筒が届きます。<a href="#s3">3章</a>の方法で、期限までに払ってください。');
+  }
+  box.addEventListener('click', function (e) {
+    var b = e.target.closest('button[data-v]'); if (!b) return;
+    var name = b.closest('fieldset').getAttribute('data-q');
+    state[name] = b.getAttribute('data-v');
+    if (name === 'jan') { delete state.income; delete state.slip; }
+    if (name === 'income') delete state.slip;
+    box.querySelectorAll('fieldset').forEach(function (f) {
+      var n = f.getAttribute('data-q');
+      f.querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-pressed', String(state[n] === x.getAttribute('data-v'))); });
+    });
+    render();
+  });
+
+  /* Japanese text-to-speech */
+  var synth = window.speechSynthesis;
+  var buttons = Array.prototype.slice.call(document.querySelectorAll('.speak'));
+  var current = null, gen = 0;
+  function reset() { buttons.forEach(function (b) { b.setAttribute('aria-pressed', 'false'); }); current = null; }
+  if (!synth || typeof SpeechSynthesisUtterance === 'undefined') {
+    buttons.forEach(function (b) { b.disabled = true; b.title = 'この端末では読み上げできません'; });
+  } else {
+    buttons.forEach(function (b) {
+      b.addEventListener('click', function () {
+        var was = current === b;
+        gen++; synth.cancel(); reset();
+        if (was) return;
+        var u = new SpeechSynthesisUtterance(b.parentNode.querySelector('.jp').textContent);
+        u.lang = 'ja-JP'; u.rate = 0.85;
+        var v = synth.getVoices().filter(function (x) { return /^ja/i.test(x.lang); })[0];
+        if (v) u.voice = v;
+        var my = gen;
+        u.onend = u.onerror = function () { if (my === gen) reset(); };
+        current = b; b.setAttribute('aria-pressed', 'true');
+        synth.speak(u);
+      });
+    });
+  }
+
+  /* Counter mode */
+  function setCounter(on) { document.body.classList.toggle('counter', on); window.scrollTo(0, 0); }
+  document.getElementById('counter').addEventListener('click', function () { setCounter(true); });
+  document.getElementById('exit').addEventListener('click', function () { setCounter(false); });
+
+  document.getElementById('suggest').addEventListener('click', function () {
+    document.getElementById('suggest-msg').hidden = false;
+  });
+})();
+</script>
