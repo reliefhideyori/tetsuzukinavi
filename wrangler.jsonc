@@ -8,7 +8,7 @@
     "directory": "./site",
     "binding": "ASSETS",
     "html_handling": "auto-trailing-slash",
-    "not_found_handling": "none"
+    "not_found_handling": "404-page"
   },
   "send_email": [
     { "name": "MAIL", "destination_address": "tetsuzukinavi@gmail.com" }
