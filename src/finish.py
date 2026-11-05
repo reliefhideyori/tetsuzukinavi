@@ -51,15 +51,17 @@ nf = put_main(shell("id"), '<main class="wrap"><h1>Halaman tidak ditemukan</h1><
 nf = re.sub(r"<title>[^<]*</title>", "<title>404 | Tetsuzuki Navi</title>", nf)
 (ROOT / "404.html").write_text(nf, encoding="utf-8")
 
-# 2b) index: add pages made with addpage.py
-INDEX_EXTRA = {"ja": [("nenkin", "帰国するときに年金の一部が戻る「脱退一時金」")],
-               "id": [("nenkin", "Uang pensiun yang kembali saat pulang: dattai ichijikin")]}
-for lang, items in INDEX_EXTRA.items():
+# 2b) home page (src/home.py)
+import home
+for lang in ("ja", "id"):
     p = ROOT / lang / "index.html"; s = p.read_text(encoding="utf-8")
-    for slug, label in items:
-        if f'href="/{lang}/{slug}' not in s:
-            s = s.replace('</div><style>.related', f'<a href="/{lang}/{slug}">{label}</a></div><style>.related', 1)
+    s = put_main(s, home.main(lang))
+    if ".hero{" not in s: s = s.replace("</head>", home.CSS, 1)
     p.write_text(s, encoding="utf-8")
+
+SHARE = {"ja": ("このページを共有する", "リンクをコピー", "コピーしました"), "id": ("Bagikan halaman ini", "Salin link", "Link disalin")}
+CONTENT = {"gaji", "lpk", "visa", "test", "arrival", "nenkin", "shinjuku-juminzei"}
+SHARE_CSS = "<style>.share{margin:var(--s3) 0}.share h2{font-size:16px;margin:0 0 var(--s1)}.share div{display:flex;flex-wrap:wrap;gap:var(--s1)}.share a,.share button{display:inline-flex;align-items:center;min-height:44px;padding:0 var(--s2);border:1px solid var(--line-strong);border-radius:8px;background:var(--bg);color:var(--fg);font-weight:700;text-decoration:none;font-size:14px;cursor:pointer}</style></head>"
 
 # 3) every page: title, description, language toggle, footer
 for p in sorted(ROOT.glob("*/*.html")):
@@ -79,5 +81,21 @@ for p in sorted(ROOT.glob("*/*.html")):
     s = re.sub(r'(<a class="lang" href=")[^"]*"', rf'\g<1>{target}"', s, count=1)
     items = "".join(f'<li><a href="{h}">{t}</a></li>' for h, t in FOOT[lang])
     s = re.sub(r"<footer>.*?</footer>", f'<footer><div class="wrap"><ul>{items}<li>© 2026 {SITE[lang]}</li></ul></div></footer>', s, count=1, flags=re.S)
+    u = f"https://tetsuzukinavi.org/{lang}/" + ("" if slug == "index" else slug)
+    s = re.sub(r'<link rel="icon"[^>]*>\n?|<meta property="og:[^>]*>\n?|<meta name="twitter:[^>]*>\n?', "", s)
+    og = [f'<link rel="icon" href="/favicon.svg" type="image/svg+xml">', f'<meta property="og:type" content="website">',
+          f'<meta property="og:site_name" content="{SITE[lang]}">', f'<meta property="og:title" content="{title}">',
+          f'<meta property="og:url" content="{u}">', f'<meta property="og:image" content="https://tetsuzukinavi.org/img/og-{lang}.png">',
+          f'<meta property="og:locale" content="{"ja_JP" if lang == "ja" else "id_ID"}">', '<meta name="twitter:card" content="summary_large_image">']
+    if m: og.insert(4, f'<meta property="og:description" content="{desc}">')
+    s = s.replace("</title>", "</title>\n" + "\n".join(og), 1)
+    if slug in CONTENT and 'class="share"' not in s:
+        from urllib.parse import quote
+        h, c1, c2 = SHARE[lang]; q = quote(f"{title}\n{u}")
+        box = (f'<div class="share"><h2>{h}</h2><div><a href="https://wa.me/?text={q}" rel="noopener" target="_blank">WhatsApp</a>'
+               f'<a href="https://www.facebook.com/sharer/sharer.php?u={quote(u)}" rel="noopener" target="_blank">Facebook</a>'
+               f'<button type="button" onclick="navigator.clipboard.writeText(\'{u}\').then(()=>{{this.textContent=\'{c2}\'}})">{c1}</button></div></div>')
+        s = re.sub(r'(<aside class="trust")', lambda mm: box + mm.group(1), s, count=1)
+        s = s.replace("</head>", SHARE_CSS, 1)
     p.write_text(s, encoding="utf-8")
 print("ok")
