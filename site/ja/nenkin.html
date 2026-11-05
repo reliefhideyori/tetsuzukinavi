@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>帰国するときに年金の一部が戻る「脱退一時金」 | 手続きナビ</title>
+<meta name="description" content="日本で働くと、給料から年金の保険料が引かれます。帰国した後に請求すると、その一部が戻ります。受け取れる人、金額の目安、請求のしかたを公式の情報からまとめました。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap">
+<style>
+/* Digital Agency Design System (DADS) based: body 16px/1.7, 8px grid, text #1a1a1a, key blue #0017c1,
+   focus = black outline + yellow. Mobile first, one column, max 40rem. Calm palette for trust. */
+:root {
+  --bg: #ffffff; --bg-sub: #f2f2f2; --bg-soft: #f6f8fc; --fg: #1a1a1a; --fg-sub: #4d4d4d; --line: #cccccc; --line-strong: #666666;
+  --key: #0017c1; --key-fg: #ffffff; --key-bg: #e8f1fe; --key-dark: #00118f;
+  --error: #ec0000; --error-bg: #fdeeee; --ok: #197a4b; --ok-bg: #e6f5ec;
+  --c-social: #3460fb; --c-tax: #9a6fd8; --c-costs: #b8b8b8; --c-left: #197a4b;
+  --focus: #ffd43d;
+  --font: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+  --s1: 8px; --s2: 16px; --s3: 24px; --s5: 40px; --s8: 64px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121212; --bg-sub: #1f1f1f; --bg-soft: #171b26; --fg: #f0f0f0; --fg-sub: #b3b3b3; --line: #3d3d3d; --line-strong: #8a8a8a;
+    --key: #8fb3ff; --key-fg: #0b1230; --key-bg: #1a2240; --key-dark: #0b1a66; --error: #ff7a7a; --error-bg: #3a1c1c;
+    --ok: #6fd39f; --ok-bg: #16301f; --c-social: #7d9bff; --c-tax: #b99be6; --c-costs: #5c5c5c; --c-left: #4fbf86; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #121212; --bg-sub: #1f1f1f; --bg-soft: #171b26; --fg: #f0f0f0; --fg-sub: #b3b3b3; --line: #3d3d3d; --line-strong: #8a8a8a;
+  --key: #8fb3ff; --key-fg: #0b1230; --key-bg: #1a2240; --key-dark: #0b1a66; --error: #ff7a7a; --error-bg: #3a1c1c;
+  --ok: #6fd39f; --ok-bg: #16301f; --c-social: #7d9bff; --c-tax: #b99be6; --c-costs: #5c5c5c; --c-left: #4fbf86; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font); font-size: 16px; line-height: 1.7; letter-spacing: .02em; }
+.wrap { max-width: 40rem; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+p { margin: 0 0 var(--s2); } p:last-child { margin-bottom: 0; }
+a { color: var(--key); text-underline-offset: 3px; }
+button, input, select { font: inherit; letter-spacing: inherit; color: inherit; }
+:focus-visible { outline: 4px solid var(--fg); outline-offset: 2px; box-shadow: 0 0 0 2px var(--focus); }
+.small { font-size: 14px; color: var(--fg-sub); }
+
+/* Site header: calm, official-looking */
+.site { background: var(--key-dark); color: #fff; }
+.site .wrap { display: flex; align-items: center; justify-content: space-between; gap: var(--s2); min-height: 56px; }
+.brand { color: #fff; text-decoration: none; font-weight: 700; font-size: 18px; display: flex; align-items: center; gap: 10px; }
+.brand svg { width: 24px; height: 24px; flex: none; }
+.brand small { display: block; font-weight: 400; font-size: 12px; opacity: .85; line-height: 1.4; }
+.lang { color: #fff; font-size: 14px; border: 1px solid rgba(255,255,255,.6); border-radius: 6px; padding: 6px 10px; text-decoration: none; white-space: nowrap; min-height: 36px; display: inline-flex; align-items: center; }
+.badges { background: var(--bg-soft); border-bottom: 1px solid var(--line); }
+.badges ul { list-style: none; margin: 0 auto; padding: 8px 0; display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 14px; color: var(--fg-sub); }
+.badges li { display: inline-flex; align-items: center; gap: 6px; }
+.badges svg { width: 16px; height: 16px; fill: var(--ok); flex: none; }
+
+main { padding-top: var(--s3); padding-bottom: var(--s8); }
+.crumb { font-size: 14px; color: var(--fg-sub); margin: 0 0 var(--s2); }
+.crumb ol { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0 4px; }
+.crumb li + li::before { content: "＞"; margin-right: 4px; }
+h1 { font-size: 24px; line-height: 1.5; margin: 0 0 var(--s1); }
+.lead { color: var(--fg-sub); }
+.updated { font-size: 14px; color: var(--fg-sub); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: var(--s1) 0; margin: var(--s2) 0 var(--s3); }
+.notice { border: 1px solid var(--key); border-left-width: 6px; padding: var(--s2); margin-bottom: var(--s3); }
+.notice.warn { border-color: var(--error); background: var(--error-bg); }
+.notice h2, .notice h3 { margin-top: 0; font-size: 17px; border: 0; padding: 0; }
+.toc { background: var(--bg-sub); padding: var(--s2); margin-bottom: var(--s5); }
+.toc h2 { font-size: 16px; margin: 0 0 var(--s1); border: 0; padding: 0; }
+.toc ol { margin: 0; padding-left: 1.5em; } .toc li { padding: 2px 0; }
+section { margin-bottom: var(--s5); scroll-margin-top: var(--s2); }
+h2 { font-size: 20px; line-height: 1.5; margin: 0 0 var(--s2); padding-bottom: var(--s1); border-bottom: 2px solid var(--fg); }
+h3 { font-size: 17px; line-height: 1.6; margin: var(--s3) 0 var(--s1); }
+ul, ol { margin: 0 0 var(--s2); padding-left: 1.5em; } li { margin-bottom: 4px; }
+
+/* Form (DADS: label above field, 48px fields, 8px radius) */
+.calc { border: 1px solid var(--line-strong); border-radius: 8px; padding: var(--s2); }
+.field { margin-bottom: var(--s3); }
+.field > label, .field > .lbl { display: block; font-weight: 700; margin-bottom: 4px; }
+.field .hint { font-size: 14px; color: var(--fg-sub); margin: 0 0 var(--s1); }
+select, input[type="number"] { width: 100%; min-height: 48px; padding: 8px 12px; border: 1px solid var(--line-strong); border-radius: 8px; background: var(--bg); font-variant-numeric: tabular-nums; }
+input[type="number"] { text-align: right; }
+.unit { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 8px; }
+.unit span { font-size: 14px; color: var(--fg-sub); min-width: 3em; }
+.seg { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.seg button { min-height: 48px; border: 1px solid var(--line-strong); border-radius: 8px; background: var(--bg); padding: 8px; }
+.seg button[aria-pressed="true"] { border: 2px solid var(--key); background: var(--key-bg); font-weight: 700; color: var(--key); }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s2); }
+.grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
+.grid3 label, .costs label { font-size: 14px; font-weight: 400; display: block; margin-bottom: 4px; }
+.costs { display: grid; grid-template-columns: 1fr 1fr; gap: 12px var(--s2); }
+fieldset { border: 0; margin: 0 0 var(--s3); padding: 0; }
+legend { font-weight: 700; margin-bottom: 4px; padding: 0; }
+.minw { font-size: 14px; color: var(--fg-sub); margin-top: 4px; }
+
+/* Result */
+.res { margin-top: var(--s3); border-top: 2px solid var(--fg); padding-top: var(--s2); }
+.res h3 { margin-top: 0; }
+.big { background: var(--ok-bg); border-left: 6px solid var(--ok); padding: var(--s2); margin-bottom: var(--s2); }
+.big .k { font-size: 14px; color: var(--fg-sub); }
+.big .v { font-size: 32px; font-weight: 700; line-height: 1.3; font-variant-numeric: tabular-nums; }
+.big .v2 { font-size: 16px; font-variant-numeric: tabular-nums; }
+.big.neg { background: var(--error-bg); border-color: var(--error); }
+.bar { display: flex; height: 16px; border-radius: 4px; overflow: hidden; margin: var(--s2) 0 var(--s1); background: var(--bg-sub); gap: 2px; }
+.bar i { display: block; height: 100%; }
+.legend { list-style: none; padding: 0; margin: 0 0 var(--s2); display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 14px; }
+.legend li { display: inline-flex; align-items: center; gap: 6px; margin: 0; }
+.legend b { width: 12px; height: 12px; border-radius: 2px; display: inline-block; }
+table { width: 100%; border-collapse: collapse; margin-bottom: var(--s2); font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 10px var(--s1); border-bottom: 1px solid var(--line); vertical-align: top; }
+td.n { text-align: right; white-space: nowrap; }
+tr.sum th, tr.sum td { font-weight: 700; border-bottom: 1px solid var(--line-strong); }
+tr.sub th { font-weight: 400; padding-left: var(--s3); font-size: 14px; } tr.sub td { font-size: 14px; color: var(--fg-sub); }
+.alert { display: none; border-left: 6px solid var(--error); background: var(--error-bg); padding: var(--s2); margin-bottom: var(--s2); }
+.alert.show { display: block; }
+
+dl.rows { margin: 0 0 var(--s2); border-top: 1px solid var(--line); }
+dl.rows div { display: grid; grid-template-columns: 9em 1fr; gap: var(--s1) var(--s2); padding: 12px 0; border-bottom: 1px solid var(--line); }
+dl.rows dt { font-weight: 700; } dl.rows dd { margin: 0; }
+details { border-bottom: 1px solid var(--line); } details:first-of-type { border-top: 1px solid var(--line); }
+summary { list-style: none; cursor: pointer; padding: 12px 32px 12px 0; position: relative; font-weight: 700; min-height: 48px; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: ""; position: absolute; right: 8px; top: 20px; width: 8px; height: 8px; border-right: 2px solid var(--fg); border-bottom: 2px solid var(--fg); transform: rotate(45deg); }
+details[open] summary::after { transform: rotate(-135deg); top: 24px; }
+details .ans { padding: 0 0 var(--s2); }
+ul.check { list-style: none; padding: 0; }
+ul.check li { position: relative; padding: 10px 0 10px 32px; border-bottom: 1px solid var(--line); margin: 0; }
+ul.check li::before { content: ""; position: absolute; left: 0; top: 13px; width: 18px; height: 18px; border: 2px solid var(--fg); border-radius: 4px; }
+.contact { border: 1px solid var(--line); border-radius: 8px; padding: var(--s2); margin-bottom: var(--s2); }
+.contact h3 { margin-top: 0; }
+.tel { font-size: 20px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.trust { background: var(--bg-sub); padding: var(--s2); font-size: 14px; }
+.trust h2 { font-size: 17px; border: 0; padding: 0; }
+.trust h3 { font-size: 14px; margin-top: var(--s2); }
+.trust ol, .trust ul { margin-bottom: 0; }
+.trust a { word-break: break-all; }
+.money { background: var(--bg); border: 1px solid var(--ok); border-left-width: 6px; padding: 12px var(--s2); font-size: 14px; margin-bottom: var(--s2); }
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 var(--s3); border-radius: 8px; font-weight: 700; border: 1px solid var(--key); background: var(--bg); color: var(--key); text-decoration: none; margin-top: var(--s2); }
+footer { border-top: 1px solid var(--line); padding: var(--s3) 0 var(--s5); font-size: 14px; color: var(--fg-sub); }
+footer ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 24px; }
+@media (max-width: 480px) {
+  dl.rows div { grid-template-columns: 1fr; gap: 0; }
+  .big .v { font-size: 28px; }
+}
+</style>
+<style>
+ol.steps { list-style: none; padding: 0; counter-reset: st; }
+ol.steps li { position: relative; padding: 0 0 var(--s2) 40px; margin: 0; }
+ol.steps li::before { counter-increment: st; content: counter(st); position: absolute; left: 0; top: 0; width: 28px; height: 28px; border: 2px solid var(--key); color: var(--key); border-radius: 50%; display: grid; place-items: center; font-size: 14px; font-weight: 700; }
+ol.steps li:not(:last-child)::after { content: ""; position: absolute; left: 14px; top: 32px; bottom: 4px; border-left: 2px solid var(--line); }
+ol.steps b { display: block; }
+ol.steps .when { display: inline-block; font-size: 12px; font-weight: 700; color: var(--key); border: 1px solid var(--key); border-radius: 4px; padding: 0 6px; margin-bottom: 4px; }
+.fact { border-left: 6px solid var(--key); background: var(--bg-soft); padding: var(--s2); margin-bottom: var(--s2); }
+.fact h3 { margin-top: 0; }
+.cmp { overflow-x: auto; margin-bottom: var(--s2); }
+.cmp table { min-width: 34rem; font-size: 14px; }
+.cmp th[scope=row] { background: var(--bg-sub); white-space: nowrap; }
+.cmp thead th { font-size: 14px; }
+.cmp-note { font-size: 14px; color: var(--fg-sub); }
+.related a { display: block; padding: 12px 0; border-bottom: 1px solid var(--line); font-weight: 700; }
+</style>
+<link rel="canonical" href="https://tetsuzukinavi.org/ja/nenkin">
+<link rel="alternate" hreflang="ja" href="https://tetsuzukinavi.org/ja/nenkin">
+<link rel="alternate" hreflang="id" href="https://tetsuzukinavi.org/id/nenkin">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/ja/">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M12 2 3 6v6c0 5 3.8 9.3 9 10 5.2-.7 9-5 9-10V6l-9-4Zm-1.2 14.2-3.5-3.5 1.4-1.4 2.1 2.1 4.9-4.9 1.4 1.4-6.3 6.3Z"/></svg>
+      <span>手続きナビ<small>日本で暮らす・働くための公式情報ガイド</small></span>
+    </a>
+    <a class="lang" href="/id/nenkin" hreflang="x">Bahasa Indonesia</a>
+  </div>
+</header>
+<div class="badges"><div class="wrap"><ul>
+  <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>公式の情報だけ</li>
+  <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>毎週確認</li>
+  <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>紹介料なし</li>
+</ul></div></div>
+
+<main class="wrap">
+<nav class="crumb" aria-label="breadcrumb"><ol><li><a href="/ja/">手続きナビ</a></li><li>日本で働く</li><li>年金の脱退一時金</li></ol></nav>
+<h1>帰国するときに年金の一部が戻る「脱退一時金」</h1><p class="lead">日本で働くと、給料から年金の保険料が引かれます。帰国した後に請求すると、その一部が戻ります。受け取れる人、金額の目安、請求のしかたを公式の情報からまとめました。</p><p class="updated">最終確認日：2026年11月5日（毎週確認）　／　出典：日本の省庁・公的機関の公式情報（ページの最後に一覧）</p>
+<div class="notice"><h2>いちばん大事なこと</h2><p>日本の年金に<b>6か月以上</b>入っていた外国人は、日本に住所がなくなった日から<b>2年以内</b>に請求すれば、脱退一時金を受け取れます。<sup><a href="#src">[1]</a></sup>2年を過ぎると請求できません。</p></div>
+<nav class="toc"><h2>このページの内容</h2><ol><li><a href="#s1">受け取れる人</a></li><li><a href="#s2">いくら戻るか（厚生年金の場合）</a></li><li><a href="#s3">請求のしかた</a></li><li><a href="#s4">税金を取り戻す手続き（厚生年金の場合）</a></li><li><a href="#s5">受け取る前に知っておくこと</a></li><li><a href="#s6">困ったときの相談先</a></li><li><a href="#s7">関連するページ</a></li></ol></nav>
+<section id="s1"><h2>受け取れる人</h2><dl class="rows"><div><dt>国籍</dt><dd>日本の国籍がない<sup><a href="#src">[1]</a></sup></dd></div><div><dt>加入した期間</dt><dd>厚生年金（会社の年金）または国民年金に、合わせて6か月以上入っていた（国民年金は保険料を払った月だけ数えます）<sup><a href="#src">[1]</a></sup></dd></div><div><dt>住所</dt><dd>日本に住所がない（帰国して住民票がなくなっている）<sup><a href="#src">[1]</a></sup></dd></div><div><dt>期限</dt><dd>日本に住所がなくなった日から2年以内<sup><a href="#src">[1]</a></sup></dd></div><div><dt>そのほか</dt><dd>日本の年金をもらう資格（加入10年以上）がない。障害年金などを受ける権利を持ったことがない<sup><a href="#src">[1]</a></sup></dd></div></dl></section>
+<section id="s2"><h2>いくら戻るか（厚生年金の場合）</h2><p>金額は「入っていた間の平均の給料（平均標準報酬額）×支給率」で決まります。支給率は入っていた月数で決まり、60か月（5年）が上限です。<sup><a href="#src">[1][3]</a></sup></p><div class="cmp" role="region" tabindex="0"><table><thead><tr><th></th><th scope="col">支給率</th><th scope="col">例：平均の給料22万円</th><th scope="col">税金20.42%を引いた後</th></tr></thead><tbody><tr><th scope="row">6〜11か月</th><td>0.5</td><td>110,000円</td><td>87,538円</td></tr><tr><th scope="row">12〜17か月</th><td>1.1</td><td>242,000円</td><td>192,584円</td></tr><tr><th scope="row">24〜29か月</th><td>2.2</td><td>484,000円</td><td>385,167円</td></tr><tr><th scope="row">36〜41か月</th><td>3.3</td><td>726,000円</td><td>577,751円</td></tr><tr><th scope="row">48〜53か月</th><td>4.4</td><td>968,000円</td><td>770,334円</td></tr><tr><th scope="row">60か月以上</th><td>5.5</td><td>1,210,000円</td><td>962,918円</td></tr></tbody></table></div><p class="cmp-note">出典：[1][3] 日本年金機構。支給率は2026年の表の一部です。22万円は計算の例で、実際の金額は加入記録で決まります。</p><div class="fact"><h3>国民年金の場合</h3><p>国民年金だけに入っていた人は、最後に払った年度の保険料で決まります。最後の月が2026年4月〜2027年3月の場合、6〜11か月で53,760円、60か月以上で537,600円です。国民年金の脱退一時金には税金はかかりません。<sup><a href="#src">[1]</a></sup></p></div></section>
+<section id="s3"><h2>請求のしかた</h2><ol class="steps"><li><span class="when">帰国の前</span><b>役所で転出届を出す</b>住んでいる市区町村の役所に、日本を出ることを届けます。出しておくと「日本に住所がないことの書類」が要らなくなります。<sup><a href="#src">[2]</a></sup></li><li><span class="when">帰国の前</span><b>書類をそろえる</b>請求書、パスポートの写し、銀行の口座がわかる書類（銀行が出したもの）、基礎年金番号がわかる書類（基礎年金番号通知書や年金手帳）。ゆうちょ銀行の口座では受け取れません。<sup><a href="#src">[2]</a></sup></li><li><span class="when">転出の日より後に届くように</span><b>日本年金機構に郵送する</b>あて先は「日本年金機構 外国業務グループ 〒168-8505 東京都杉並区高井戸西3-5-24」です。日本から送っても、帰国後に自分の国から送ってもかまいません。<sup><a href="#src">[2]</a></sup></li><li><span class="when">審査の後</span><b>口座に振り込まれる</b>書類が足りないと、請求書が送り返されることがあります。<sup><a href="#src">[2]</a></sup></li></ol></section>
+<section id="s4"><h2>税金を取り戻す手続き（厚生年金の場合）</h2><p>厚生年金の脱退一時金からは、所得税20.42%が引かれます。<sup><a href="#src">[2]</a></sup>税務署に申告すると、引かれた税金が戻ることがあります。</p><ol class="steps"><li><span class="when">帰国の前</span><b>納税管理人を決めて届け出る</b>日本に住む人に、税金の手続きを任せます。「所得税・消費税の納税管理人の届出書」を、住んでいた地域の税務署に出します。<sup><a href="#src">[2]</a></sup></li><li><span class="when">脱退一時金を受け取った後</span><b>還付の申告をする</b>納税管理人が「退職所得の選択課税による還付のための申告書」を税務署に出します。脱退一時金の支給通知書（原本）が必要なので、納税管理人に送ってください。<sup><a href="#src">[2]</a></sup></li></ol></section>
+<section id="s5"><h2>受け取る前に知っておくこと</h2><div class="notice warn"><p>脱退一時金を受け取ると、<b>それまでの日本の年金に入っていた期間はすべてなくなります</b>。将来また日本で働いても、その期間は数えられません。<sup><a href="#src">[2]</a></sup></p></div><dl class="rows"><div><dt>60か月より長く入っていた人</dt><dd>受け取れるのは60か月分までですが、入っていた期間はすべてなくなります。<sup><a href="#src">[2]</a></sup></dd></div><div><dt>10年以上入っていた人</dt><dd>脱退一時金は請求できません。日本の年金を受け取る資格があります。<sup><a href="#src">[2]</a></sup></dd></div><div><dt>インドネシアとの協定</dt><dd>日本とインドネシアの間には、年金の期間を合わせて数える協定（社会保障協定）はありません（2026年3月時点）。<sup><a href="#src">[2]</a></sup></dd></div><div><dt>再入国許可で出国した人</dt><dd>転出届を出さずに再入国許可で出国した場合は、許可の期限が過ぎるまで請求できません。<sup><a href="#src">[2]</a></sup></dd></div></dl></section>
+<section id="s6"><h2>困ったときの相談先</h2><div class="fact"><h3>日本年金機構 外国業務グループ　+81-3-6700-1165</h3><p>脱退一時金の手続きについて聞けます。日本語での対応です。<sup><a href="#src">[2]</a></sup></p></div></section>
+<section id="s7"><h2>関連するページ</h2><div class="related"><a href="/ja/gaji">日本で本当に手元に残るお金（手取り計算）</a><a href="/ja/arrival">日本に着いて最初の2週間にすること</a><a href="/ja/visa">特定技能・技能実習・育成就労の違い</a></div></section>
+<aside class="trust" id="src"><h2>この情報について</h2><div class="money"><b>このサイトの収入は広告だけです。</b>LPK、仲介業者、会社から紹介料は受け取っていません。</div><h3>出典（確認日：2026年11月5日）</h3><ol><li>脱退一時金の制度（日本年金機構、2026年4月1日更新）<br><a href="https://www.nenkin.go.jp/service/jukyu/seido/sonota-kyufu/dattai-ichiji/20150406.html">https://www.nenkin.go.jp/service/jukyu/seido/sonota-kyufu/dattai-ichiji/20150406.html</a></li><li>日本から出国される外国人のみなさまへ（脱退一時金の案内、インドネシア語版、日本年金機構）<br><a href="https://www.nenkin.go.jp/international/english/japanese-system/benefit/payment.files/F.pdf">https://www.nenkin.go.jp/international/english/japanese-system/benefit/payment.files/F.pdf</a></li><li>厚生年金保険の脱退一時金として、いくらもらえますか（日本年金機構）<br><a href="https://www.nenkin.go.jp/section/faq/jukyu/seido/sonota-kyufu/dattai-ichiji/2020042803.html">https://www.nenkin.go.jp/section/faq/jukyu/seido/sonota-kyufu/dattai-ichiji/2020042803.html</a></li></ol><h3>変更履歴</h3><ul><li>2026年11月5日　第1版を公開</li></ul><a class="btn" href="/ja/contact?page=nenkin">間違いを見つけたら教えてください</a></aside></main>
+<footer><div class="wrap"><ul><li><a href="/ja/about">運営者と方針</a></li><li><a href="/ja/privacy">プライバシーポリシー</a></li><li><a href="/ja/contact">お問い合わせ・間違いの報告</a></li><li>© 2026 手続きナビ</li></ul></div></footer></body></html>

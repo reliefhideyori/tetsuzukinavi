@@ -51,6 +51,16 @@ nf = put_main(shell("id"), '<main class="wrap"><h1>Halaman tidak ditemukan</h1><
 nf = re.sub(r"<title>[^<]*</title>", "<title>404 | Tetsuzuki Navi</title>", nf)
 (ROOT / "404.html").write_text(nf, encoding="utf-8")
 
+# 2b) index: add pages made with addpage.py
+INDEX_EXTRA = {"ja": [("nenkin", "帰国するときに年金の一部が戻る「脱退一時金」")],
+               "id": [("nenkin", "Uang pensiun yang kembali saat pulang: dattai ichijikin")]}
+for lang, items in INDEX_EXTRA.items():
+    p = ROOT / lang / "index.html"; s = p.read_text(encoding="utf-8")
+    for slug, label in items:
+        if f'href="/{lang}/{slug}' not in s:
+            s = s.replace('</div><style>.related', f'<a href="/{lang}/{slug}">{label}</a></div><style>.related', 1)
+    p.write_text(s, encoding="utf-8")
+
 # 3) every page: title, description, language toggle, footer
 for p in sorted(ROOT.glob("*/*.html")):
     lang, slug = p.parent.name, p.stem
@@ -63,6 +73,7 @@ for p in sorted(ROOT.glob("*/*.html")):
     if m:
         desc = re.sub(r"<[^>]+>", "", m.group(1)).replace('"', "&quot;").strip()
         s = s.replace("</title>", f'</title>\n<meta name="description" content="{desc}">', 1)
+    s = re.sub(r'(<nav class="crumb".*?</nav>)', lambda m: re.sub(r'<li><a href="(#|[^"]*contact[^"]*)">([^<]*)</a></li>', r'<li>\2</li>', m.group(1)), s, count=1, flags=re.S)
     o = OTHER[lang]
     target = f"/{o}/" if slug == "index" else (f"/{o}/{slug}" if (ROOT / o / p.name).exists() else f"/{o}/")
     s = re.sub(r'(<a class="lang" href=")[^"]*"', rf'\g<1>{target}"', s, count=1)
