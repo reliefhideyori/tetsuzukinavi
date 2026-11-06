@@ -3,9 +3,10 @@ S1 = ("JFT-Basic よくある質問（国際交流基金）", "https://www.jpf.g
 S2 = ("JFT-Basic 個人で受験する流れ（国際交流基金）", "https://www.jpf.go.jp/jft-basic/id/schedule/flow.html")
 S3 = ("日本語能力試験 海外の実施都市・実施機関一覧（JLPT公式）", "https://www.jlpt.jp/e/application/overseas_list.html")
 S4 = ("JLPT インドネシアの申込み案内（実施機関）", "https://jlptonline.or.id/")
+S6 = ("日本語能力試験 JLPT 公式サイト（トップ）", "https://www.jlpt.jp/")
 S5 = ("基本方針の概要（出入国在留管理庁・厚生労働省）", "https://www.moj.go.jp/isa/content/001432243.pdf")
 PAGE = {
- "sources": [S1, S2, S3, S4, S5],
+ "sources": [S1, S2, S3, S4, S5, S6],
  "ja": {
   "title": "JLPTとJFT-Basicの受け方", "crumb_last": "日本語の試験",
   "h1": "JLPTとJFT-Basicの受け方（インドネシアで受ける場合）",
@@ -33,13 +34,13 @@ PAGE = {
      ("note", "国際交流基金の事務所は予約を代わりにしません。<sup><a href=\"#src\">[1]</a></sup>LPKや業者を通さなくても、自分で申し込めます。"),
    ]},
    {"h": "JLPTの受け方", "blocks": [
-     ("p", "インドネシアでは、ジャカルタ、バンドン、スラバヤ、メダン、ジョグジャカルタ、デンパサール、スマラン、マカッサルなど16都市で、7月と12月に行われます。<sup><a href=\"#src\">[3]</a></sup>申し込みの期間と方法は、インドネシアの実施機関のサイト（jlptonline.or.id）で確認してください。<sup><a href=\"#src\">[4]</a></sup>"),
+     ("p", "インドネシアでは、ジャカルタ、バンドン、スラバヤ、メダン、ジョグジャカルタ、デンパサール、スマラン、マカッサルなど16都市で、7月と12月に行われます。<sup><a href=\"#src\">[3]</a></sup>2026年の第2回は<b>12月6日（日）</b>です。<sup><a href=\"#src\">[6]</a></sup>申し込みの期間と方法は、インドネシアの実施機関のサイト（jlptonline.or.id）で確認してください。<sup><a href=\"#src\">[4]</a></sup>"),
    ]},
    {"h": "関連するページ", "blocks": [("related", [("visa", "特定技能・技能実習・育成就労の違い"), ("gaji", "日本で本当に手元に残るお金（手取り計算）"), ("lpk", "LPK・仲介業者を選ぶ前に、公式情報で確認できること")])]},
   ]},
  "id": {
-  "title": "Cara Ikut JLPT dan JFT-Basic", "crumb_last": "Ujian bahasa Jepang",
-  "h1": "Cara Ikut JLPT dan JFT-Basic (di Indonesia)",
+  "title": "Cara Ikut JLPT 2026 dan JFT-Basic di Indonesia", "crumb_last": "Ujian bahasa Jepang",
+  "h1": "Cara Ikut JLPT 2026 dan JFT-Basic di Indonesia",
   "lead": "Ringkasan perbedaan dan cara mendaftar ujian bahasa Jepang yang dibutuhkan untuk berangkat lewat Tokutei Ginou, dari informasi resmi.",
   "notice": ("Yang perlu diketahui dulu", "Bahasa Jepang yang dibutuhkan untuk SSW 1 adalah <b>sekitar level A2</b>.<sup><a href=\"#src\">[5]</a></sup> JFT-Basic level A2 (A2.2) bisa dipakai untuk mengajukan SSW 1.<sup><a href=\"#src\">[1]</a></sup> Beberapa bidang membutuhkan level lebih tinggi atau ujian lain, jadi cek syarat bidang Anda."),
   "sections": [
@@ -64,7 +65,7 @@ PAGE = {
      ("note", "Kantor Japan Foundation tidak melakukan reservasi untuk Anda.<sup><a href=\"#src\">[1]</a></sup> Anda bisa mendaftar sendiri tanpa lewat LPK atau agen."),
    ]},
    {"h": "Cara ikut JLPT", "blocks": [
-     ("p", "Di Indonesia, JLPT diadakan pada bulan Juli dan Desember di 16 kota, antara lain Jakarta, Bandung, Surabaya, Medan, Yogyakarta, Denpasar, Semarang, dan Makassar.<sup><a href=\"#src\">[3]</a></sup> Cek masa dan cara pendaftaran di situs penyelenggara Indonesia (jlptonline.or.id).<sup><a href=\"#src\">[4]</a></sup>"),
+     ("p", "Di Indonesia, JLPT diadakan pada bulan Juli dan Desember di 16 kota, antara lain Jakarta, Bandung, Surabaya, Medan, Yogyakarta, Denpasar, Semarang, dan Makassar.<sup><a href=\"#src\">[3]</a></sup> Ujian kedua tahun 2026 diadakan pada <b>Minggu, 6 Desember 2026</b>.<sup><a href=\"#src\">[6]</a></sup> Cek masa dan cara pendaftaran di situs penyelenggara Indonesia (jlptonline.or.id).<sup><a href=\"#src\">[4]</a></sup>"),
    ]},
    {"h": "Halaman terkait", "blocks": [("related", [("visa", "Perbedaan Tokutei Ginou, magang, dan Ikusei Shuro"), ("gaji", "Berapa uang yang benar-benar tersisa di Jepang (kalkulator gaji bersih)"), ("lpk", "Sebelum memilih LPK atau agen: yang bisa dicek dari sumber resmi")])]},
   ]},
