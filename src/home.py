@@ -8,6 +8,7 @@ C = {
  stages=[
   ("Sebelum mendaftar", [("kerja", "Cara kerja di Jepang: syarat dan langkah", "Jalur utama dan urutan dari ujian sampai berangkat."),
                          ("ssw", "Apa itu Tokutei Ginou (SSW)", "19 bidang kerja, ujian, dan alur sampai ke Jepang."),
+                         ("epa", "Program EPA (G to G) perawat dan kaigo", "Syarat, pelatihan 6 bulan, dan ujian nasional Jepang."),
                          ("magang", "Program magang (Ginou Jisshu)", "Tahapan sampai 5 tahun, hal yang dilarang, dan konsultasi."),
                          ("lpk", "Sebelum memilih LPK atau agen", "Biaya, uang jaminan, dan cara mengecek lembaga resmi."),
                          ("visa", "Perbedaan SSW, magang, dan Ikusei Shuro", "Lama tinggal, keluarga, bahasa Jepang, dan pindah kerja.")]),
@@ -21,6 +22,7 @@ C = {
   ("Setelah tiba", [("arrival", "Dua minggu pertama di Jepang", "Lapor alamat dalam 14 hari, asuransi, dan rekening bank."),
                     ("hak", "Hak pekerja: lembur, cuti, libur", "Lembur minimal +25%, 10 hari cuti setelah 6 bulan."),
                     ("kesehatan", "Asuransi kesehatan dan biaya berobat", "Bayar 30% di rumah sakit, ada batas biaya per bulan."),
+                    ("zairyu", "Zairyu card (kartu izin tinggal)", "Wajib selalu dibawa. Jika hilang, ajukan ulang dalam 14 hari."),
                     ("mynumber", "My Number dan My Number Card", "Nomor datang 2–3 minggu setelah lapor alamat. Kartu gratis."),
                     ("pindah", "Pindah perusahaan (SSW)", "Perlu izin perubahan status dan lapor dalam 14 hari.")]),
   ("Saat pulang", [("nenkin", "Pengembalian uang pensiun", "Sebagian iuran pensiun bisa kembali. Ajukan dalam 2 tahun.")]),
@@ -44,6 +46,7 @@ C = {
  stages=[
   ("申し込む前", [("kerja", "日本で働くには：条件と流れ", "主な方法と、試験から出発までの順番。"),
                  ("ssw", "特定技能（SSW）とは", "19の分野、必要な試験、日本に来るまでの流れ。"),
+                 ("epa", "EPA看護師・介護福祉士候補者", "条件、6か月の研修、日本の国家試験。"),
                  ("magang", "技能実習（magang）のしくみ", "最長5年の段階、禁止されていること、相談先。"),
                  ("lpk", "LPK・仲介業者を選ぶ前に", "費用、保証金、公式に確認できる方法。"),
                  ("visa", "特定技能・技能実習・育成就労の違い", "期間、家族、日本語、会社を変えられるか。")]),
@@ -57,6 +60,7 @@ C = {
   ("日本に着いたら", [("arrival", "最初の2週間にすること", "14日以内の住所の届出、保険、銀行口座。"),
                    ("hak", "働く人の権利", "残業は25%以上の割増、6か月で有給10日。"),
                    ("kesehatan", "健康保険と医療費", "病院で払うのは3割。1か月の上限もあります。"),
+                   ("zairyu", "在留カード", "いつも持ち歩く義務。なくしたら14日以内に再交付。"),
                    ("mynumber", "マイナンバーとカード", "住所の届出から2〜3週間で番号が届きます。カードは無料。"),
                    ("pindah", "特定技能で会社を変える", "変更許可申請と、14日以内の届出が必要です。")]),
   ("帰国するとき", [("nenkin", "年金の脱退一時金", "払った年金の一部が戻ります。期限は2年。")]),
