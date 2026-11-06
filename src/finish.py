@@ -44,6 +44,19 @@ for lang, (h1, lead, secs, log) in PRIVACY.items():
             f'<h1>{h1}</h1><p class="lead">{lead}</p>{body}<aside class="trust"><h3>{LOG_H[lang]}</h3><ul><li>{log}</li></ul></aside></main>')
     (ROOT / lang / "privacy.html").write_text(put_main(shell(lang), main), encoding="utf-8")
 
+# 1b) 住民税ページ（古い断片）をサイトの外枠に入れる
+jp = ROOT / "ja" / "shinjuku-juminzei.html"
+js = jp.read_text(encoding="utf-8")
+if "</head>" not in js:
+    body = js.split("</style>", 1)[1]
+    main = body[body.index("<main"):body.index("</main>") + 7].replace("<main>", '<main class="wrap">', 1)
+    main = main.replace("<ol><li>手続きナビ</li>", '<ol><li><a href="/ja/">手続きナビ</a></li>', 1)
+    script = body[body.index("</main>") + 7:]
+    out = put_main(shell("ja"), main)
+    out = out.replace("</body>", script.strip() + "\n</body>", 1)
+    out = re.sub(r'<meta name="robots"[^>]*>\n?', "", out)
+    jp.write_text(out, encoding="utf-8")
+
 # 2) 404 (both languages on one page)
 nf = put_main(shell("id"), '<main class="wrap"><h1>Halaman tidak ditemukan</h1><p>Halaman ini tidak ada atau sudah dipindahkan.</p>'
     '<p><a class="btn" href="/id/">Ke halaman utama (Bahasa Indonesia)</a></p><h2 lang="ja">ページが見つかりません</h2>'
@@ -65,7 +78,7 @@ SHARE_CSS = "<style>.share{margin:var(--s3) 0}.share h2{font-size:16px;margin:0 
 LOGO = ('<svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#18794e"/>'
         '<path d="M10 23v-5.5a3.5 3.5 0 0 1 3.5-3.5h5a3.5 3.5 0 0 0 3.5-3.5V9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>'
         '<circle cx="10" cy="23" r="2.6" fill="#fff"/><path d="M18.5 9.5 22 6l3.5 3.5" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>')
-CSS_V = "4"
+CSS_V = "5"
 
 # 3) every page: title, description, language toggle, footer
 for p in [q for q in sorted(ROOT.glob("*/*.html")) if "</head>" in q.read_text(encoding="utf-8")]:
