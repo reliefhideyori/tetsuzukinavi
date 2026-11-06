@@ -79,6 +79,7 @@ LOGO = ('<svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32
         '<path d="M10 23v-5.5a3.5 3.5 0 0 1 3.5-3.5h5a3.5 3.5 0 0 0 3.5-3.5V9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>'
         '<circle cx="10" cy="23" r="2.6" fill="#fff"/><path d="M18.5 9.5 22 6l3.5 3.5" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>')
 CSS_V = "7"
+ADSENSE = '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9784894740329526" crossorigin="anonymous"></script>'
 
 # 3) every page: title, description, language toggle, footer
 for p in [q for q in sorted(ROOT.glob("*/*.html")) if "</head>" in q.read_text(encoding="utf-8")]:
@@ -96,7 +97,8 @@ for p in [q for q in sorted(ROOT.glob("*/*.html")) if "</head>" in q.read_text(e
     head, rest = s.split("</head>", 1)
     head = re.sub(r"<style>.*?</style>\n?", "", head, flags=re.S)
     head = re.sub(r'<link rel="stylesheet" href="/assets/site.css[^>]*>\n?', "", head)
-    s = head + f'<link rel="stylesheet" href="/assets/site.css?v={CSS_V}">\n</head>' + rest
+    head = re.sub(r'<script async src="https://pagead2[^>]*></script>\n?', "", head)
+    s = head + f'<link rel="stylesheet" href="/assets/site.css?v={CSS_V}">\n{ADSENSE}\n</head>' + rest
     s = re.sub(r'(<a class="brand"[^>]*>)\s*<svg.*?</svg>', lambda mm: mm.group(1) + LOGO, s, count=1, flags=re.S)
     o = OTHER[lang]
     target = f"/{o}/" if slug == "index" else (f"/{o}/{slug}" if (ROOT / o / p.name).exists() else f"/{o}/")
