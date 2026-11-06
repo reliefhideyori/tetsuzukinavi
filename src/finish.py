@@ -56,15 +56,19 @@ import home
 for lang in ("ja", "id"):
     p = ROOT / lang / "index.html"; s = p.read_text(encoding="utf-8")
     s = put_main(s, home.main(lang))
-    if ".hero{" not in s: s = s.replace("</head>", home.CSS, 1)
     p.write_text(s, encoding="utf-8")
 
 SHARE = {"ja": ("このページを共有する", "リンクをコピー", "コピーしました"), "id": ("Bagikan halaman ini", "Salin link", "Link disalin")}
 CONTENT = {"gaji", "lpk", "visa", "test", "arrival", "nenkin", "shinjuku-juminzei"}
 SHARE_CSS = "<style>.share{margin:var(--s3) 0}.share h2{font-size:16px;margin:0 0 var(--s1)}.share div{display:flex;flex-wrap:wrap;gap:var(--s1)}.share a,.share button{display:inline-flex;align-items:center;min-height:44px;padding:0 var(--s2);border:1px solid var(--line-strong);border-radius:8px;background:var(--bg);color:var(--fg);font-weight:700;text-decoration:none;font-size:14px;cursor:pointer}</style></head>"
 
+LOGO = ('<svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#18794e"/>'
+        '<path d="M10 23v-5.5a3.5 3.5 0 0 1 3.5-3.5h5a3.5 3.5 0 0 0 3.5-3.5V9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>'
+        '<circle cx="10" cy="23" r="2.6" fill="#fff"/><path d="M18.5 9.5 22 6l3.5 3.5" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>')
+CSS_V = "4"
+
 # 3) every page: title, description, language toggle, footer
-for p in sorted(ROOT.glob("*/*.html")):
+for p in [q for q in sorted(ROOT.glob("*/*.html")) if "</head>" in q.read_text(encoding="utf-8")]:
     lang, slug = p.parent.name, p.stem
     s = p.read_text(encoding="utf-8")
     h1 = re.sub(r"<[^>]+>", "", re.search(r"<h1>(.*?)</h1>", s, re.S).group(1)).strip()
@@ -76,6 +80,11 @@ for p in sorted(ROOT.glob("*/*.html")):
         desc = re.sub(r"<[^>]+>", "", m.group(1)).replace('"', "&quot;").strip()
         s = s.replace("</title>", f'</title>\n<meta name="description" content="{desc}">', 1)
     s = re.sub(r'(<nav class="crumb".*?</nav>)', lambda m: re.sub(r'<li><a href="(#|[^"]*contact[^"]*)">([^<]*)</a></li>', r'<li>\2</li>', m.group(1)), s, count=1, flags=re.S)
+    head, rest = s.split("</head>", 1)
+    head = re.sub(r"<style>.*?</style>\n?", "", head, flags=re.S)
+    head = re.sub(r'<link rel="stylesheet" href="/assets/site.css[^>]*>\n?', "", head)
+    s = head + f'<link rel="stylesheet" href="/assets/site.css?v={CSS_V}">\n</head>' + rest
+    s = re.sub(r'(<a class="brand"[^>]*>)\s*<svg.*?</svg>', lambda mm: mm.group(1) + LOGO, s, count=1, flags=re.S)
     o = OTHER[lang]
     target = f"/{o}/" if slug == "index" else (f"/{o}/{slug}" if (ROOT / o / p.name).exists() else f"/{o}/")
     s = re.sub(r'(<a class="lang" href=")[^"]*"', rf'\g<1>{target}"', s, count=1)
@@ -96,6 +105,5 @@ for p in sorted(ROOT.glob("*/*.html")):
                f'<a href="https://www.facebook.com/sharer/sharer.php?u={quote(u)}" rel="noopener" target="_blank">Facebook</a>'
                f'<button type="button" onclick="navigator.clipboard.writeText(\'{u}\').then(()=>{{this.textContent=\'{c2}\'}})">{c1}</button></div></div>')
         s = re.sub(r'(<aside class="trust")', lambda mm: box + mm.group(1), s, count=1)
-        s = s.replace("</head>", SHARE_CSS, 1)
     p.write_text(s, encoding="utf-8")
 print("ok")
