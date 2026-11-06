@@ -42,22 +42,22 @@ PAGE = {
   "sections": [
    {"h": "Perbandingan tiga program", "blocks": [
      ("table", ["SSW 1 (Tokutei Ginou 1)", "SSW 2 (Tokutei Ginou 2)", "Ikusei Shuro (mulai April 2027)"], [
-       ["Lama bekerja", "Total maksimal 5 tahun", "Perpanjangan tanpa batas", "Pada dasarnya 3 tahun"],
+       ["Lama bekerja", "Total maksimal 5 tahun", "Bisa diperpanjang tanpa batas jumlah", "Pada dasarnya 3 tahun"],
        ["Keluarga", "Pada dasarnya tidak bisa dibawa", "Bisa dibawa", "Pada dasarnya tidak bisa dibawa"],
-       ["Bahasa Jepang", "Sekitar A2", "Sekitar B1", "Sekitar A1 sebelum mulai kerja, sekitar A2 di akhir"],
+       ["Bahasa Jepang", "Sekitar A2", "Sekitar B1", "Sekitar A1 sebelum mulai kerja, sekitar A2 di akhir program"],
        ["Keterampilan", "Dicek dengan ujian, dll.", "Dicek dengan ujian tingkat lebih tinggi, dll.", "Mencapai level SSW 1 di akhir program"],
        ["Pindah perusahaan", "Bisa dalam bidang yang sama (perlu prosedur)", "Bisa dalam bidang yang sama (perlu prosedur)", "Bisa setelah bekerja 1–2 tahun dan memenuhi syarat seperti lulus ujian"],
      ], "Sumber: [1] Ringkasan kebijakan dasar, [2] penjelasan Prefektur Kagoshima. A1, A2, B1 adalah level bahasa menurut standar Eropa (CEFR)."),
    ]},
    {"h": "Penjelasan tiap program", "blocks": [
      ("fact", "Tokutei Ginou 1 (SSW 1)", "Program untuk orang yang bisa langsung bekerja di bidang yang kekurangan tenaga kerja. Pada dasarnya berangkat setelah lulus ujian bahasa Jepang dan keterampilan. Total maksimal 5 tahun, dan keluarga pada dasarnya tidak bisa dibawa.", 1),
-     ("fact", "Tokutei Ginou 2 (SSW 2)", "Program untuk orang yang lebih ahli. Perpanjangan tanpa batas, dan keluarga bisa dibawa.", 1),
+     ("fact", "Tokutei Ginou 2 (SSW 2)", "Program untuk orang yang lebih ahli. Masa tinggal bisa diperpanjang tanpa batas jumlah, dan keluarga bisa dibawa.", 1),
      ("fact", "Magang / Ginou Jisshu (program saat ini)", "Program untuk belajar keterampilan di Jepang. Pada dasarnya tidak bisa pindah perusahaan. Direncanakan berganti menjadi Ikusei Shuro mulai April 2027.", 2),
      ("fact", "Ikusei Shuro (mulai April 2027)", "Program 3 tahun untuk melatih pekerja sampai level SSW 1. Setelah bekerja 1–2 tahun di perusahaan yang sama (ditentukan per bidang) dan memenuhi syarat seperti lulus ujian keterampilan atau bahasa Jepang, Anda bisa pindah perusahaan atas keinginan sendiri.", 2),
    ]},
    {"h": "Yang perlu diketahui soal uang", "blocks": [
-     ("fact", "Untuk SSW, uang jaminan dan denda tidak diperbolehkan", "Perusahaan penerima di Jepang harus tidak memungut uang jaminan dan tidak membuat kontrak denda. Biaya dukungan hidup juga tidak boleh dibebankan kepada pekerja.", 5),
-     ("fact", "Lulusan magang 2 yang baik dibebaskan dari ujian", "Orang yang menyelesaikan magang 2 (Ginou Jisshu 2-go) dengan baik dibebaskan dari ujian keterampilan dan bahasa Jepang saat pindah ke SSW 1.", 4),
+     ("fact", "Untuk SSW, uang jaminan dan denda tidak diperbolehkan", "Syaratnya, perusahaan penerima di Jepang tidak memungut uang jaminan dan tidak membuat perjanjian denda (penalti). Biaya dukungan hidup juga tidak boleh dibebankan kepada pekerja.", 5),
+     ("fact", "Yang menyelesaikan magang 2 dengan baik dibebaskan dari ujian", "Orang yang menyelesaikan magang 2 (Ginou Jisshu 2-go) dengan baik dibebaskan dari ujian keterampilan dan bahasa Jepang saat pindah ke SSW 1.", 4),
      ("p", "Di program mana pun, upah minimum Jepang juga berlaku untuk pekerja asing. Cek berapa yang tersisa tiap bulan dengan kalkulator gaji bersih."),
    ]},
    {"h": "Halaman terkait", "blocks": [("related", [("gaji", "Berapa uang yang benar-benar tersisa di Jepang (kalkulator gaji bersih)"), ("lpk", "Sebelum memilih LPK atau agen: yang bisa dicek dari sumber resmi"), ("test", "Cara ikut JLPT dan JFT-Basic")])]},

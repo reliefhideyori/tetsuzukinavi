@@ -35,28 +35,28 @@ PAGE = {
  "id": {
   "title": "Pindah Perusahaan dengan Visa Tokutei Ginou", "crumb_last": "Pindah kerja (SSW)",
   "h1": "Pindah Perusahaan dengan Tokutei Ginou: Yang Boleh dan Prosedurnya",
-  "lead": "Pekerja Tokutei Ginou No.1 boleh pindah perusahaan jika memenuhi syarat. Ringkasan permohonan dan laporan yang diperlukan, serta hal yang perlu dijaga saat belum bekerja, dari informasi resmi imigrasi Jepang (ISA).",
-  "notice": ("Yang perlu diketahui dulu", "Saat pindah perusahaan, Anda perlu <b>mengajukan izin perubahan status izin tinggal</b>.<sup><a href=\"#src\">[1]</a></sup> Anda juga wajib <b>melapor dalam 14 hari</b> sejak kontrak lama berakhir dan sejak kontrak baru dibuat.<sup><a href=\"#src\">[2]</a></sup>"),
+  "lead": "Pekerja SSW 1 boleh pindah perusahaan jika memenuhi syarat. Ringkasan permohonan dan laporan yang diperlukan, serta hal yang perlu diperhatikan selama belum bekerja, dari informasi resmi imigrasi Jepang (ISA).",
+  "notice": ("Yang perlu diketahui dulu", "Saat pindah perusahaan, Anda perlu <b>mengajukan permohonan perubahan status izin tinggal</b>.<sup><a href=\"#src\">[1]</a></sup> Anda juga wajib <b>melapor dalam 14 hari</b> masing-masing sejak kontrak lama berakhir dan sejak kontrak baru ditandatangani.<sup><a href=\"#src\">[2]</a></sup>"),
   "sections": [
    {"h": "Kapan boleh pindah perusahaan", "blocks": [
      ("dl", [
        ("Kategori pekerjaan yang sama", "Boleh pindah perusahaan dalam kategori pekerjaan (gyomu kubun) yang sama", "1"),
        ("Kategori yang diakui setara lewat ujian", "Boleh pindah antar kategori yang kesamaan keterampilannya sudah diakui lewat ujian", "1"),
-       ("Bidang lain", "Lulus ujian bidang itu dan sebagainya, lalu ajukan lagi izin perubahan status izin tinggal", "1"),
+       ("Bidang lain", "Misalnya lulus ujian bidang itu, lalu ajukan lagi permohonan perubahan status izin tinggal", "1"),
      ]),
    ]},
    {"h": "Alur pindah perusahaan", "blocks": [
      ("steps", [
        ("", "Tanda tangan kontrak dengan perusahaan baru", "Cek gaji, isi pekerjaan, dan tempat tinggal secara tertulis."),
        ("Dalam 14 hari", "Laporkan bahwa kontrak lama sudah berakhir", "Anda sendiri yang melapor ke imigrasi. Lewat sistem online bisa 24 jam, tanpa dokumen lampiran.", 2),
-       ("", "Ajukan izin perubahan status izin tinggal", "Perlu karena perusahaan penerima berubah. Tanyakan ke kantor imigrasi daerah apakah boleh mulai bekerja sebelum izin keluar.", 1),
+       ("", "Ajukan permohonan perubahan status izin tinggal", "Perlu karena perusahaan penerima berubah. Tanyakan ke kantor imigrasi daerah apakah boleh mulai bekerja sebelum izin keluar.", 1),
        ("Dalam 14 hari", "Laporkan kontrak dengan perusahaan baru", "Ini juga laporan oleh Anda sendiri. Bisa di loket, lewat pos, atau online.", 2),
      ]),
    ]},
    {"h": "Hal penting saat belum bekerja", "blocks": [
      ("p", "Berhenti dari perusahaan tidak berarti harus langsung pulang. Jika sedang mencari kerja, Anda bisa tinggal di Jepang setidaknya selama masa izin tinggal.<sup><a href=\"#src\">[1]</a></sup>"),
-     ("warn", "Jika <b>3 bulan atau lebih</b> tidak mencari kerja dan tidak bekerja sebagai Tokutei Ginou tanpa alasan yang sah, status izin tinggal bisa dicabut.<sup><a href=\"#src\">[1]</a></sup>"),
-     ("p", "Tokutei Ginou adalah status untuk kerja penuh waktu. Anda tidak boleh bekerja di perusahaan lain pada saat yang sama, termasuk kerja paruh waktu (baito).<sup><a href=\"#src\">[1]</a></sup>"),
+     ("warn", "Jika tanpa alasan yang sah Anda tidak mencari kerja dan tidak bekerja sebagai SSW selama <b>3 bulan atau lebih</b>, status izin tinggal bisa dicabut.<sup><a href=\"#src\">[1]</a></sup>"),
+     ("p", "Tokutei Ginou adalah status untuk bekerja penuh waktu. Anda tidak boleh bekerja di perusahaan lain pada saat yang sama, termasuk kerja paruh waktu (baito).<sup><a href=\"#src\">[1]</a></sup>"),
    ]},
    {"h": "Halaman terkait", "blocks": [("related", [("ssw", "Apa itu Tokutei Ginou (SSW)"), ("ujian", "Ujian keterampilan per bidang"), ("hak", "Hak pekerja: lembur, cuti, libur"), ("visa", "Perbedaan SSW, magang, dan Ikusei Shuro")])]},
   ]},

@@ -61,7 +61,7 @@ PAGE = {
   "title": "Pengembalian Uang Pensiun (Dattai Ichijikin)", "crumb_last": "Dattai ichijikin",
   "h1": "Uang Pensiun yang Kembali Saat Pulang: Dattai Ichijikin",
   "lead": "Saat bekerja di Jepang, iuran pensiun dipotong dari gaji. Setelah pulang, sebagian bisa diminta kembali. Ringkasan siapa yang bisa menerima, perkiraan jumlah, dan cara mengajukan dari informasi resmi.",
-  "notice": ("Hal paling penting", "Orang asing yang ikut pensiun Jepang <b>6 bulan atau lebih</b> bisa menerima dattai ichijikin (Lump-sum Withdrawal Payment) jika mengajukan <b>dalam 2 tahun</b> sejak tidak lagi punya alamat di Jepang.<sup><a href=\"#src\">[1]</a></sup> Lewat dari 2 tahun, tidak bisa diajukan."),
+  "notice": ("Hal paling penting", "Orang asing yang ikut pensiun Jepang <b>6 bulan atau lebih</b> bisa menerima dattai ichijikin (Lump-sum Withdrawal Payment) jika mengajukan <b>dalam 2 tahun</b> sejak tidak lagi punya alamat di Jepang.<sup><a href=\"#src\">[1]</a></sup> Jika sudah lewat 2 tahun, tidak bisa diajukan lagi."),
   "sections": [
    {"h": "Siapa yang bisa menerima", "blocks": [
      ("dl", [
@@ -69,7 +69,7 @@ PAGE = {
        ("Lama ikut pensiun", "Ikut kosei nenkin (pensiun karyawan) atau kokumin nenkin (pensiun nasional) total 6 bulan atau lebih (untuk kokumin nenkin, hanya bulan yang iurannya dibayar)", 1),
        ("Alamat", "Tidak punya alamat di Jepang (sudah pulang dan data penduduk sudah dihapus)", 1),
        ("Batas waktu", "Dalam 2 tahun sejak tidak punya alamat di Jepang", 1),
-       ("Lainnya", "Tidak memenuhi syarat pensiun Jepang (ikut 10 tahun atau lebih). Belum pernah punya hak atas pensiun cacat dan sejenisnya", 1),
+       ("Lainnya", "Tidak memenuhi syarat pensiun Jepang (ikut 10 tahun atau lebih). Belum pernah punya hak atas pensiun disabilitas dan sejenisnya", 1),
      ]),
    ]},
    {"h": "Berapa yang kembali (kosei nenkin)", "blocks": [
@@ -82,7 +82,7 @@ PAGE = {
      ("steps", [
        ("Sebelum pulang", "Lapor pindah keluar (tenshutsu todoke) di kantor kota", "Laporkan ke kantor kota/kecamatan bahwa Anda akan meninggalkan Jepang. Jika sudah lapor, dokumen bukti tidak punya alamat di Jepang tidak diperlukan.", 2),
        ("Sebelum pulang", "Siapkan dokumen", "Formulir permohonan, fotokopi paspor, dokumen dari bank yang menunjukkan rekening, dan dokumen yang menunjukkan nomor pensiun dasar (kiso nenkin bango tsuchisho atau nenkin techo). Rekening Japan Post Bank (Yucho) tidak bisa dipakai.", 2),
-       ("Tiba setelah tanggal pindah keluar", "Kirim lewat pos ke Japan Pension Service", "Alamat: Japan Pension Service, Foreign Affairs Group, 3-5-24 Takaido-nishi, Suginami-ku, Tokyo 168-8505, Japan. Boleh dikirim dari Jepang atau dari Indonesia setelah pulang.", 2),
+       ("Kirim agar tiba setelah tanggal pindah keluar", "Kirim lewat pos ke Japan Pension Service", "Alamat: Japan Pension Service, Foreign Affairs Group, 3-5-24 Takaido-nishi, Suginami-ku, Tokyo 168-8505, Japan. Boleh dikirim dari Jepang atau dari Indonesia setelah pulang.", 2),
        ("Setelah diperiksa", "Uang ditransfer ke rekening", "Jika dokumen kurang, formulir bisa dikembalikan.", 2),
      ]),
    ]},
@@ -90,7 +90,7 @@ PAGE = {
      ("p", "Dattai ichijikin kosei nenkin dipotong pajak penghasilan 20,42%.<sup><a href=\"#src\">[2]</a></sup> Dengan melapor ke kantor pajak, pajak yang dipotong bisa kembali."),
      ("steps", [
        ("Sebelum pulang", "Tunjuk dan laporkan wakil pajak (nozei kanrinin)", "Minta orang yang tinggal di Jepang untuk mengurus pajak Anda. Serahkan formulir penunjukan wakil pajak ke kantor pajak di daerah tempat tinggal Anda.", 2),
-       ("Setelah menerima dattai ichijikin", "Ajukan pengembalian pajak", "Wakil pajak menyerahkan formulir pengembalian pajak (taishoku shotoku no sentaku kazei) ke kantor pajak. Surat pemberitahuan pembayaran (asli) diperlukan, jadi kirimkan ke wakil pajak.", 2),
+       ("Setelah menerima dattai ichijikin", "Ajukan pengembalian pajak", "Wakil pajak menyerahkan formulir pengembalian pajak (taishoku shotoku no sentaku kazei) ke kantor pajak. Surat pemberitahuan pembayaran dattai ichijikin (asli) diperlukan, jadi kirimkan ke wakil pajak.", 2),
      ]),
    ]},
    {"h": "Yang perlu diketahui sebelum menerima", "blocks": [

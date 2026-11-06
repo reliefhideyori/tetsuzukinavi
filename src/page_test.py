@@ -46,7 +46,7 @@ PAGE = {
   "sections": [
    {"h": "Perbedaan dua ujian", "blocks": [
      ("table", ["JFT-Basic", "JLPT"], [
-       ["Tujuan", "Bahasa Jepang untuk kehidupan pekerja di Jepang", "Mengukur kemampuan bahasa Jepang secara umum"],
+       ["Tujuan", "Bahasa Jepang untuk kehidupan sehari-hari orang yang bekerja di Jepang", "Mengukur kemampuan bahasa Jepang secara umum"],
        ["Cara", "Komputer (CBT), 60 menit", "Ujian kertas"],
        ["Frekuensi", "Hampir tiap bulan di dalam dan luar Jepang", "Di Indonesia: Juli dan Desember"],
        ["Pendaftaran", "Sendiri lewat situs Prometric", "Lewat situs penyelenggara di Indonesia"],
@@ -57,9 +57,9 @@ PAGE = {
      ("steps", [
        ("", "Buat ID Prometric", "Buat ID Anda di situs reservasi Prometric.", 2),
        ("", "Pilih tanggal dan lokasi", "Cek jadwal dan lokasi ujian di Indonesia di situs reservasi.", 2),
-       ("Paling lambat 3 hari kerja sebelum ujian", "Reservasi dan bayar", "Untuk ujian hari Sabtu, Minggu, atau libur: paling lambat 4 hari kerja. Pembayaran dengan kartu kredit, dompet elektronik, atau voucer, berbeda tiap negara.", 2),
+       ("Paling lambat 3 hari kerja sebelum ujian", "Reservasi dan bayar", "Untuk ujian hari Sabtu, Minggu, atau libur: paling lambat 4 hari kerja. Cara bayar (kartu kredit, dompet elektronik, voucer, dll.) berbeda di setiap negara.", 2),
        ("Hari ujian", "Ikut ujian", "Ada 4 bagian: huruf dan kosakata, percakapan dan ungkapan, mendengar, dan membaca. Tidak ada ujian berbicara atau menulis.", 1),
-       ("Dalam 5 hari kerja", "Lihat hasil", "Login ke situs reservasi untuk melihat atau mencetak notifikasi hasil. Hasil tidak punya masa berlaku, tetapi hanya bisa dilihat di situs selama 5 tahun.", 1),
+       ("Dalam 5 hari kerja", "Lihat hasil", "Login ke situs reservasi untuk melihat atau mencetak lembar hasil ujian. Hasil tidak punya masa berlaku, tetapi hanya bisa dilihat di situs selama 5 tahun.", 1),
      ]),
      ("dl", [("A2 (A2.2)", "200–250 poin. Level yang bisa dipakai untuk mengajukan SSW 1", 1), ("A2.1", "175–199 poin", 1), ("A1", "145–174 poin", 1)]),
      ("note", "Kantor Japan Foundation tidak melakukan reservasi untuk Anda.<sup><a href=\"#src\">[1]</a></sup> Anda bisa mendaftar sendiri tanpa lewat LPK atau agen."),

@@ -62,15 +62,15 @@ C = {
  toc=["Yang perlu diketahui dulu","Langkah pengecekan","Tanda-tanda yang perlu diwaspadai","Tempat konsultasi"],
  s1=[
   ("Untuk Tokutei Ginou (SSW), memakai agen atau tidak adalah pilihan Anda", "Badan Imigrasi Jepang menjelaskan bahwa penggunaan perusahaan penempatan Indonesia (P3MI) bersifat <b>tidak wajib (opsional)</b>.<sup><a href=\"#src\">[1]</a></sup>"),
-  ("Untuk Tokutei Ginou, uang jaminan dan denda tidak diperbolehkan", "Perusahaan penerima di Jepang harus tidak memungut uang jaminan dan tidak membuat kontrak denda (penalti). Biaya dukungan hidup di Jepang juga tidak boleh dibebankan kepada pekerja.<sup><a href=\"#src\">[2]</a></sup>"),
+  ("Untuk Tokutei Ginou, uang jaminan dan denda tidak diperbolehkan", "Perusahaan penerima di Jepang tidak boleh memungut uang jaminan dan tidak boleh membuat perjanjian denda (penalti). Biaya dukungan hidup di Jepang juga tidak boleh dibebankan kepada pekerja.<sup><a href=\"#src\">[2]</a></sup>"),
   ("Untuk magang (Ginou Jisshu), lembaga pengirim harus yang diakui kedua negara", "Jika berangkat lewat program magang, lembaga pengirim (sending organization) harus diakui oleh Jepang dan Indonesia. Daftarnya dipublikasikan oleh OTIT.<sup><a href=\"#src\">[3][4]</a></sup> Program magang direncanakan berganti menjadi sistem baru \"Ikusei Shuro\" mulai April 2027."),
  ],
  steps=[
   ("Pastikan jenis visa Anda", "Tempat pengecekan berbeda untuk Tokutei Ginou dan magang."),
   ("Jika magang, cek daftar lembaga pengirim", "Pastikan nama lembaganya ada di \"Daftar Lembaga Pengirim yang Diakui\" milik OTIT.<sup><a href=\"#src\">[4]</a></sup>"),
   ("Jika memakai agen, cek daftar P3MI", "Pastikan perusahaannya terdaftar sebagai P3MI di SISKOP2MI milik pemerintah Indonesia.<sup><a href=\"#src\">[5]</a></sup>"),
-  ("Minta rincian biaya secara tertulis", "Minta di kertas atau file: biaya untuk apa, kapan dibayar, dan apakah dikembalikan jika berhenti di tengah jalan."),
-  ("Cek syarat kerja dari perusahaan Jepang", "Minta lihat dokumen syarat kerja (gaji, jam kerja, asrama, dll.), lalu cek berapa yang tersisa tiap bulan dengan <a href=\"https://claude.ai/artifact/L6sqNYiPWnkv6wEwuouN8X\">kalkulator gaji bersih</a>."),
+  ("Minta rincian biaya secara tertulis", "Minta secara tertulis (di kertas atau file): biaya untuk apa, kapan dibayar, dan apakah dikembalikan jika berhenti di tengah jalan."),
+  ("Cek syarat kerja dari perusahaan Jepang", "Minta untuk melihat dokumen syarat kerja (gaji, jam kerja, asrama, dll.), lalu cek berapa yang tersisa tiap bulan dengan <a href=\"https://claude.ai/artifact/L6sqNYiPWnkv6wEwuouN8X\">kalkulator gaji bersih</a>."),
  ],
  flags=[
   "Tidak mau memberi rincian biaya secara tertulis",
@@ -80,7 +80,7 @@ C = {
   "Sangat mendorong Anda meminjam uang (dana talangan / pinjaman) untuk membayar",
   "Mengaku \"resmi dari pemerintah\" padahal namanya tidak ada di daftar",
  ],
- flags_note="Jika ada satu saja yang cocok, tanyakan ke tempat konsultasi di bawah sebelum membayar.",
+ flags_note="Jika ada satu saja tanda di atas yang Anda temui, tanyakan ke tempat konsultasi di bawah sebelum membayar.",
  c_id_h="Kontak pemerintah Indonesia (yang dicantumkan oleh Badan Imigrasi Jepang)",
  c1="Kementerian Ketenagakerjaan RI, Direktorat Penempatan dan Pelindungan Pekerja Migran Indonesia", c1l="Bahasa Inggris, Bahasa Indonesia",
  c2="BP2MI, Direktorat Penempatan Non-Pemerintah Kawasan Asia dan Afrika", c2l="Bahasa Inggris, Bahasa Indonesia",

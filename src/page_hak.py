@@ -46,8 +46,8 @@ PAGE = {
  "id": {
   "title": "Hak Pekerja di Jepang", "crumb_last": "Hak pekerja",
   "h1": "Hak Pekerja di Jepang: Upah Lembur, Cuti Tahunan, dan Hari Libur",
-  "lead": "Hukum ketenagakerjaan Jepang berlaku sama untuk pekerja asing. Ringkasan jam kerja, upah lembur, hari libur, cuti berbayar, cara pembayaran gaji, dan aturan PHK, dari informasi MHLW.",
-  "notice": ("Hal paling penting", "Lembur dibayar <b>minimal 25% lebih tinggi</b>.<sup><a href=\"#src\">[1]</a></sup> Setelah bekerja 6 bulan, Anda mendapat <b>10 hari cuti berbayar</b>.<sup><a href=\"#src\">[2]</a></sup> Berlaku sama untuk SSW maupun magang."),
+  "lead": "Hukum ketenagakerjaan Jepang berlaku sama untuk pekerja asing. Ringkasan jam kerja, upah lembur, hari libur, cuti tahunan berbayar, cara pembayaran gaji, dan aturan PHK, dari informasi MHLW.",
+  "notice": ("Hal paling penting", "Upah lembur <b>minimal 25% lebih tinggi</b> dari upah biasa.<sup><a href=\"#src\">[1]</a></sup> Setelah bekerja 6 bulan, Anda mendapat <b>10 hari cuti berbayar</b>.<sup><a href=\"#src\">[2]</a></sup> Berlaku sama untuk SSW maupun magang."),
   "sections": [
    {"h": "Jam kerja dan hari libur", "blocks": [
      ("dl", [
@@ -60,18 +60,18 @@ PAGE = {
      ("table", ["Tambahan", "Contoh upah 1.200 yen/jam"], [
        ["Lembur (lebih dari 8 jam/hari atau 40 jam/minggu)", "25% atau lebih", "1.500 yen atau lebih"],
        ["Malam (22.00–05.00)", "25% atau lebih", "1.500 yen atau lebih"],
-       ["Hari libur resmi", "35% atau lebih", "1.620 yen atau lebih"],
+       ["Hari libur wajib mingguan (hotei kyujitsu)", "35% atau lebih", "1.620 yen atau lebih"],
        ["Lembur lebih dari 60 jam sebulan", "50% atau lebih", "1.800 yen atau lebih"],
      ], "Sumber: [1] MHLW. Jika lembur dan kerja malam bersamaan, tambahannya dijumlahkan (contoh: malam di hari libur = 1,6 kali)."),
    ]},
    {"h": "Cuti tahunan berbayar (yukyu)", "blocks": [
-     ("p", "Jika bekerja terus 6 bulan dan hadir 80% atau lebih dari hari kerja, Anda mendapat 10 hari cuti berbayar.<sup><a href=\"#src\">[2]</a></sup> Setelah itu bertambah setiap tahun."),
+     ("p", "Jika bekerja terus-menerus selama 6 bulan dan hadir 80% atau lebih dari hari kerja, Anda mendapat 10 hari cuti berbayar.<sup><a href=\"#src\">[2]</a></sup> Setelah itu bertambah setiap tahun."),
      ("table", ["Jumlah hari"], [["6 bulan", "10 hari"], ["1 tahun 6 bulan", "11 hari"], ["2 tahun 6 bulan", "12 hari"], ["3 tahun 6 bulan", "14 hari"], ["4 tahun 6 bulan", "16 hari"], ["5 tahun 6 bulan", "18 hari"], ["6 tahun 6 bulan atau lebih", "20 hari"]], "Untuk pekerja penuh waktu. Sumber: [2]"),
      ("note", "Jika mendapat 10 hari atau lebih, perusahaan wajib memastikan Anda mengambil minimal 5 hari dalam setahun.<sup><a href=\"#src\">[2]</a></sup>"),
    ]},
    {"h": "Aturan gaji dan PHK", "blocks": [
      ("dl", [
-       ("Cara bayar gaji", "Dengan uang, langsung ke pekerja, penuh, setiap bulan, pada tanggal tetap (5 prinsip)", 3),
+       ("Cara bayar gaji", "Dibayar dengan uang, langsung kepada pekerja, secara penuh, setiap bulan, pada tanggal tetap (5 prinsip)", 3),
        ("PHK", "Perusahaan harus memberi tahu minimal 30 hari sebelumnya, atau membayar minimal 30 hari upah rata-rata", 3),
        ("Upah minimum", "Gaji di bawah upah minimum prefektur adalah ilegal. Bisa dicek dengan kalkulator gaji bersih", ""),
      ]),

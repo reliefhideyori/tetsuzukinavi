@@ -56,12 +56,12 @@ PAGE = {
  "id": {
   "title": "Apa Itu Tokutei Ginou (SSW)", "crumb_last": "Tokutei Ginou",
   "h1": "Bekerja di Jepang dengan Tokutei Ginou (SSW): Syarat dan Alur",
-  "lead": "Izin tinggal untuk orang yang lulus ujian dan bekerja di bidang yang kekurangan tenaga kerja. Ringkasan bidang kerja, ujian, alur sampai ke Jepang, dan aturan yang melindungi Anda, dari dokumen resmi.",
-  "notice": ("Hal paling penting", "SSW 1 berlaku <b>total maksimal 5 tahun</b>, dan keluarga tidak bisa dibawa.<sup><a href=\"#src\">[1][3]</a></sup> Perusahaan penerima <b>dilarang memungut uang jaminan dan membuat kontrak denda</b>.<sup><a href=\"#src\">[3]</a></sup>"),
+  "lead": "Status izin tinggal yang memungkinkan orang yang lulus ujian bekerja di bidang yang kekurangan tenaga kerja. Kami merangkum bidang kerja, ujian, alur sampai ke Jepang, dan aturan yang melindungi Anda dari dokumen resmi.",
+  "notice": ("Hal paling penting", "SSW 1 berlaku <b>total maksimal 5 tahun</b>, dan keluarga tidak bisa dibawa.<sup><a href=\"#src\">[1][3]</a></sup> Perusahaan penerima <b>dilarang memungut uang jaminan dan membuat perjanjian denda (penalti)</b>.<sup><a href=\"#src\">[3]</a></sup>"),
   "sections": [
    {"h": "Bidang kerja (19 bidang)", "blocks": [
      ("p", f"Ada 19 bidang kerja Tokutei Ginou:<sup><a href=\"#src\">[2]</a></sup> {FIELDS_ID}."),
-     ("note", "Gudang logistik, penyediaan linen, dan daur ulang sumber daya adalah bidang yang baru ditambahkan. Cek kapan penerimaan dimulai di situs Imigrasi Jepang (ISA).<sup><a href=\"#src\">[2]</a></sup>"),
+     ("note", "Gudang logistik, penyediaan linen, dan daur ulang sumber daya adalah bidang yang baru ditambahkan. Cek kapan penerimaan dimulai di situs Badan Imigrasi Jepang (ISA).<sup><a href=\"#src\">[2]</a></sup>"),
    ]},
    {"h": "Perbedaan SSW 1 dan SSW 2", "blocks": [
      ("table", ["SSW 1", "SSW 2"], [
@@ -74,25 +74,25 @@ PAGE = {
    {"h": "Ujian yang dibutuhkan", "blocks": [
      ("dl", [
        ("Ujian keterampilan", "Lulus ujian keterampilan SSW 1 untuk bidang masing-masing", 2),
-       ("Ujian bahasa Jepang", "JFT-Basic atau JLPT N4 ke atas. Untuk kaigo, juga perlu ujian bahasa Jepang khusus perawatan", 4),
-       ("Bebas ujian", "Lulusan magang 2 (Ginou Jisshu 2-go) yang baik dibebaskan dari ujian keterampilan dan bahasa jika pekerjaannya berhubungan", 4),
+       ("Ujian bahasa Jepang", "JFT-Basic atau JLPT N4 ke atas. Untuk kaigo, juga perlu Ujian Evaluasi Bahasa Jepang Kaigo", 4),
+       ("Bebas ujian", "Orang yang menyelesaikan magang 2 (Ginou Jisshu 2-go) dengan baik dibebaskan dari ujian keterampilan dan bahasa Jepang, jika pekerjaannya berhubungan", 4),
      ]),
    ]},
    {"h": "Alur sampai ke Jepang", "blocks": [
      ("steps", [
        ("", "Lulus ujian", "Lulus ujian keterampilan dan ujian bahasa Jepang.", 4),
-       ("", "Tanda tangan kontrak kerja dengan perusahaan Jepang", "Gaji dan jam kerja harus sama atau lebih baik dari orang Jepang yang melakukan pekerjaan yang sama.", 4),
+       ("", "Tanda tangan kontrak kerja dengan perusahaan Jepang", "Gaji dan jam kerja harus sama dengan atau lebih baik daripada orang Jepang yang melakukan pekerjaan yang sama.", 4),
        ("", "Perusahaan mengajukan Certificate of Eligibility (COE)", "Diajukan oleh perusahaan di Jepang ke kantor imigrasi di Jepang.", 4),
-       ("", "Ajukan visa", "Di Indonesia, pengajuan lewat Japan Visa Application Center (JVAC). Perlu COE, paspor, fotokopi KTP, dan lain-lain.", 5),
+       ("", "Ajukan visa ke Kedutaan Besar/Konsulat Jenderal Jepang", "Di Indonesia, pengajuan lewat Japan Visa Application Center (JVAC). Perlu COE, paspor, fotokopi KTP, dan lain-lain.", 5),
        ("Dalam 3 bulan sejak COE terbit", "Masuk Jepang dan mulai bekerja", "", 4),
      ]),
-     ("note", "Lewat agen tidak wajib. Kerja sama Jepang dengan negara pengirim bertujuan menghilangkan agen yang curang.<sup><a href=\"#src\">[3]</a></sup>"),
+     ("note", "Lewat agen tidak wajib. Dengan negara yang punya perjanjian kerja sama dengan Jepang, salah satu tujuannya adalah memberantas agen nakal.<sup><a href=\"#src\">[3]</a></sup>"),
    ]},
    {"h": "Aturan yang melindungi Anda", "blocks": [
      ("dl", [
-       ("Uang jaminan dan denda", "Memungut atau memasukkannya ke kontrak adalah ilegal", 3),
+       ("Uang jaminan dan denda", "Dilarang memungutnya atau mencantumkannya dalam kontrak (ilegal)", 3),
        ("Biaya dukungan", "Biaya dukungan wajib seperti antar-jemput bandara dan bantuan mencari tempat tinggal tidak boleh dibebankan kepada pekerja", 3),
-       ("Pindah perusahaan", "Bisa pindah perusahaan dalam bidang yang sama. Perlu mengajukan perubahan izin tinggal", 3),
+       ("Pindah perusahaan", "Bisa pindah perusahaan dalam bidang yang sama. Perlu mengajukan perubahan status izin tinggal", 3),
        ("Kerja sampingan", "Tidak boleh kerja paruh waktu di perusahaan lain", 3),
      ]),
    ]},

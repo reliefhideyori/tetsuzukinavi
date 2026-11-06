@@ -33,17 +33,17 @@ PAGE = {
  "id": {
   "title": "Gaji Tokutei Ginou dan Magang di Jepang: Data Resmi", "crumb_last": "Gaji per jenis visa",
   "h1": "Gaji Tokutei Ginou (SSW) dan Magang di Jepang: Rata-rata Menurut Data Pemerintah",
-  "lead": "Berapa gaji kerja di Jepang? Jawaban dari dua statistik Kementerian Kesehatan, Tenaga Kerja, dan Kesejahteraan Jepang (MHLW). Ini bukan angka iklan atau lowongan, tetapi rata-rata orang asing yang benar-benar bekerja.",
+  "lead": "Berapa gaji bekerja di Jepang? Kami menjawabnya dengan dua statistik Kementerian Kesehatan, Tenaga Kerja, dan Kesejahteraan Jepang (MHLW). Ini bukan angka iklan atau lowongan, tetapi rata-rata gaji orang asing yang benar-benar bekerja di Jepang.",
   "notice": ("Yang perlu diketahui dulu", "Menurut statistik 2025, rata-rata gaji bulanan tanpa lembur adalah <b>221.400 yen untuk Tokutei Ginou</b> dan <b>190.300 yen untuk magang</b>.<sup><a href=\"#src\">[1]</a></sup> Dari jumlah ini masih dipotong pajak dan iuran asuransi."),
   "sections": [
-   {"h": "Rata-rata gaji per jenis status", "blocks": [
+   {"h": "Rata-rata gaji per jenis status izin tinggal", "blocks": [
      ("table", ["Gaji per bulan", "Usia rata-rata"], [
        ["Semua pekerja asing", "254.300 yen", "32,5 tahun"],
        ["Tokutei Ginou (SSW)", "221.400 yen", "29,5 tahun"],
        ["Magang (Ginou Jisshu)", "190.300 yen", "26,2 tahun"],
        ["Bidang profesional/teknis (selain SSW)", "313.200 yen", "32,4 tahun"],
      ], "Sumber: [1] Survei Struktur Upah 2025. Rata-rata gaji bulan Juni 2025 tanpa lembur dan sejenisnya (shoteinai kyuyo). Dibanding tahun sebelumnya, SSW naik 4,8% dan magang naik 4,2%."),
-     ("p", "Menurut survei lain (survei kondisi kerja orang asing), rata-rata gaji yang dibayar tetap setiap bulan adalah 254.100 yen untuk SSW dan 213.500 yen untuk magang.<sup><a href=\"#src\">[2]</a></sup> Cara survei dan cara menghitungnya berbeda, jadi angkanya tidak sama."),
+     ("p", "Menurut survei lain (survei kondisi kerja orang asing), rata-rata gaji tetap yang dibayar setiap bulan adalah 254.100 yen untuk SSW dan 213.500 yen untuk magang.<sup><a href=\"#src\">[2]</a></sup> Cara survei dan cara menghitungnya berbeda, jadi angkanya tidak sama."),
    ]},
    {"h": "Berapa yang tersisa di tangan", "blocks": [
      ("p", "Angka di atas adalah sebelum dipotong pajak dan iuran asuransi sosial. Jika ada biaya asrama, sisanya lebih kecil lagi. Masukkan gaji dari lowongan untuk menghitung sisa uang setiap bulan."),
@@ -54,6 +54,6 @@ PAGE = {
      ("warn", "Di antara pekerja yang mengalami masalah, <b>22,2%</b> menjawab \"biaya agen penyalur (termasuk lembaga pengirim) mahal\".<sup><a href=\"#src\">[2]</a></sup> Sebelum membayar, selalu minta rincian biaya secara tertulis."),
      ("related", [("lpk", "Sebelum memilih LPK atau agen")]),
    ]},
-   {"h": "Halaman terkait", "blocks": [("related", [("kerja", "Cara kerja di Jepang: syarat dan langkah"), ("hak", "Hak pekerja: lembur, cuti, libur"), ("visa", "Perbedaan SSW, magang, dan Ikusei Shuro")])]},
+   {"h": "Halaman terkait", "blocks": [("related", [("kerja", "Cara bekerja di Jepang: syarat dan langkah"), ("hak", "Hak pekerja: lembur, cuti, libur"), ("visa", "Perbedaan SSW, magang, dan Ikusei Shuro")])]},
   ]},
 }

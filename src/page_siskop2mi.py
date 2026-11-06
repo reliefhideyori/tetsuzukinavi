@@ -34,13 +34,13 @@ PAGE = {
    {"h": "関連するページ", "blocks": [("related", [("coe", "内定からビザまで（COE）"), ("lpk", "LPK・仲介業者を選ぶ前に"), ("ssw", "特定技能（SSW）とは"), ("kerja", "日本で働くには：条件と流れ")])]},
   ]},
  "id": {
-  "title": "Daftar SISKOP2MI untuk Kerja di Jepang (SSW)", "crumb_last": "SISKOP2MI",
-  "h1": "Daftar SISKOP2MI: Kapan dan Apa yang Dilakukan Pekerja SSW ke Jepang",
-  "lead": "Warga Indonesia yang bekerja di Jepang dengan Tokutei Ginou (SSW) harus mendaftar sendiri di SISKOP2MI, sistem pekerja migran milik pemerintah Indonesia. Ringkasan waktu pendaftaran dan alur lengkapnya dari dokumen resmi imigrasi Jepang (ISA).",
+  "title": "Daftar SISKOP2MI untuk Bekerja di Jepang (SSW)", "crumb_last": "SISKOP2MI",
+  "h1": "Daftar SISKOP2MI: Kapan dan Apa yang Harus Dilakukan Calon Pekerja SSW ke Jepang",
+  "lead": "Warga Indonesia yang bekerja di Jepang dengan Tokutei Ginou (SSW) harus mendaftar sendiri di SISKOP2MI, sistem pekerja migran milik pemerintah Indonesia. Ringkasan waktu pendaftaran dan alur lengkapnya dari dokumen resmi Badan Imigrasi Jepang (ISA).",
   "notice": ("Yang perlu diketahui dulu", "Pendaftaran SISKOP2MI dilakukan <b>sendiri secara online</b>. Daftar <b>setelah menerima COE dan sebelum mengajukan visa</b>, lalu Anda mendapat nomor ID.<sup><a href=\"#src\">[1]</a></sup>"),
   "sections": [
    {"h": "Apa itu SISKOP2MI", "blocks": [
-     ("p", "Sistem pemerintah Indonesia untuk melindungi warga Indonesia yang bekerja di luar negeri, misalnya jika mendapat masalah di negara tempat bekerja. Perusahaan penerima di Jepang diminta menjelaskan dan mendorong pekerja untuk mendaftar.<sup><a href=\"#src\">[1]</a></sup>"),
+     ("p", "Sistem pemerintah Indonesia untuk melindungi warga Indonesia yang bekerja di luar negeri, misalnya jika mendapat masalah di negara tempat bekerja. Perusahaan penerima di Jepang diminta menjelaskan pendaftaran ini kepada pekerja dan menganjurkannya.<sup><a href=\"#src\">[1]</a></sup>"),
    ]},
    {"h": "Alur dari Indonesia ke Jepang", "blocks": [
      ("steps", [
@@ -48,9 +48,9 @@ PAGE = {
        ("", "Tanda tangan kontrak kerja", "Kontrak diverifikasi di KBRI Tokyo. Gratis, sekitar 3 hari.", 1),
        ("", "Perusahaan mengajukan COE", "COE asli dikirim perusahaan ke Anda lewat pos.", 1),
        ("Setelah COE", "Daftar SISKOP2MI dan dapatkan nomor ID", "Daftar sendiri secara online sebelum mengajukan visa.", 1),
-       ("", "Ajukan visa", "Bawa COE dan fotokopi nomor ID. Pengajuan di JVAC, Kuningan City Mall lantai 2, Jakarta.", 1),
-       ("Setelah visa", "Daftarkan visa di SISKOP2MI dan selesaikan persiapan berangkat", "Setelah ikut orientasi pra-pemberangkatan dan lainnya, kartu pekerja migran (E-PMI) diterbitkan.", 1),
-       ("", "Masuk ke Jepang", "Mendapat izin mendarat di bandara, dan status izin tinggal menjadi Tokutei Ginou.", 1),
+       ("", "Ajukan visa", "Bawa COE dan fotokopi bukti nomor ID. Pengajuan di JVAC, Kuningan City Mall lantai 2, Jakarta.", 1),
+       ("Setelah visa", "Daftarkan visa di SISKOP2MI dan selesaikan persiapan berangkat", "Setelah mengikuti Orientasi Pra Pemberangkatan (OPP) dan proses lainnya, kartu pekerja migran (E-PMI) diterbitkan.", 1),
+       ("", "Masuk ke Jepang", "Anda mendapat izin masuk (izin pendaratan) di bandara, dan status izin tinggal Anda menjadi Tokutei Ginou.", 1),
      ]),
    ]},
    {"h": "Jika sudah berada di Jepang", "blocks": [
@@ -58,8 +58,8 @@ PAGE = {
      ("dl", [("KBRI Tokyo", "5-2-9 Higashi-Gotanda, Shinagawa-ku, Tokyo　Telp. 03-3441-4201　Email consular@kbritokyo.jp", "1")]),
    ]},
    {"h": "Hal yang perlu diwaspadai", "blocks": [
-     ("warn", "Menurut dokumen resmi, pemasangan lowongan di IPKOL dan verifikasi kontrak di KBRI <b>gratis</b>, dan SISKOP2MI didaftar sendiri secara online. Jika diminta uang besar untuk \"jasa pendaftaran\", bandingkan dulu dengan informasi resmi sebelum membayar.<sup><a href=\"#src\">[1]</a></sup>"),
+     ("warn", "Menurut dokumen resmi, pemasangan lowongan di IPKOL dan verifikasi kontrak di KBRI <b>gratis</b>, dan pendaftaran SISKOP2MI dilakukan sendiri secara online. Jika diminta bayar mahal untuk \"jasa pendaftaran\", bandingkan dulu dengan informasi resmi sebelum membayar.<sup><a href=\"#src\">[1]</a></sup>"),
    ]},
-   {"h": "Halaman terkait", "blocks": [("related", [("coe", "Dari tawaran kerja sampai visa (COE)"), ("lpk", "Sebelum memilih LPK atau agen"), ("ssw", "Apa itu Tokutei Ginou (SSW)"), ("kerja", "Cara kerja di Jepang: syarat dan langkah")])]},
+   {"h": "Halaman terkait", "blocks": [("related", [("coe", "Dari tawaran kerja sampai visa (COE)"), ("lpk", "Sebelum memilih LPK atau agen"), ("ssw", "Apa itu Tokutei Ginou (SSW)"), ("kerja", "Cara bekerja di Jepang: syarat dan langkah")])]},
   ]},
 }

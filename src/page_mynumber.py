@@ -41,9 +41,9 @@ PAGE = {
   ]},
  "id": {
   "title": "My Number dan My Number Card untuk Orang Asing", "crumb_last": "My Number",
-  "h1": "My Number dan My Number Card: Kapan Datang, Cara Daftar, dan Hal Penting",
-  "lead": "Setelah mendaftarkan alamat di Jepang, orang asing juga mendapat My Number berisi 12 angka. Ringkasan pemberitahuan nomor, cara membuat kartu, dan hubungan kartu dengan masa izin tinggal, dari informasi Kementerian Dalam Negeri dan Badan Digital Jepang.",
-  "notice": ("Yang perlu diketahui dulu", "My Number ditetapkan saat catatan penduduk (juminhyo) dibuat, lalu dikirim <b>lewat pos tercatat sekitar 2–3 minggu kemudian</b>.<sup><a href=\"#src\">[1]</a></sup> Biaya pembuatan kartu pertama kali untuk saat ini <b>gratis</b>.<sup><a href=\"#src\">[2]</a></sup>"),
+  "h1": "My Number dan My Number Card: Kapan Diterima, Cara Mengajukan, dan Hal Penting",
+  "lead": "Setelah mendaftarkan alamat di Jepang, orang asing juga mendapat My Number berisi 12 angka. Ringkasan pemberitahuan nomor, cara membuat kartu, dan hubungan kartu dengan masa izin tinggal, dari informasi Kementerian Dalam Negeri dan Komunikasi (MIC) dan Badan Digital Jepang.",
+  "notice": ("Yang perlu diketahui dulu", "My Number ditetapkan saat catatan penduduk (juminhyo) dibuat, lalu surat pemberitahuannya dikirim <b>lewat pos tercatat sekitar 2–3 minggu kemudian</b>.<sup><a href=\"#src\">[1]</a></sup> Biaya pembuatan kartu pertama kali untuk saat ini <b>gratis</b>.<sup><a href=\"#src\">[2]</a></sup>"),
   "sections": [
    {"h": "Pemberitahuan nomor", "blocks": [
      ("p", "Setelah melapor alamat di kantor kota dan juminhyo dibuat, My Number ditetapkan dan surat pemberitahuan (kojin bango tsuchisho) dikirim lewat pos tercatat. Jika Anda tidak di rumah, ambil di kantor pos atau minta dikirim ulang.<sup><a href=\"#src\">[1]</a></sup>"),
@@ -58,8 +58,8 @@ PAGE = {
      ("p", "Panduan pengisian formulir dalam bahasa asing ada di situs resmi. Setelah kartu jadi, ambil di kantor kota/kecamatan."),
    ]},
    {"h": "Masa izin tinggal dan kartu", "blocks": [
-     ("p", "Kecuali pemegang izin tinggal permanen dan beberapa status lain, masa berlaku kartu orang asing berbeda menurut status dan masa izin tinggal.<sup><a href=\"#src\">[2]</a></sup>"),
-     ("warn", "Tanggal berakhir izin tinggal tercetak di formulir. Jika tinggal <b>sekitar 1 bulan</b> lagi, jangan pakai formulir itu. Perpanjang izin tinggal dulu, lalu minta formulir baru di kantor kota.<sup><a href=\"#src\">[1]</a></sup>"),
+     ("p", "Kecuali penduduk tetap (eijusha) dan beberapa status lain, masa berlaku kartu orang asing berbeda menurut status dan masa izin tinggal.<sup><a href=\"#src\">[2]</a></sup>"),
+     ("warn", "Tanggal berakhir izin tinggal tercetak di formulir. Jika masa izin tinggal Anda <b>tinggal sekitar 1 bulan</b> lagi, jangan pakai formulir itu. Perpanjang izin tinggal dulu, lalu minta formulir baru di kantor kota.<sup><a href=\"#src\">[1]</a></sup>"),
      ("p", "Setelah izin tinggal diperpanjang, data di kartu juga perlu diubah. Lakukan di kantor kota.<sup><a href=\"#src\">[2]</a></sup>"),
    ]},
    {"h": "Kegunaan kartu", "blocks": [
@@ -70,7 +70,7 @@ PAGE = {
      ]),
    ]},
    {"h": "Jika kartu hilang", "blocks": [
-     ("p", "Segera lapor ke polisi (koban) dan kantor kota. Untuk menghentikan kartu segera, telepon bebas pulsa <b>0120-0178-27</b> (multibahasa, jam layanan berbeda per bahasa).<sup><a href=\"#src\">[1]</a></sup>"),
+     ("p", "Segera lapor ke polisi (koban) dan kantor kota. Untuk segera memblokir kartu, telepon bebas pulsa <b>0120-0178-27</b> (multibahasa, jam layanan berbeda per bahasa).<sup><a href=\"#src\">[1]</a></sup>"),
    ]},
    {"h": "Halaman terkait", "blocks": [("related", [("arrival", "Dua minggu pertama di Jepang"), ("kesehatan", "Asuransi kesehatan dan biaya berobat"), ("gaji", "Kalkulator gaji bersih")])]},
   ]},

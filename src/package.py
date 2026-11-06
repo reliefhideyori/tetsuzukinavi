@@ -50,7 +50,7 @@ CT = {
    note="Kami tidak bisa menjawab konsultasi pribadi soal visa atau kontrak. Jika ada masalah, hubungi layanan resmi di bagian \"Tempat konsultasi\" di setiap halaman.",
    kind="Jenis", k=["Laporan kesalahan", "Saran", "Lainnya"], page="Halaman mana? (opsional)", msg="Isi pesan", mail="Email untuk balasan (opsional)",
    mail_note="Isi hanya jika perlu dibalas. Tidak dipakai untuk hal lain.", send="Kirim", req="wajib",
-   thanks_h="Pesan terkirim", thanks="Terima kasih. Kami akan memeriksa isinya dan mengeceknya dengan informasi resmi sebelum memperbaiki.", back="Kembali ke beranda"),
+   thanks_h="Pesan terkirim", thanks="Terima kasih. Kami akan membaca pesan Anda dan mencocokkannya dengan informasi resmi sebelum memperbaiki halaman.", back="Kembali ke beranda"),
 }
 FORM_CSS = "<style>.cform label{display:block;font-weight:700;margin:0 0 4px}.cform .f{margin-bottom:24px}.cform input[type=text],.cform input[type=email],.cform textarea{width:100%;min-height:48px;padding:8px 12px;border:1px solid var(--line-strong);border-radius:8px;background:var(--bg);font:inherit;color:inherit}.cform textarea{min-height:160px}.cform .opt{display:flex;align-items:center;gap:8px;min-height:44px;font-weight:400}.cform .opt input{width:20px;height:20px}.cform .req{font-size:12px;color:var(--error);margin-left:6px;font-weight:700}.cform button{min-height:48px;padding:0 32px;border-radius:8px;border:0;background:var(--key);color:var(--key-fg);font-weight:700;font:inherit;font-weight:700}.hp{position:absolute;left:-9999px}</style>"
 for lang in ("ja", "id"):

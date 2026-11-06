@@ -33,7 +33,7 @@ PAGE = {
        ("ビザ申請書と写真", "申請書はQRコード付きのPDF。写真は6か月以内に撮ったもの", 3),
        ("KTPの写し", "", 3),
        ("COE", "原本または写し", 3),
-       ("インドネシア政府の海外就労の登録", "大使館のページでは、政府のシステムに登録した証明（E-KTKLN）の印刷が必要とされています。今の登録方法はインドネシア政府の窓口で確認してください", 3),
+       ("インドネシア政府の海外就労の登録", "大使館のページでは、政府のシステムに登録した証明（E-KTKLN）の印刷が必要とされています。出入国在留管理庁の新しい資料では、COEのあと・ビザの前にSISKOP2MIに登録してID番号をもらい、その写しをビザ申請に使うとされています（SISKOP2MIのページを参照）。最新の方法はインドネシア政府の窓口でも確認してください", 3),
      ]),
      ("note", "必要なものは変わることがあります。申請の前に、JVAC（VFS Global）のページで最新の一覧を確認してください。<sup><a href=\"#src\">[3]</a></sup>"),
    ]},
@@ -43,12 +43,12 @@ PAGE = {
   "title": "Dari Tawaran Kerja sampai Visa (COE)", "crumb_last": "COE dan visa",
   "h1": "Dari Tawaran Kerja sampai Visa: Alur Certificate of Eligibility (COE)",
   "lead": "Setelah mendapat tawaran kerja dari perusahaan Jepang, Anda perlu COE (zairyu shikaku nintei shomeisho) dan visa sebelum masuk Jepang. Ringkasan alurnya dari informasi resmi.",
-  "notice": ("Ada batas waktunya", "COE <b>tidak berlaku lagi jika Anda tidak masuk Jepang dalam 3 bulan</b> sejak tanggal terbit.<sup><a href=\"#src\">[1]</a></sup> Ini berbeda dengan masa berlaku visa."),
+  "notice": ("Ada batas waktunya", "COE <b>tidak berlaku lagi jika Anda tidak masuk Jepang dalam 3 bulan</b> sejak tanggal terbit.<sup><a href=\"#src\">[1]</a></sup> Perhatikan, ini berbeda dengan masa berlaku visa."),
   "sections": [
    {"h": "Perbedaan COE dan visa", "blocks": [
      ("dl", [
        ("COE", "Dokumen dari imigrasi Jepang yang menyatakan Anda memenuhi syarat izin tinggal. Hanya bisa diajukan oleh pihak di Jepang, misalnya perusahaan penerima", 3),
-       ("Visa", "Dokumen dari Kedutaan/Konsulat Jepang untuk masuk Jepang. Dengan COE, prosesnya lebih cepat", 1),
+       ("Visa", "Dokumen dari Kedutaan Besar/Konsulat Jenderal Jepang untuk masuk Jepang. Dengan COE, prosesnya lebih cepat", 1),
        ("Zairyu card", "Kartu izin tinggal yang diberikan di bandara Jepang saat masuk", ""),
      ]),
    ]},
@@ -64,10 +64,10 @@ PAGE = {
    {"h": "Yang dibutuhkan untuk visa (Tokutei Ginou)", "blocks": [
      ("dl", [
        ("Paspor", "", 3),
-       ("Formulir visa dan foto", "Formulir PDF dengan kode QR. Foto diambil dalam 6 bulan terakhir", 3),
+       ("Formulir permohonan visa dan foto", "Formulir PDF dengan kode QR. Foto diambil dalam 6 bulan terakhir", 3),
        ("Fotokopi KTP", "", 3),
        ("COE", "Asli atau fotokopi", 3),
-       ("Pendaftaran kerja luar negeri pemerintah Indonesia", "Halaman kedutaan menyebut cetakan E-KTKLN dari sistem pemerintah. Cek cara pendaftaran terbaru di instansi pemerintah Indonesia", 3),
+       ("Bukti pendaftaran pekerja migran di sistem pemerintah Indonesia", "Menurut situs Kedutaan Besar Jepang, perlu cetakan bukti pendaftaran (E-KTKLN) dari sistem pemerintah. Menurut dokumen terbaru Badan Imigrasi Jepang, setelah menerima COE dan sebelum mengajukan visa, Anda harus mendaftar di SISKOP2MI untuk mendapatkan nomor ID, lalu fotokopi bukti pendaftarannya dipakai untuk pengajuan visa (lihat halaman SISKOP2MI). Cek juga prosedur terbarunya di instansi pemerintah Indonesia", 3),
      ]),
      ("note", "Daftar dokumen bisa berubah. Sebelum mengajukan, cek daftar terbaru di situs JVAC (VFS Global).<sup><a href=\"#src\">[3]</a></sup>"),
    ]},

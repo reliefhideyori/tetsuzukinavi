@@ -41,10 +41,10 @@ PAGE = {
    {"h": "Urutan yang harus dilakukan", "blocks": [
      ("steps", [
        ("Bandara", "Terima kartu izin tinggal (zairyu card)", "Kartu diberikan di bandara saat masuk Jepang.<sup><a href=\"#src\">[1]</a></sup> Selalu bawa kartu ini selama di Jepang.", ""),
-       ("Dalam 14 hari", "Lapor alamat di kantor kota/kecamatan", "Bawa zairyu card ke loket kota/kecamatan tempat tinggal. Laporan ini sekaligus dihitung sebagai laporan alamat ke imigrasi. Tidak ada biaya.", 2),
+       ("Dalam 14 hari", "Lapor alamat di kantor kota/kecamatan", "Bawa zairyu card ke loket kota/kecamatan tempat tinggal. Laporan ini sekaligus dianggap sebagai laporan alamat ke imigrasi. Tidak ada biaya.", 2),
        ("Saat lapor alamat", "Cek asuransi kesehatan dan pensiun", "Jika ikut asuransi sosial dari perusahaan, perusahaan yang mengurus. Jika tidak, urus asuransi kesehatan nasional (kokumin kenko hoken) dan pensiun nasional (kokumin nenkin) di kantor yang sama pada hari yang sama agar lebih mudah.", ""),
        ("1–2 minggu", "Siapkan rekening bank dan HP", "Rekening bank dibutuhkan untuk menerima gaji. Tanyakan ke perusahaan dokumen apa yang dibutuhkan (misalnya zairyu card setelah lapor alamat).", ""),
-       ("Hari gajian pertama", "Cek slip gaji", "Bandingkan potongan asuransi dan pajak dengan hasil kalkulator gaji bersih. Jika ada potongan tanpa penjelasan, konsultasikan.", ""),
+       ("Hari gajian pertama", "Cek slip gaji", "Bandingkan potongan asuransi dan pajak dengan hasil kalkulator gaji bersih. Jika ada potongan tanpa penjelasan, segera tanyakan ke tempat konsultasi.", ""),
      ]),
    ]},
    {"h": "Yang perlu diingat", "blocks": [

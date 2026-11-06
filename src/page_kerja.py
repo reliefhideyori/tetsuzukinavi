@@ -43,10 +43,10 @@ PAGE = {
    ]},
   ]},
  "id": {
-  "title": "Cara Kerja di Jepang dari Indonesia: Syarat dan Langkahnya", "crumb_last": "Cara kerja di Jepang",
-  "h1": "Cara Kerja di Jepang dari Indonesia: Syarat dan Langkah sampai Berangkat",
+  "title": "Cara Bekerja di Jepang dari Indonesia: Syarat dan Langkahnya", "crumb_last": "Cara bekerja di Jepang",
+  "h1": "Cara Bekerja di Jepang dari Indonesia: Syarat dan Langkah sampai Berangkat",
   "lead": "Jalur utama bagi orang Indonesia untuk bekerja di Jepang, dan urutan dari ujian, visa, sampai berangkat, dalam satu halaman. Setiap langkah terhubung ke halaman penjelasan yang lebih rinci.",
-  "notice": ("Yang perlu diketahui dulu", "Jalur yang paling banyak dipakai adalah <b>Tokutei Ginou (SSW)</b>. Pada dasarnya Anda <b>lulus ujian keterampilan dan ujian bahasa Jepang</b>, lalu membuat kontrak kerja dengan perusahaan Jepang.<sup><a href=\"#src\">[1]</a></sup> Lewat LPK atau P3MI tidak wajib.<sup><a href=\"#src\">[2]</a></sup>"),
+  "notice": ("Yang perlu diketahui dulu", "Jalur yang paling banyak dipakai adalah <b>Tokutei Ginou (SSW)</b>. Pada dasarnya Anda <b>lulus ujian keterampilan dan ujian bahasa Jepang</b>, lalu menandatangani kontrak kerja dengan perusahaan Jepang.<sup><a href=\"#src\">[1]</a></sup> Lewat LPK atau P3MI tidak wajib.<sup><a href=\"#src\">[2]</a></sup>"),
   "sections": [
    {"h": "Tiga jalur utama", "blocks": [
      ("dl", [
@@ -54,22 +54,22 @@ PAGE = {
        ("Magang (Ginou Jisshu)", "Program untuk belajar keterampilan. Pada dasarnya tidak bisa pindah perusahaan. Direncanakan berganti menjadi Ikusei Shuro mulai April 2027", "3"),
        ("Ikusei Shuro (mulai April 2027)", "Program baru 3 tahun untuk mencapai level SSW 1. Bisa pindah perusahaan jika memenuhi syarat", "3"),
      ]),
-     ("related", [("visa", "Perbedaan lengkap tiga program")]),
+     ("related", [("visa", "Perbedaan lengkap ketiga program")]),
    ]},
    {"h": "Langkah lewat Tokutei Ginou (SSW)", "blocks": [
      ("steps", [
        ("", "Pilih bidang kerja", "Ada ujian untuk setiap bidang, misalnya kaigo, restoran, pertanian, dan konstruksi.", 4),
        ("", "Lulus ujian bahasa Jepang", "JFT-Basic (A2) atau JLPT N4 ke atas.", 4),
        ("", "Lulus ujian keterampilan bidang", "Ujian diadakan oleh lembaga yang berbeda untuk setiap bidang.", 4),
-       ("", "Tanda tangan kontrak dengan perusahaan Jepang", "Perekrutan langsung lewat IPKOL, sistem lowongan pemerintah Indonesia, juga bisa. Kontrak diverifikasi di KBRI Tokyo.", 2),
+       ("", "Tanda tangan kontrak dengan perusahaan Jepang", "Anda juga bisa direkrut langsung lewat IPKOL, sistem lowongan kerja milik pemerintah Indonesia. Kontrak diverifikasi di KBRI Tokyo.", 2),
        ("", "Perusahaan mengajukan COE", "COE berlaku 3 bulan."),
-       ("", "Daftar SISKOP2MI", "Setelah COE dan sebelum visa, daftar sendiri secara online.", 2),
+       ("", "Daftar SISKOP2MI", "Setelah COE terbit dan sebelum mengajukan visa, daftar sendiri secara online.", 2),
        ("", "Ajukan visa dan berangkat", "Ajukan di JVAC Jakarta. Setelah orientasi pra-pemberangkatan, E-PMI diterbitkan."),
      ]),
      ("related", [("ujian", "Ujian keterampilan per bidang"), ("test", "Cara ikut JFT-Basic dan JLPT"), ("coe", "Dari tawaran kerja sampai visa (COE)"), ("siskop2mi", "Daftar SISKOP2MI")]),
    ]},
    {"h": "Soal uang", "blocks": [
-     ("p", "Perusahaan penerima SSW tidak boleh memungut uang jaminan atau membuat kontrak denda.<sup><a href=\"#src\">[5]</a></sup> Upah minimum Jepang juga berlaku untuk orang asing."),
+     ("p", "Perusahaan penerima SSW tidak boleh memungut uang jaminan atau membuat perjanjian denda (penalti).<sup><a href=\"#src\">[5]</a></sup> Upah minimum Jepang juga berlaku untuk orang asing."),
      ("warn", "Hati-hati dengan tawaran \"bayar biaya ini, pasti bisa ke Jepang\". Bandingkan dulu dengan biaya resmi dan prosedur gratis, seperti biaya ujian, verifikasi di KBRI, dan lowongan di IPKOL.<sup><a href=\"#src\">[2]</a></sup>"),
      ("related", [("gaji", "Kalkulator gaji bersih"), ("lpk", "Sebelum memilih LPK atau agen")]),
    ]},

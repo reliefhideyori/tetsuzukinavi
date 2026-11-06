@@ -44,23 +44,23 @@ PAGE = {
   "sections": [
    {"h": "Lama program dan 3 tahap (maksimal 5 tahun)", "blocks": [
      ("table", ["Lama", "Syarat naik tahap"], [
-       ["Magang 1", "Maksimal 1 tahun", "Lulus ujian keterampilan tingkat dasar"],
+       ["Magang 1", "Maksimal 1 tahun", "Lulus ujian keterampilan tingkat dasar (kiso-kyu), dll."],
        ["Magang 2", "Maksimal 2 tahun", "Lulus ujian praktik tingkat 3"],
-       ["Magang 3", "Maksimal 2 tahun", "Lulus ujian praktik tingkat 2. Wajib pulang sementara minimal 1 bulan"],
-     ], "Sumber: [1]. Ada 96 jenis pekerjaan dan 174 tugas yang bisa naik ke magang 2 (per 29 Juli 2026)."),
-     ("p", "Sekitar 2 bulan pertama adalah pelatihan. Setelah itu Anda punya hubungan kerja dengan perusahaan dan <b>hukum ketenagakerjaan Jepang berlaku</b>, termasuk upah minimum dan upah lembur.<sup><a href=\"#src\">[1]</a></sup>"),
+       ["Magang 3", "Maksimal 2 tahun", "Lulus ujian praktik tingkat 2. Wajib pulang sementara ke negara asal minimal 1 bulan, sebelum atau sesudah mulai magang 3"],
+     ], "Sumber: [1]. Program ini mencakup 96 jenis pekerjaan dan 174 jenis tugas (per 29 Juli 2026)."),
+     ("p", "Sekitar 2 bulan pertama diisi pelatihan (koshu). Setelah pelatihan selesai, Anda resmi menjadi pekerja perusahaan, dan <b>hukum ketenagakerjaan Jepang berlaku</b>, termasuk upah minimum dan upah lembur.<sup><a href=\"#src\">[1]</a></sup>"),
    ]},
    {"h": "Bentuk penerimaan", "blocks": [
      ("dl", [
-       ("Lewat lembaga pengawas (sekitar 98%)", "Lembaga nirlaba seperti koperasi (kanri dantai) menerima peserta, lalu peserta magang di perusahaan anggota", 1),
+       ("Lewat lembaga pengawas (sekitar 98%)", "Lembaga nirlaba seperti koperasi (kanri dantai) menerima peserta, lalu peserta menjalani magang di perusahaan anggotanya", 1),
        ("Langsung oleh perusahaan (sekitar 2%)", "Perusahaan Jepang menerima karyawan dari anak perusahaan atau mitra di luar negeri", 1),
      ]),
    ]},
    {"h": "Hal yang dilarang oleh hukum", "blocks": [
-     ("warn", "Hal berikut dilarang oleh hukum dan ada hukumannya:<sup><a href=\"#src\">[1]</a></sup> memaksa bekerja dengan kekerasan atau ancaman (penjara sampai 10 tahun, dll.); membuat denda atau mengelola tabungan peserta; <b>menahan paspor atau zairyu card</b> tanpa persetujuan peserta; membatasi kehidupan pribadi secara tidak wajar; memperlakukan peserta dengan buruk karena melapor ke pemerintah."),
+     ("warn", "Hal berikut dilarang oleh hukum dan ada hukumannya:<sup><a href=\"#src\">[1]</a></sup> memaksa bekerja dengan kekerasan atau ancaman (penjara sampai 10 tahun, dll.); menetapkan denda (penalti) jika peserta melanggar kontrak, atau mengelola tabungan peserta; <b>menahan paspor atau zairyu card</b> tanpa persetujuan peserta; membatasi kehidupan pribadi secara tidak wajar; memperlakukan peserta dengan buruk karena melapor ke pemerintah."),
    ]},
    {"h": "Jika ingin pindah tempat magang", "blocks": [
-     ("p", "Jika magang di perusahaan sekarang tidak bisa dilanjutkan, Anda bisa melanjutkan di tempat lain. Lembaga pengawas dan perusahaan wajib melapor dan membantu mencari tempat baru. OTIT (Organization for Technical Intern Training) juga membantu mencari penerima dan tempat tinggal sementara.<sup><a href=\"#src\">[1]</a></sup> Saat naik ke magang 3, Anda bisa memilih sendiri tempat magang."),
+     ("p", "Jika magang di perusahaan sekarang tidak bisa dilanjutkan, Anda bisa melanjutkan di tempat lain. Lembaga pengawas dan perusahaan wajib melapor dan membantu mencari tempat baru. OTIT (Organization for Technical Intern Training) juga membantu mencari perusahaan penerima baru dan tempat tinggal sementara.<sup><a href=\"#src\">[1]</a></sup> Saat naik ke magang 3, Anda bisa memilih sendiri tempat magang."),
    ]},
    {"h": "Tempat konsultasi", "blocks": [
      ("fact", "Konsultasi bahasa ibu OTIT (bahasa Indonesia) 0120-250-192", "Selasa, Kamis, Sabtu 11.00–19.00 (Sabtu 09.00–17.00). Gratis. Selain telepon, bisa juga lewat email dan lainnya.", 1),

@@ -23,7 +23,7 @@ t("h1", "日本で本当に手元に残るお金（手取り計算）", "Berapa 
 t("lead", "求人の「月給」から、税金・保険・寮費などを引いて、毎月いくら残るかを計算します。特定技能・技能実習で日本に来る前に使ってください。",
   "Hitung berapa yang tersisa setiap bulan setelah gaji di lowongan dipotong pajak, asuransi, asrama, dan lainnya. Gunakan sebelum berangkat ke Jepang lewat Tokutei Ginou (SSW) atau magang.")
 t("updated", "最終確認日：2026年11月5日（毎週確認）　／　出典：厚生労働省・協会けんぽ・国税庁などの公式情報（ページの最後に一覧）",
-  "Terakhir dicek: 5 November 2026 (dicek tiap minggu)  /  Sumber: informasi resmi Kementerian Kesehatan, Tenaga Kerja dan Kesejahteraan Jepang (MHLW), Kyokai Kenpo, Badan Pajak Nasional, dan lainnya (daftar di bagian bawah)")
+  "Terakhir dicek: 5 November 2026 (dicek tiap minggu)  /  Sumber: informasi resmi Kementerian Kesehatan, Tenaga Kerja, dan Kesejahteraan Jepang (MHLW), Kyokai Kenpo, Badan Pajak Nasional, dan lainnya (daftar di bagian bawah)")
 t("first_h", "はじめに知っておくこと", "Yang perlu diketahui dulu")
 t("first_p", "求人に書かれた「月給20万円」は、20万円もらえるという意味ではありません。給料からは<b>社会保険料と税金</b>が自動で引かれ、さらに<b>寮費や光熱費</b>が引かれることがあります。日本に来て2年目からは<b>住民税</b>も始まるので、手取りが減ります。",
   "\"Gaji 200.000 yen per bulan\" di lowongan <b>bukan</b> berarti Anda menerima 200.000 yen. Gaji otomatis dipotong <b>asuransi sosial dan pajak</b>, dan kadang juga <b>biaya asrama dan listrik/air</b>. Mulai tahun kedua di Jepang, <b>pajak penduduk (juminzei)</b> juga mulai dipotong, jadi gaji bersih turun.")
@@ -62,7 +62,7 @@ t("c_food", "食費", "Makan")
 t("c_phone", "スマホ・ネット", "HP / internet")
 t("c_other", "その他", "Lainnya")
 t("c_rate", "為替レート（1円＝何ルピア）", "Kurs (1 yen = berapa rupiah)")
-t("c_rate_note", "2026年11月4日の目安は約114ルピアです。送金するときは送金会社のレートを確認してください。", "Perkiraan per 4 November 2026: sekitar 114 rupiah. Saat mengirim uang, cek kurs dari perusahaan pengiriman.")
+t("c_rate_note", "2026年11月4日の目安は約114ルピアです。送金するときは送金会社のレートを確認してください。", "Perkiraan per 4 November 2026: sekitar 114 rupiah. Saat mengirim uang, cek kurs dari jasa pengiriman uang.")
 t("r_title", "計算結果（毎月の目安）", "Hasil (perkiraan per bulan)")
 t("r_gross", "給料の総額", "Gaji kotor")
 t("r_social", "社会保険料", "Iuran asuransi sosial")
@@ -82,7 +82,7 @@ t("r_jtax", "住民税", "Pajak penduduk (juminzei)")
 t("r_jtax0", "1年目は0円", "Tahun pertama 0 yen")
 t("r_below", "この時給は最低賃金より低いです。日本では外国人にも最低賃金が適用されるので、この条件は違法です。契約する前に相談してください。",
   "Upah per jam ini di bawah upah minimum. Di Jepang, upah minimum juga berlaku untuk pekerja asing, jadi syarat ini melanggar hukum. Konsultasikan sebelum tanda tangan kontrak.")
-t("r_neg", "生活費が手取りより多く、毎月赤字になります。", "Biaya hidup lebih besar dari gaji bersih. Anda akan minus setiap bulan.")
+t("r_neg", "生活費が手取りより多く、毎月赤字になります。", "Biaya hidup lebih besar dari gaji bersih. Anda akan kekurangan uang (tekor) setiap bulan.")
 t("r_note", "これは目安です。実際の額は、会社の計算方法、賞与、家族の扶養、市区町村によって変わります。所得税は1年分を12で割った額で、毎月の天引きとは少し違うことがあります（年末調整で精算されます）。",
   "Ini hanya perkiraan. Jumlah sebenarnya tergantung cara hitung perusahaan, bonus, tanggungan keluarga, dan kota tempat tinggal. Pajak penghasilan dihitung dari pajak setahun dibagi 12, jadi bisa sedikit berbeda dari potongan bulanan (selisihnya disesuaikan di akhir tahun / nenmatsu chosei).")
 t("legend_social", "社会保険", "Asuransi")
@@ -94,11 +94,11 @@ t("legend_left", "残るお金", "Tersisa")
 t("s2_intro", "日本の会社員は、次のお金が給料から自動で引かれます。どれも法律で決まっていて、会社が勝手に決めることはできません。",
   "Karyawan di Jepang otomatis dipotong biaya berikut dari gajinya. Semuanya ditentukan oleh hukum, bukan oleh perusahaan.")
 t("d_health", "病院で払うお金が3割になります。保険料は会社と半分ずつ払います。料率は都道府県で違い、約9.4〜10.6%（本人はその半分）です。",
-  "Biaya berobat jadi hanya 30%. Iuran dibayar setengah oleh perusahaan, setengah oleh Anda. Tarifnya berbeda tiap prefektur, sekitar 9,4–10,6% (Anda membayar setengahnya).")
+  "Anda hanya membayar 30% biaya berobat. Iuran dibayar setengah oleh perusahaan, setengah oleh Anda. Tarifnya berbeda tiap prefektur, sekitar 9,4–10,6% (Anda membayar setengahnya).")
 t("d_shien", "2026年4月分から始まった新しいお金です。全国同じ0.23%で、本人はその半分です。", "Iuran baru mulai April 2026. Tarif sama di seluruh Jepang 0,23%, Anda membayar setengahnya.")
 t("d_kaigo", "40歳から64歳の人だけ払います。1.62%で、本人はその半分です。", "Hanya untuk usia 40–64 tahun. Tarif 1,62%, Anda membayar setengahnya.")
 t("d_pension", "18.3%で、本人はその半分の9.15%です。一番大きい天引きです。<b>帰国するときに一部が戻ります</b>（脱退一時金）。6か月以上加入していれば請求でき、計算の上限は5年分です。日本を出てから2年以内に請求が必要です。",
-  "Tarif 18,3%, Anda membayar setengahnya yaitu 9,15%. Ini potongan terbesar. <b>Sebagian bisa dikembalikan saat pulang ke negara asal</b> (dattai ichijikin). Bisa diklaim jika ikut minimal 6 bulan, dihitung maksimal 5 tahun. Harus diklaim dalam 2 tahun setelah meninggalkan Jepang.")
+  "Tarif 18,3%, Anda membayar setengahnya yaitu 9,15%. Ini potongan terbesar. <b>Sebagian bisa dikembalikan saat pulang ke negara asal</b> (dattai ichijikin). Bisa diajukan jika ikut minimal 6 bulan, dihitung maksimal 5 tahun. Harus diajukan dalam 2 tahun setelah meninggalkan Jepang.")
 t("d_koyo", "仕事を失ったときの手当などのための保険です。本人負担は0.5%です（2026年4月〜2027年3月）。", "Asuransi untuk tunjangan jika kehilangan pekerjaan, dll. Bagian Anda 0,5% (April 2026–Maret 2027).")
 t("d_itax", "収入にかかる国の税金です。2026年分から、給料だけの人は年収178万円までかかりません。", "Pajak negara atas penghasilan. Mulai tahun 2026, orang yang hanya punya gaji tidak kena pajak ini sampai penghasilan 1,78 juta yen per tahun.")
 t("d_jtax", "住んでいる市区町村に払う税金です。前の年の収入で決まるので、<b>1年目はかかりません。2年目の6月から</b>天引きが始まります。帰国する年も払う必要があります。",
@@ -120,7 +120,7 @@ t("m4a", "いいえ。1日8時間・週40時間を超えた残業には、通常
   "Tidak. Lembur di atas 8 jam per hari atau 40 jam per minggu harus dibayar minimal 1,25 kali upah biasa (UU Standar Ketenagakerjaan Pasal 37). Masukkan ke \"jam lembur\" di kalkulator.")
 t("m5q", "外国人は最低賃金より安くてもいい？", "Pekerja asing boleh dibayar di bawah upah minimum?")
 t("m5a", "いいえ。最低賃金は国籍に関係なく、日本で働くすべての人に適用されます。特定技能では、同じ仕事をする日本人と同じ以上の給料が必要です。",
-  "Tidak. Upah minimum berlaku untuk semua orang yang bekerja di Jepang, apa pun kewarganegaraannya. Untuk Tokutei Ginou, gaji harus sama atau lebih tinggi dari orang Jepang yang melakukan pekerjaan yang sama.")
+  "Tidak. Upah minimum berlaku untuk semua orang yang bekerja di Jepang, apa pun kewarganegaraannya. Untuk Tokutei Ginou, gaji harus sama atau lebih tinggi daripada gaji orang Jepang yang melakukan pekerjaan yang sama.")
 
 # section 4
 t("s4_intro", "日本に来る前に、雇用契約書（雇用条件書）で次のことを確認してください。わからない言葉があれば、サインする前に質問してください。",
@@ -136,7 +136,7 @@ t("k6_note", "このサイトは、特定の会社・LPK・仲介業者を紹介
 # section 5
 t("h_dial", "外国人労働者向け相談ダイヤル（厚生労働省）", "Layanan Konsultasi untuk Pekerja Asing (MHLW)")
 t("h_dial_d", "インドネシア語：火曜・木曜 10:00〜15:00（12:00〜13:00を除く）。給料や労働条件の相談ができます。無料ですが通話料がかかります。",
-  "Bahasa Indonesia: Selasa dan Kamis 10.00–15.00 (kecuali 12.00–13.00). Bisa konsultasi soal gaji dan syarat kerja. Gratis, tetapi ada biaya telepon.")
+  "Bahasa Indonesia: Selasa dan Kamis 10.00–15.00 (kecuali 12.00–13.00). Bisa konsultasi soal gaji dan syarat kerja. Layanannya gratis, tetapi Anda tetap membayar biaya telepon.")
 t("h_hot", "労働条件相談ほっとライン（厚生労働省）", "Hotline Konsultasi Syarat Kerja (MHLW)")
 t("h_hot_d", "無料で電話できます。インドネシア語にも対応していますが、言語によって曜日が違うので、公式ページで確認してください。",
   "Telepon gratis. Tersedia dalam bahasa Indonesia, tetapi hari layanan berbeda tiap bahasa. Cek di halaman resmi.")

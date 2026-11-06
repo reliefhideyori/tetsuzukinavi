@@ -42,13 +42,13 @@ PAGE = {
  "id": {
   "title": "Tokutei Ginou Bidang Kaigo", "crumb_last": "Kaigo (SSW)",
   "h1": "Cara Mendapat Tokutei Ginou Kaigo (Perawatan Lansia): Ujian dan Syarat",
-  "lead": "Ringkasan ujian untuk SSW 1 di panti perawatan lansia Jepang: cara daftar, nilai lulus, siapa yang bebas ujian, dan syarat kerja perawatan ke rumah, dari informasi Kementerian Kesehatan Jepang (MHLW).",
-  "notice": ("Yang perlu diketahui dulu", "Untuk kaigo dibutuhkan <b>3 ujian</b>: ujian keterampilan kaigo, ujian bahasa Jepang kaigo, dan JFT-Basic atau JLPT N4 ke atas.<sup><a href=\"#src\">[1][2]</a></sup> Warga negara Indonesia bisa ikut ujian <b>mulai usia 18 tahun</b>.<sup><a href=\"#src\">[1]</a></sup>"),
+  "lead": "Ringkasan ujian untuk SSW 1 di panti perawatan lansia Jepang: cara daftar, nilai lulus, siapa yang bebas ujian, dan syarat bekerja di layanan kunjungan rumah (homon kaigo), dari informasi Kementerian Kesehatan, Tenaga Kerja, dan Kesejahteraan Jepang (MHLW).",
+  "notice": ("Yang perlu diketahui dulu", "Untuk kaigo dibutuhkan <b>3 ujian</b>: ujian keterampilan kaigo, Ujian Evaluasi Bahasa Jepang Kaigo, dan JFT-Basic atau JLPT N4 ke atas.<sup><a href=\"#src\">[1][2]</a></sup> Warga negara Indonesia bisa ikut ujian <b>mulai usia 18 tahun</b>.<sup><a href=\"#src\">[1]</a></sup>"),
   "sections": [
    {"h": "Ujian yang dibutuhkan", "blocks": [
      ("table", ["Isi", "Nilai lulus (mulai April 2026)"], [
        ["Ujian keterampilan kaigo", "Pengetahuan dan keterampilan perawatan", "60%"],
-       ["Ujian bahasa Jepang kaigo", "Bahasa Jepang untuk pekerjaan perawatan", "73%"],
+       ["Ujian Evaluasi Bahasa Jepang Kaigo", "Bahasa Jepang untuk pekerjaan perawatan", "73%"],
        ["JFT-Basic atau JLPT N4 ke atas", "Bahasa Jepang sehari-hari", "JFT-Basic level A2 (200 poin ke atas)"],
      ], "Sumber: [1] MHLW, [2] Buku panduan SSW."),
    ]},
@@ -69,8 +69,8 @@ PAGE = {
        ("Kandidat EPA", "Menyelesaikan masa tinggal 4 tahun sebagai kandidat kaigo fukushishi EPA", 1),
      ]),
    ]},
-   {"h": "Syarat bekerja di perawatan ke rumah", "blocks": [
-     ("p", "Mulai April 2025, pekerja SSW juga bisa bekerja di layanan perawatan ke rumah (homon kaigo).<sup><a href=\"#src\">[1]</a></sup> Pada dasarnya perlu menyelesaikan pelatihan dasar (kaigo shokuin shoninsha kenshu) dan punya pengalaman kerja minimal 1 tahun di panti perawatan."),
+   {"h": "Syarat bekerja di layanan kunjungan rumah (homon kaigo)", "blocks": [
+     ("p", "Mulai April 2025, pekerja SSW juga bisa bekerja di layanan kunjungan ke rumah lansia (homon kaigo).<sup><a href=\"#src\">[1]</a></sup> Pada dasarnya perlu menyelesaikan pelatihan dasar (kaigo shokuin shoninsha kenshu) dan punya pengalaman kerja minimal 1 tahun di panti perawatan."),
    ]},
    {"h": "Halaman terkait", "blocks": [("related", [("ssw", "Bekerja di Jepang dengan Tokutei Ginou (SSW)"), ("test", "Cara ikut JLPT dan JFT-Basic"), ("gaji", "Kalkulator gaji bersih")])]},
   ]},

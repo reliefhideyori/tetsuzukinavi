@@ -7,11 +7,11 @@ F = [
  ("ビルクリーニング", "Pembersihan gedung", "ビルクリーニング分野特定技能１号評価試験", "全国ビルメンテナンス協会", "https://www.j-bma.or.jp/qualification-training/zairyu"),
  ("工業製品製造業", "Manufaktur produk industri", "製造分野特定技能評価試験", "工業製品製造技能人材機構", "https://www.jaim-skill.or.jp/exam/?stt_lang=ja"),
  ("建設", "Konstruksi", "建設分野特定技能１号評価試験", "建設技能人材機構", "https://jac-skill.or.jp/exam/index.php"),
- ("造船・舶用工業", "Pembuatan kapal", "造船・舶用工業分野特定技能１号試験", "日本海事協会", "http://www.classnk.or.jp/hp/ja/authentication/evaluation/index.html"),
- ("自動車整備", "Perawatan mobil", "自動車整備分野特定技能１号評価試験", "日本自動車整備振興会連合会", "https://www.jaspa.or.jp/mechanic/specific-skill/index.html"),
+ ("造船・舶用工業", "Galangan kapal dan industri perkapalan", "造船・舶用工業分野特定技能１号試験", "日本海事協会", "http://www.classnk.or.jp/hp/ja/authentication/evaluation/index.html"),
+ ("自動車整備", "Perbaikan mobil", "自動車整備分野特定技能１号評価試験", "日本自動車整備振興会連合会", "https://www.jaspa.or.jp/mechanic/specific-skill/index.html"),
  ("航空", "Penerbangan", "航空分野特定技能評価試験（グランドハンドリング／航空機整備）", "日本航空技術協会", "https://exam.jaea.or.jp/"),
  ("宿泊", "Perhotelan", "宿泊分野特定技能１号評価試験", "宿泊業技能試験センター", "https://caipt.or.jp/"),
- ("自動車運送業", "Transportasi (sopir)", "自動車運送業分野特定技能１号評価試験", "日本海事協会", "https://www.classnk.or.jp/hp/ja/authentication/evaluation/motortransport.html"),
+ ("自動車運送業", "Transportasi kendaraan (sopir)", "自動車運送業分野特定技能１号評価試験", "日本海事協会", "https://www.classnk.or.jp/hp/ja/authentication/evaluation/motortransport.html"),
  ("鉄道", "Perkeretaapian", "鉄道分野特定技能１号評価試験", "国土交通省", "https://www.mlit.go.jp/tetudo/tetudo_fr7_000056.html"),
  ("農業", "Pertanian", "１号農業技能測定試験", "全国農業会議所", "http://asat-nca.jp/"),
  ("漁業", "Perikanan", "１号漁業技能測定試験（漁業／養殖業）", "大日本水産会", "https://suisankai.or.jp/skill/"),
@@ -55,16 +55,16 @@ PAGE = {
   ]},
  "id": {
   "title": "Daftar Ujian Keterampilan SSW per Bidang", "crumb_last": "Ujian keterampilan per bidang",
-  "h1": "Tokutei Ginou No.1: Ujian Keterampilan per Bidang dan Situs Resminya",
-  "lead": "Untuk bekerja dengan Tokutei Ginou No.1, biasanya Anda harus lulus ujian keterampilan bidang kerja dan ujian bahasa Jepang. Nama ujian dan lembaga penyelenggaranya dirangkum per bidang dari situs imigrasi Jepang (ISA).",
+  "h1": "Tokutei Ginou 1 (SSW 1): Ujian Keterampilan per Bidang dan Situs Resminya",
+  "lead": "Untuk bekerja dengan SSW 1, biasanya Anda harus lulus ujian keterampilan bidang kerja dan ujian bahasa Jepang. Nama ujian dan lembaga penyelenggaranya dirangkum per bidang dari situs Badan Imigrasi Jepang (ISA).",
   "notice": ("Yang perlu diketahui dulu", "Ujian diadakan oleh <b>lembaga yang berbeda untuk setiap bidang</b>. Jadwal dan negara tempat ujian <b>wajib dicek di situs resmi lembaga itu</b>.<sup><a href=\"#src\">[1]</a></sup>"),
   "sections": [
-   {"h": "Dua ujian yang harus lulus", "blocks": [
+   {"h": "Dua ujian yang harus Anda lulus", "blocks": [
      ("dl", [
        ("Ujian keterampilan bidang", "Mengecek apakah Anda bisa melakukan pekerjaan di bidang itu. Pilih dari daftar di bawah", "1"),
-       ("Ujian bahasa Jepang", "Untuk semua bidang: JFT-Basic dari Japan Foundation, atau JLPT N4 ke atas. Untuk kaigo, ditambah ujian bahasa Jepang perawatan (kaigo nihongo)", "1"),
+       ("Ujian bahasa Jepang", "Untuk semua bidang: JFT-Basic dari Japan Foundation, atau JLPT N4 ke atas. Untuk kaigo, ditambah Ujian Evaluasi Bahasa Jepang Kaigo", "1"),
      ]),
-     ("p", "Orang yang menyelesaikan magang (Ginou Jisshu) No.2 dengan baik bisa bebas ujian untuk bidang pekerjaan yang sama."),
+     ("p", "Orang yang menyelesaikan magang 2 (Ginou Jisshu 2-go) dengan baik bisa bebas ujian untuk bidang pekerjaan yang sama."),
    ]},
    {"h": "Ujian dan lembaga per bidang", "blocks": [
      ("dl", rows("id")),
@@ -74,7 +74,7 @@ PAGE = {
    {"h": "Hal yang perlu diperhatikan", "blocks": [
      ("steps", [
        ("", "Lihat jadwal di situs resmi", "Jadwal, tempat, dan cara daftar berbeda untuk setiap lembaga.", 1),
-       ("", "Cek apakah bisa daftar sendiri", "Banyak ujian bisa didaftar sendiri. Jika dikatakan \"perlu uang banyak untuk ikut ujian\", bandingkan dengan biaya ujian resmi."),
+       ("", "Cek apakah bisa daftar sendiri", "Untuk banyak ujian, Anda bisa mendaftar sendiri. Jika ada yang bilang \"perlu uang banyak untuk ikut ujian\", bandingkan dengan biaya ujian resmi."),
        ("", "Setelah lulus, cari perusahaan", "Lulus ujian saja belum cukup untuk ke Jepang. Anda perlu kontrak kerja dengan perusahaan Jepang, lalu perusahaan mengajukan COE."),
      ]),
    ]},

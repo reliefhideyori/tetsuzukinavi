@@ -43,16 +43,16 @@ PAGE = {
    {"h": "Syarat mendaftar", "blocks": [
      ("dl", [
        ("Kandidat perawat", "Lisensi perawat Indonesia + pengalaman kerja 2 tahun", "2"),
-       ("Kandidat careworker", "Lulus sekolah keperawatan (3 tahun ke atas), atau lulus pendidikan tinggi (3 tahun ke atas) + sertifikasi caregiver dari pemerintah Indonesia", "1"),
-       ("Bahasa Jepang (keduanya)", "Sekitar N4 saat masuk, sekitar N3 saat mulai bekerja", "1"),
+       ("Kandidat careworker", "Lulus sekolah keperawatan (minimal 3 tahun), atau lulus pendidikan tinggi (minimal 3 tahun) + sertifikasi caregiver dari pemerintah Indonesia", "1"),
+       ("Bahasa Jepang (keduanya)", "Minimal setara N4 saat masuk Jepang, minimal setara N3 saat mulai bekerja", "1"),
      ]),
    ]},
    {"h": "Alur sebelum dan setelah ke Jepang", "blocks": [
      ("steps", [
        ("", "Daftar lewat perekrutan pemerintah Indonesia", "Setelah seleksi, JICWELS mengatur pencocokan dan wawancara dengan fasilitas di Jepang.", 1),
-       ("6 bulan", "Pelatihan bahasa Jepang sebelum ke Jepang", "Kandidat yang sudah punya JLPT N4 atau N3 dibebaskan.", 1),
+       ("6 bulan", "Pelatihan bahasa Jepang sebelum ke Jepang", "Kandidat yang sudah punya sertifikat JLPT N4 atau N3 dibebaskan dari pelatihan ini.", 1),
        ("6 bulan", "Pelatihan setelah tiba di Jepang", "Bahasa Jepang dan pelatihan dasar keperawatan/perawatan lansia.", 2),
-       ("", "Bekerja di fasilitas sambil menuju ujian nasional", "Careworker perlu 3 tahun pengalaman kerja sebelum ikut ujian. Perawat bisa ikut ujian setiap tahun selama tinggal.", 1),
+       ("", "Bekerja di fasilitas sambil bersiap untuk ujian nasional", "Careworker perlu 3 tahun pengalaman kerja sebelum ikut ujian. Perawat bisa ikut ujian setiap tahun selama tinggal di Jepang.", 1),
      ]),
    ]},
    {"h": "Lama tinggal di Jepang", "blocks": [
@@ -62,6 +62,6 @@ PAGE = {
      ], "Sumber: [1][2]. Jika memenuhi syarat tertentu, bisa diperpanjang 1 tahun walaupun belum lulus. Jika lulus ujian nasional, bisa terus bekerja sebagai perawat atau careworker."),
      ("p", "Dalam ujian nasional perawat, ada keringanan seperti waktu ujian 1,3 kali lebih lama dan furigana pada semua kanji.<sup><a href=\"#src\">[2]</a></sup>"),
    ]},
-   {"h": "Halaman terkait", "blocks": [("related", [("kaigo", "Tokutei Ginou bidang kaigo"), ("kerja", "Cara kerja di Jepang: syarat dan langkah"), ("test", "Cara ikut JFT-Basic dan JLPT")])]},
+   {"h": "Halaman terkait", "blocks": [("related", [("kaigo", "Tokutei Ginou bidang kaigo"), ("kerja", "Cara bekerja di Jepang: syarat dan langkah"), ("test", "Cara ikut JFT-Basic dan JLPT")])]},
   ]},
 }

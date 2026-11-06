@@ -51,7 +51,7 @@ PAGE = {
   "notice": ("Yang perlu diketahui dulu", "Zairyu card <b>wajib selalu dibawa</b>. Paspor tidak bisa menggantikannya.<sup><a href=\"#src\">[2]</a></sup> Jika hilang, ajukan penerbitan ulang <b>dalam 14 hari</b>.<sup><a href=\"#src\">[2]</a></sup>"),
   "sections": [
    {"h": "Apa itu zairyu card", "blocks": [
-     ("p", "Kartu untuk orang asing yang tinggal jangka menengah-panjang di Jepang, diberikan saat mendapat izin masuk, izin perubahan status, atau perpanjangan izin tinggal. Berisi nama, tanggal lahir, kewarganegaraan, alamat, status izin tinggal, izin bekerja, dan lainnya.<sup><a href=\"#src\">[4]</a></sup>"),
+     ("p", "Kartu ini diberikan kepada orang asing yang tinggal jangka menengah atau panjang di Jepang. Kartu diterima saat mendapat izin masuk, atau izin perubahan atau perpanjangan status izin tinggal. Berisi nama, tanggal lahir, kewarganegaraan, alamat, status izin tinggal, boleh tidaknya bekerja, dan lainnya.<sup><a href=\"#src\">[4]</a></sup>"),
    ]},
    {"h": "Di mana menerimanya", "blocks": [
      ("dl", [
@@ -64,8 +64,8 @@ PAGE = {
    ]},
    {"h": "Masa berlaku", "blocks": [
      ("table", ["Masa berlaku kartu"], [
-       ["16 tahun ke atas (selain penduduk tetap, dll.)", "Sampai tanggal berakhir izin tinggal"],
-       ["Penduduk tetap, Koudo Senmonshoku 2 (16 tahun ke atas)", "7 tahun sejak diterbitkan"],
+       ["16 tahun ke atas (selain penduduk tetap dan lainnya)", "Sampai tanggal berakhir izin tinggal"],
+       ["Penduduk tetap (eijusha), Profesional Tingkat Tinggi 2 (Koudo Senmonshoku 2-go), 16 tahun ke atas", "7 tahun sejak diterbitkan"],
      ], "Sumber: [1]. Jika izin tinggal diperpanjang, Anda menerima kartu baru."),
    ]},
    {"h": "Jika hilang atau dicuri", "blocks": [

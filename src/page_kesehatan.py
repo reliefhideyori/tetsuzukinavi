@@ -56,7 +56,7 @@ PAGE = {
        ["Gaji standar bulanan 280.000–500.000 yen", "85.800 yen + (biaya berobat − 286.000 yen) × 1%"],
        ["Tidak dikenai pajak penduduk", "36.900 yen"],
      ], "Untuk usia di bawah 70 tahun, Kyokai Kenpo. Sumber: [2]. Jika mencapai batas 3 kali atau lebih dalam 12 bulan terakhir, mulai kali ke-4 batasnya 44.400 yen (24.600 yen jika tidak dikenai pajak penduduk)."),
-     ("note", "Agar tidak membayar lebih dari batas di loket, pakai <b>My Number Card yang didaftarkan sebagai kartu asuransi</b> (maina hokensho). Di rumah sakit yang belum bisa, ajukan dulu sertifikat batas biaya (gendogaku tekiyo ninteisho) lalu tunjukkan.<sup><a href=\"#src\">[3]</a></sup>"),
+     ("note", "Agar tidak membayar lebih dari batas di loket, pakai <b>My Number Card yang didaftarkan sebagai kartu asuransi</b> (maina hokensho). Di rumah sakit yang belum bisa menerima kartu ini, ajukan dulu sertifikat batas biaya (gendogaku tekiyo ninteisho) lalu tunjukkan.<sup><a href=\"#src\">[3]</a></sup>"),
    ]},
    {"h": "Halaman terkait", "blocks": [("related", [("gaji", "Kalkulator gaji bersih"), ("arrival", "Dua minggu pertama di Jepang"), ("hak", "Hak pekerja di Jepang: lembur, cuti, dan hari libur")])]},
   ]},
