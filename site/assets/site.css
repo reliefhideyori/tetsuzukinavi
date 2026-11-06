@@ -112,8 +112,10 @@ td.n { text-align: right; white-space: nowrap; }
 tr.sum th, tr.sum td { font-weight: 700; border-bottom: 1px solid var(--line-strong); }
 tr.sub th { font-weight: 400; padding-left: var(--s6); font-size: 14px; } tr.sub td { font-size: 14px; color: var(--fg-sub); }
 .cmp { overflow-x: auto; margin-bottom: var(--s2); }
-.cmp table { min-width: 34rem; font-size: 14px; }
-.cmp th[scope=row] { background: var(--bg-sub); white-space: nowrap; }
+.cmp table { min-width: 0; font-size: 14px; }
+.cmp table:has(thead th:nth-child(4)) { min-width: 34rem; }
+.cmp th[scope=row] { background: var(--bg-sub); width: 40%; }
+.cmp table:has(thead th:nth-child(4)) th[scope=row] { width: auto; white-space: nowrap; }
 .cmp-note { font-size: 12px; color: var(--fg-sub); }
 dl.rows { margin: 0 0 var(--s4); border-top: 1px solid var(--line); }
 dl.rows div { display: grid; grid-template-columns: 9em 1fr; gap: var(--s2) var(--s4); padding: var(--s3) 0; border-bottom: 1px solid var(--line); }

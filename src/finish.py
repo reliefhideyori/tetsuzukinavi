@@ -78,7 +78,7 @@ SHARE_CSS = "<style>.share{margin:var(--s3) 0}.share h2{font-size:16px;margin:0 
 LOGO = ('<svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#18794e"/>'
         '<path d="M10 23v-5.5a3.5 3.5 0 0 1 3.5-3.5h5a3.5 3.5 0 0 0 3.5-3.5V9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>'
         '<circle cx="10" cy="23" r="2.6" fill="#fff"/><path d="M18.5 9.5 22 6l3.5 3.5" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>')
-CSS_V = "5"
+CSS_V = "7"
 
 # 3) every page: title, description, language toggle, footer
 for p in [q for q in sorted(ROOT.glob("*/*.html")) if "</head>" in q.read_text(encoding="utf-8")]:

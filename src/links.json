@@ -22,5 +22,33 @@
  "arrival": {
   "ja": "https://claude.ai/artifact/X8tVH5NUvev6yvCZTrwyFa",
   "id": "https://claude.ai/artifact/HM3PvpZyvi9NyhE46GhjtN"
+ },
+ "ssw": {
+  "ja": "/ja/ssw",
+  "id": "/id/ssw"
+ },
+ "magang": {
+  "ja": "/ja/magang",
+  "id": "/id/magang"
+ },
+ "coe": {
+  "ja": "/ja/coe",
+  "id": "/id/coe"
+ },
+ "kaigo": {
+  "ja": "/ja/kaigo",
+  "id": "/id/kaigo"
+ },
+ "hak": {
+  "ja": "/ja/hak",
+  "id": "/id/hak"
+ },
+ "kesehatan": {
+  "ja": "/ja/kesehatan",
+  "id": "/id/kesehatan"
+ },
+ "nenkin": {
+  "ja": "/ja/nenkin",
+  "id": "/id/nenkin"
  }
 }
