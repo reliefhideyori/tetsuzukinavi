@@ -2,6 +2,7 @@ SLUG = "pindah"
 S1 = ("特定技能制度に関するＱ＆Ａ（出入国在留管理庁）", "https://www.moj.go.jp/isa/policies/ssw/faq.html")
 S2 = ("所属（契約）機関に関する届出（出入国在留管理庁）", "https://www.moj.go.jp/isa/applications/procedures/nyuukokukanri10_00015.html")
 PAGE = {
+ "date": "2026-11-06",
  "sources": [S1, S2],
  "ja": {
   "title": "特定技能で会社を変える（転職）手続き", "crumb_last": "特定技能の転職",

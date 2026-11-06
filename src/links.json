@@ -62,5 +62,17 @@
  "mynumber": {
   "ja": "/ja/mynumber",
   "id": "/id/mynumber"
+ },
+ "kerja": {
+  "ja": "/ja/kerja",
+  "id": "/id/kerja"
+ },
+ "siskop2mi": {
+  "ja": "/ja/siskop2mi",
+  "id": "/id/siskop2mi"
+ },
+ "upah": {
+  "ja": "/ja/upah",
+  "id": "/id/upah"
  }
 }

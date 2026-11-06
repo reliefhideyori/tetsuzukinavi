@@ -75,6 +75,10 @@ def render(page, lang):
     out.append(f'<footer><div class="wrap"><ul><li><a href="{ABOUT[lang]}">{tx["about"]}</a></li><li>{tx["site"]}</li></ul></div></footer></body></html>')
     html = h + "\n".join(out)
     assert "{{" not in html
+    d = page.get("date")
+    if d:
+        y, m, dd = d.split("-"); mi = ["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"][int(m)-1]
+        html = html.replace("2026年11月5日", f"{int(y)}年{int(m)}月{int(dd)}日").replace("5 November 2026", f"{int(dd)} {mi} {y}")
     return html
 
 if __name__ == "__main__":

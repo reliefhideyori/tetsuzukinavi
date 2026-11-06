@@ -2,6 +2,7 @@ SLUG = "mynumber"
 S1 = ("外国人住民の皆様へ マイナンバー制度とマイナンバーカードについて（総務省・デジタル庁）", "https://www.kojinbango-card.go.jp/hpsv/wpmng/assets/pdf/download/pamphlet-jp.pdf")
 S2 = ("マイナンバーカード（総務省）", "https://www.soumu.go.jp/kojinbango_card/03.html")
 PAGE = {
+ "date": "2026-11-06",
  "sources": [S1, S2],
  "ja": {
   "title": "外国人のマイナンバーとマイナンバーカード", "crumb_last": "マイナンバー",

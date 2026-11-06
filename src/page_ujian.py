@@ -24,6 +24,7 @@ def rows(lang):
     i = 0 if lang == "ja" else 1
     return [(f[i], f'{f[2]}<br><small>{f[3]} ・ <a href="{f[4]}">{f[4].split("/")[2]}</a></small>', "") for f in F]
 PAGE = {
+ "date": "2026-11-06",
  "sources": [S1, S2, S3],
  "ja": {
   "title": "特定技能の分野別 技能試験の一覧", "crumb_last": "分野別の技能試験",
