@@ -50,5 +50,17 @@
  "nenkin": {
   "ja": "/ja/nenkin",
   "id": "/id/nenkin"
+ },
+ "ujian": {
+  "ja": "/ja/ujian",
+  "id": "/id/ujian"
+ },
+ "pindah": {
+  "ja": "/ja/pindah",
+  "id": "/id/pindah"
+ },
+ "mynumber": {
+  "ja": "/ja/mynumber",
+  "id": "/id/mynumber"
  }
 }
