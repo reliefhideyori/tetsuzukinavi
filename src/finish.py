@@ -19,14 +19,14 @@ PRIVACY = {
  ("集める情報", "<p>このサイトは会員登録がなく、名前や住所を入力する場所はありません。集めるのは、お問い合わせフォームに書かれた内容と、任意で書かれた返信用のメールアドレスだけです。</p>"),
  ("情報の使い方", "<p>お問い合わせの内容は、返信と、ページの間違いを直すためだけに使います。法律で求められた場合を除き、ほかの人や会社に渡しません。</p>"),
  ("広告について", "<p>このサイトは、Google AdSense などの広告で運営費をまかないます（準備中を含みます）。Google などの広告配信事業者は、Cookie を使って、このサイトやほかのサイトへの過去のアクセスにもとづいた広告を表示することがあります。</p><p>あなたに合わせた広告（パーソナライズ広告）は、<a href='https://adssettings.google.com/'>Google の広告設定</a>で止められます。Google による Cookie の使い方は<a href='https://policies.google.com/technologies/ads?hl=ja'>Google のポリシーと規約</a>で確認できます。</p><p>LPK・仲介業者・借金（ローン）の広告は表示しないように設定します。</p>"),
- ("アクセスの記録", "<p>サイトは Cloudflare で配信しています。安全に配信するため、Cloudflare が IP アドレスなどの技術的な記録を扱います。今のところ、アクセス解析ツールは使っていません。使い始めるときは、このページに書きます。</p>"),
+ ("アクセスの記録", "<p>サイトは Cloudflare で配信しています。安全に配信するため、Cloudflare が IP アドレスなどの技術的な記録を扱います。訪問数や読まれたページを知るために、Cloudflare Web Analytics を使っています。このツールは Cookie を使わず、あなた個人を特定できる情報は集めません。</p>"),
  ("このページの変更", "<p>内容を変えたときは、このページを更新し、下の変更履歴に書きます。</p>"),
 ], "2026年11月6日　公開"),
 "id": ("Kebijakan Privasi", "Informasi apa yang dikumpulkan situs ini dan bagaimana digunakan.", [
  ("Informasi yang dikumpulkan", "<p>Situs ini tidak punya pendaftaran anggota dan tidak meminta nama atau alamat. Yang dikumpulkan hanya isi formulir kontak dan alamat email untuk balasan jika Anda menuliskannya.</p>"),
  ("Cara penggunaan", "<p>Isi pesan hanya dipakai untuk membalas dan memperbaiki kesalahan di halaman. Kami tidak memberikannya kepada orang atau perusahaan lain, kecuali jika diwajibkan oleh hukum.</p>"),
  ("Tentang iklan", "<p>Biaya operasional situs ini ditutup dari iklan seperti Google AdSense (sebagian masih dalam persiapan). Penyedia iklan seperti Google dapat memakai cookie untuk menampilkan iklan berdasarkan kunjungan Anda sebelumnya ke situs ini atau situs lain.</p><p>Iklan yang disesuaikan untuk Anda (iklan yang dipersonalisasi) bisa dimatikan di <a href='https://adssettings.google.com/'>Setelan Iklan Google</a>. Cara Google memakai cookie bisa dibaca di <a href='https://policies.google.com/technologies/ads?hl=id'>Kebijakan dan Persyaratan Google</a>.</p><p>Iklan LPK, agen, dan pinjaman diatur agar tidak tampil.</p>"),
- ("Catatan akses", "<p>Situs ini ditayangkan melalui Cloudflare. Agar aman, Cloudflare memproses catatan teknis seperti alamat IP. Saat ini kami tidak memakai alat analisis akses. Jika mulai memakainya, akan kami tulis di halaman ini.</p>"),
+ ("Catatan akses", "<p>Situs ini ditayangkan melalui Cloudflare. Agar aman, Cloudflare memproses catatan teknis seperti alamat IP. Kami memakai Cloudflare Web Analytics untuk melihat jumlah kunjungan dan halaman yang dibaca. Alat ini tidak memakai cookie dan tidak mengumpulkan data yang bisa mengenali Anda secara pribadi.</p>"),
  ("Perubahan halaman ini", "<p>Jika isinya berubah, halaman ini diperbarui dan dicatat di riwayat perubahan di bawah.</p>"),
 ], "6 November 2026  Diterbitkan"),
 }
