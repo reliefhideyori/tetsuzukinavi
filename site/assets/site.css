@@ -250,3 +250,11 @@ ol.steps li.bad::before { background: var(--error); }
 .speak svg { width: 16px; height: 16px; fill: currentColor; }
 body.counter #s-counter .rd-only, body.counter .phrase .tr, body.counter .speak { display: none; }
 body.counter .phrase .jp { font-size: 24px; line-height: 1.5; }
+
+/* トップの目玉機能（契約書チェック） */
+.feat { border: 2px solid var(--key); border-radius: var(--r); padding: var(--s5); margin: var(--s6) 0 var(--s10); }
+.feat .tag { display: inline-block; font-size: 12px; font-weight: 700; color: var(--key-fg); background: var(--key); border-radius: 4px; padding: 0 var(--s2); margin-bottom: var(--s2); }
+.feat h2 { font-size: 19px; border: 0; padding: 0; margin: 0 0 var(--s2); }
+.feat p { font-size: 15px; color: var(--fg-sub); margin: 0; }
+.feat .btn { background: var(--key); color: var(--key-fg); }
+.feat .btn:hover { background: var(--key-hover); color: var(--key-fg); }

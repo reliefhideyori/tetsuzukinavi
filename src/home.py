@@ -4,6 +4,7 @@ C = {
  h1="Informasi resmi sebelum bekerja di Jepang",
  lead="Gaji bersih, biaya LPK, jenis visa, ujian bahasa, prosedur setelah tiba, dan pengembalian pensiun. Semua dicek dari situs resmi pemerintah Jepang, dalam bahasa Indonesia.",
  cta=("gaji", "Hitung gaji bersih Anda"),
+ feat=("kontrak", "Baru", "Cek kontrak kerja sebelum tanda tangan", "Masukkan gaji, jam kerja, dan potongan dari kontrak Anda. Lihat apakah sesuai upah minimum dan aturan jam kerja, lalu dapatkan daftar pertanyaan untuk perusahaan atau LPK. Data tidak dikirim ke mana pun.", "Mulai cek kontrak"),
  road_h="Mulai dari tahap Anda sekarang",
  stages=[
   ("Sebelum mendaftar", [("kerja", "Cara bekerja di Jepang: syarat dan langkah", "Jalur utama dan urutan dari ujian sampai berangkat."),
@@ -42,6 +43,7 @@ C = {
  h1="日本で働く前に知っておきたい、公式の情報",
  lead="手取り、LPKの費用、在留資格、日本語の試験、来日直後の手続き、帰国するときの年金。すべて日本の省庁・公的機関の公式ページで確かめてまとめています。",
  cta=("gaji", "手取りを計算する"),
+ feat=("kontrak", "新しい機能", "サインする前に、雇用契約書をチェック", "契約書の給料・労働時間・天引きを入れると、最低賃金や労働時間のルールと比べて、会社やLPKに聞くべき質問の一覧が出ます。入力した内容はどこにも送られません。", "契約書をチェックする"),
  road_h="今の段階から読む",
  stages=[
   ("申し込む前", [("kerja", "日本で働くには：条件と流れ", "主な方法と、試験から出発までの順番。"),
@@ -91,6 +93,8 @@ CSS = """<style>
 .facts a{font-size:14px}
 .why{display:grid;gap:var(--s1)}.why div{background:var(--bg-soft);border-radius:8px;padding:12px var(--s2)}.why b{display:block}
 .why p{font-size:14px;color:var(--fg-sub);margin:0}
+.feat{border:2px solid var(--key);border-radius:8px;padding:var(--s5);margin:var(--s6) 0 var(--s10)}.feat .tag{display:inline-block;font-size:12px;font-weight:700;color:var(--key-fg);background:var(--key);border-radius:4px;padding:0 var(--s2);margin-bottom:var(--s2)}
+.feat h2{font-size:19px;border:0;padding:0;margin:0 0 var(--s2)}.feat p{font-size:15px;color:var(--fg-sub);margin:0}.feat .btn{background:var(--key);color:var(--key-fg)}
 .op{display:flex;gap:var(--s2);align-items:center;margin-top:var(--s2)}.op img{width:64px;height:64px;border-radius:50%;object-fit:cover;flex:none}
 .op p{margin:0}.op small{color:var(--fg-sub)}
 </style></head>"""
@@ -101,6 +105,7 @@ def main(lang):
     why = "".join(f'<div><b>{h}</b><p>{p}</p></div>' for h, p in c["trust"])
     return (f'<main class="wrap"><div class="hero"><h1>{c["h1"]}</h1><p class="lead">{c["lead"]}</p>'
             f'<a class="btn" href="{L(c["cta"][0])}">{c["cta"][1]}</a><p class="upd">{c["upd"]}</p></div>'
+            f'<div class="feat"><span class="tag">{c["feat"][1]}</span><h2>{c["feat"][2]}</h2><p>{c["feat"][3]}</p><a class="btn" href="{L(c["feat"][0])}">{c["feat"][4]}</a></div>'
             f'<section><h2>{c["road_h"]}</h2><ol class="road">{road}</ol></section>'
             f'<section><h2>{c["facts_h"]}</h2><ul class="facts">{facts}</ul></section>'
             f'<section><h2>{c["trust_h"]}</h2><div class="why">{why}</div>'
