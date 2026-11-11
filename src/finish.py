@@ -19,16 +19,16 @@ PRIVACY = {
  ("集める情報", "<p>このサイトは会員登録がなく、名前や住所を入力する場所はありません。集めるのは、お問い合わせフォームに書かれた内容と、任意で書かれた返信用のメールアドレスだけです。</p>"),
  ("情報の使い方", "<p>お問い合わせの内容は、返信と、ページの間違いを直すためだけに使います。法律で求められた場合を除き、ほかの人や会社に渡しません。</p>"),
  ("広告について", "<p>このサイトは、Google AdSense などの広告で運営費をまかないます（準備中を含みます）。Google などの広告配信事業者は、Cookie を使って、このサイトやほかのサイトへの過去のアクセスにもとづいた広告を表示することがあります。</p><p>あなたに合わせた広告（パーソナライズ広告）は、<a href='https://adssettings.google.com/'>Google の広告設定</a>で止められます。Google による Cookie の使い方は<a href='https://policies.google.com/technologies/ads?hl=ja'>Google のポリシーと規約</a>で確認できます。</p><p>LPK・仲介業者・借金（ローン）の広告は表示しないように設定します。</p>"),
- ("アクセスの記録", "<p>サイトは Cloudflare で配信しています。安全に配信するため、Cloudflare が IP アドレスなどの技術的な記録を扱います。訪問数や読まれたページを知るために、Cloudflare Web Analytics を使っています。このツールは Cookie を使わず、あなた個人を特定できる情報は集めません。</p>"),
+ ("アクセスの記録", "<p>サイトは Cloudflare で配信しています。安全に配信するため、Cloudflare が IP アドレスなどの技術的な記録を扱います。訪問数や読まれたページを知るために、Cloudflare Web Analytics と、このサイト独自の簡単なカウンターを使っています。</p><p>カウンターが記録するのは、開いたページ、国、どのサイトから来たか、スマートフォンかパソコンか、だけです。IP アドレスはそのまま保存しません。同じ人を二重に数えないように、その日だけ使う、元に戻せない番号に変えて記録します。</p><p>どちらも Cookie を使わず、あなた個人を特定できる情報は集めません。</p>"),
  ("このページの変更", "<p>内容を変えたときは、このページを更新し、下の変更履歴に書きます。</p>"),
-], "2026年11月6日　公開"),
+], "2026年11月6日　公開</li><li>2026年11月11日　訪問者カウンターについて追記"),
 "id": ("Kebijakan Privasi", "Informasi apa yang dikumpulkan situs ini dan bagaimana digunakan.", [
  ("Informasi yang dikumpulkan", "<p>Situs ini tidak punya pendaftaran anggota dan tidak meminta nama atau alamat. Yang dikumpulkan hanya isi formulir kontak dan alamat email untuk balasan jika Anda menuliskannya.</p>"),
  ("Cara penggunaan", "<p>Isi pesan hanya dipakai untuk membalas dan memperbaiki kesalahan di halaman. Kami tidak memberikannya kepada orang atau perusahaan lain, kecuali jika diwajibkan oleh hukum.</p>"),
  ("Tentang iklan", "<p>Biaya operasional situs ini ditutup dari iklan seperti Google AdSense (sebagian masih dalam persiapan). Penyedia iklan seperti Google dapat memakai cookie untuk menampilkan iklan berdasarkan kunjungan Anda sebelumnya ke situs ini atau situs lain.</p><p>Iklan yang disesuaikan untuk Anda (iklan yang dipersonalisasi) bisa dimatikan di <a href='https://adssettings.google.com/'>Setelan Iklan Google</a>. Cara Google memakai cookie bisa dibaca di <a href='https://policies.google.com/technologies/ads?hl=id'>Kebijakan dan Persyaratan Google</a>.</p><p>Iklan LPK, agen, dan pinjaman diatur agar tidak tampil.</p>"),
- ("Catatan akses", "<p>Situs ini ditayangkan melalui Cloudflare. Agar aman, Cloudflare memproses catatan teknis seperti alamat IP. Kami memakai Cloudflare Web Analytics untuk melihat jumlah kunjungan dan halaman yang dibaca. Alat ini tidak memakai cookie dan tidak mengumpulkan data yang bisa mengenali Anda secara pribadi.</p>"),
+ ("Catatan akses", "<p>Situs ini ditayangkan melalui Cloudflare. Agar aman, Cloudflare memproses catatan teknis seperti alamat IP. Untuk melihat jumlah kunjungan dan halaman yang dibaca, kami memakai Cloudflare Web Analytics dan penghitung sederhana milik situs ini.</p><p>Penghitung ini hanya mencatat halaman yang dibuka, negara, situs asal kunjungan, dan jenis perangkat (ponsel atau komputer). Alamat IP tidak disimpan dalam bentuk aslinya. Agar satu orang tidak terhitung dua kali, alamat IP diubah menjadi kode yang hanya dipakai pada hari itu dan tidak bisa diubah kembali menjadi alamat IP.</p><p>Keduanya tidak memakai cookie dan tidak mengumpulkan data yang bisa mengenali Anda secara pribadi.</p>"),
  ("Perubahan halaman ini", "<p>Jika isinya berubah, halaman ini diperbarui dan dicatat di riwayat perubahan di bawah.</p>"),
-], "6 November 2026  Diterbitkan"),
+], "6 November 2026  Diterbitkan</li><li>11 November 2026  Ditambahkan penjelasan tentang penghitung pengunjung"),
 }
 LOG_H = {"ja": "変更履歴", "id": "Riwayat perubahan"}
 
@@ -79,6 +79,7 @@ LOGO = ('<svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32
         '<path d="M10 23v-5.5a3.5 3.5 0 0 1 3.5-3.5h5a3.5 3.5 0 0 0 3.5-3.5V9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>'
         '<circle cx="10" cy="23" r="2.6" fill="#fff"/><path d="M18.5 9.5 22 6l3.5 3.5" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>')
 CSS_V = "8"
+COUNT = '<script defer src="/assets/count.js?v=1"></script>'  # 人の訪問だけを数える（worker/index.js の /api/hit）
 ADSENSE = '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9784894740329526" crossorigin="anonymous"></script>'
 
 # 3) every page: title, description, language toggle, footer
@@ -98,7 +99,8 @@ for p in [q for q in sorted(ROOT.glob("*/*.html")) if "</head>" in q.read_text(e
     head = re.sub(r"<style>.*?</style>\n?", "", head, flags=re.S)
     head = re.sub(r'<link rel="stylesheet" href="/assets/site.css[^>]*>\n?', "", head)
     head = re.sub(r'<script async src="https://pagead2[^>]*></script>\n?', "", head)
-    s = head + f'<link rel="stylesheet" href="/assets/site.css?v={CSS_V}">\n{ADSENSE}\n</head>' + rest
+    head = re.sub(r'<script defer src="/assets/count.js[^>]*></script>\n?', "", head)
+    s = head + f'<link rel="stylesheet" href="/assets/site.css?v={CSS_V}">\n{ADSENSE}\n{COUNT}\n</head>' + rest
     s = re.sub(r'(<a class="brand"[^>]*>)\s*<svg.*?</svg>', lambda mm: mm.group(1) + LOGO, s, count=1, flags=re.S)
     o = OTHER[lang]
     target = f"/{o}/" if slug == "index" else (f"/{o}/{slug}" if (ROOT / o / p.name).exists() else f"/{o}/")

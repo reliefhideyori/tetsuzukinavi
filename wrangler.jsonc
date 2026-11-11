@@ -10,6 +10,9 @@
     "html_handling": "auto-trailing-slash",
     "not_found_handling": "404-page"
   },
+  "d1_databases": [
+    { "binding": "DB", "database_name": "tetsuzukinavi-stats", "database_id": "736d7c78-a4ac-467f-b02b-7ea7c67f5fe3" }
+  ],
   "send_email": [
     { "name": "MAIL", "destination_address": "tetsuzukinavi@gmail.com" }
   ]
