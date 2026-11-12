@@ -12,10 +12,10 @@ const clip = (v, n) => String(v ?? "").slice(0, n).trim();
 async function contact(request, env) {
   const f = await request.formData();
   const lang = f.get("lang") === "ja" ? "ja" : "id";
-  const back = new URL(`/${lang}/thanks.html`, request.url);
+  const back = new URL(`/${lang}/thanks`, request.url);
   if (clip(f.get("_honey"), 100)) return Response.redirect(back, 303); // bot
   const message = clip(f.get("message"), 5000);
-  if (!message) return Response.redirect(new URL(`/${lang}/contact.html`, request.url), 303);
+  if (!message) return Response.redirect(new URL(`/${lang}/contact`, request.url), 303);
   const kind = clip(f.get("kind"), 50), page = clip(f.get("page"), 200);
   const email = clip(f.get("email"), 200).replace(/[\r\n]/g, "");
   const body = [
