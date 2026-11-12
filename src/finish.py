@@ -62,6 +62,7 @@ nf = put_main(shell("id"), '<main class="wrap"><h1>Halaman tidak ditemukan</h1><
     '<p><a class="btn" href="/id/">Ke halaman utama (Bahasa Indonesia)</a></p><h2 lang="ja">ページが見つかりません</h2>'
     '<p lang="ja">このページはないか、移動しました。</p><p><a class="btn" href="/ja/">トップへ（日本語）</a></p></main>')
 nf = re.sub(r"<title>[^<]*</title>", "<title>404 | Tetsuzuki Navi</title>", nf)
+nf = re.sub(r'<link rel="(alternate|canonical)"[^>]*>\n?|<meta name="robots"[^>]*>\n?', "", nf)  # 外枠(thanks)の canonical を持ち込まない
 (ROOT / "404.html").write_text(nf, encoding="utf-8")
 
 # 2b) home page (src/home.py)

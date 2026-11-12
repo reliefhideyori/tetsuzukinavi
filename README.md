@@ -10,6 +10,8 @@ https://tetsuzukinavi.org — 日本で働く人のための公式情報ガイ�
 2. `cd src && python3 addpage.py <slug> && python3 finish.py && python3 seo.py`
 3. `main` に push すると公開されます
 
+トップ `/` は `src/root.py`（seo.py が呼ぶ）が作る2言語の入口ページです。リダイレクトにはしないでください（Search Console の「ページにリダイレクトがあります」と AdSense 審査の原因になります）。
+
 ## 雇用契約書チェック（/kontrak）
 `src/build_kontrak.py` が `site/{ja,id}/kontrak.html` を書き出します（入力はブラウザ内だけで計算）。最低賃金は `src/data.py` の値を使います。
 `cd src && python3 build_kontrak.py && python3 finish.py && python3 seo.py`

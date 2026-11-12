@@ -13,12 +13,14 @@ for p in sorted(ROOT.glob("*/*.html")):
     s = re.sub(r'<meta name="robots"[^>]*>\n?', "", s)
     tags = [f'<link rel="canonical" href="{url(lang, slug)}">']
     if (ROOT / other / p.name).exists():
+        if slug == "index": tags.append(f'<link rel="alternate" hreflang="x-default" href="{BASE}/">')
         tags += [f'<link rel="alternate" hreflang="{lang}" href="{url(lang, slug)}">',
                  f'<link rel="alternate" hreflang="{other}" href="{url(other, slug)}">']
     if slug in NOINDEX: tags.append('<meta name="robots" content="noindex">')
     else: urls.append(url(lang, slug))
     s = s.replace("</head>", "\n".join(tags) + "\n</head>", 1)
     p.write_text(s, encoding="utf-8")
+import root; root.build(); urls.insert(0, f"{BASE}/")  # トップはリダイレクトしない入口ページ
 today = datetime.date.today().isoformat()
 (ROOT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     + "".join(f"<url><loc>{u}</loc><lastmod>{today}</lastmod></url>\n" for u in urls) + "</urlset>\n", encoding="utf-8")
