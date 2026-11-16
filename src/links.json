@@ -82,5 +82,21 @@
  "epa": {
   "ja": "/ja/epa",
   "id": "/id/epa"
+ },
+ "jft": {
+  "ja": "/ja/jft",
+  "id": "/id/jft"
+ },
+ "jlpt": {
+  "ja": "/ja/jlpt",
+  "id": "/id/jlpt"
+ },
+ "pertanian": {
+  "ja": "/ja/pertanian",
+  "id": "/id/pertanian"
+ },
+ "makanan": {
+  "ja": "/ja/makanan",
+  "id": "/id/makanan"
  }
 }

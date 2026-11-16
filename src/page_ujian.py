@@ -51,7 +51,7 @@ PAGE = {
        ("", "合格したら会社を探す", "合格だけでは日本に行けません。日本の会社と雇用契約を結び、会社がCOEを申請します。"),
      ]),
    ]},
-   {"h": "関連するページ", "blocks": [("related", [("ssw", "特定技能（SSW）とは"), ("test", "JFT-BasicとJLPTの受け方"), ("kaigo", "介護分野の特定技能"), ("coe", "内定からビザまで（COE）")])]},
+   {"h": "関連するページ", "blocks": [("related", [("pertanian", "農業分野の特定技能"), ("makanan", "飲食料品製造業分野の特定技能"), ("jft", "JFT-Basic：受験料・申し込み"), ("ssw", "特定技能（SSW）とは"), ("test", "JFT-BasicとJLPTの受け方"), ("kaigo", "介護分野の特定技能"), ("coe", "内定からビザまで（COE）")])]},
   ]},
  "id": {
   "title": "Daftar Ujian Keterampilan SSW per Bidang", "crumb_last": "Ujian keterampilan per bidang",
@@ -78,6 +78,6 @@ PAGE = {
        ("", "Setelah lulus, cari perusahaan", "Lulus ujian saja belum cukup untuk ke Jepang. Anda perlu kontrak kerja dengan perusahaan Jepang, lalu perusahaan mengajukan COE."),
      ]),
    ]},
-   {"h": "Halaman terkait", "blocks": [("related", [("ssw", "Apa itu Tokutei Ginou (SSW)"), ("test", "Cara ikut JFT-Basic dan JLPT"), ("kaigo", "Tokutei Ginou bidang kaigo"), ("coe", "Dari tawaran kerja sampai visa (COE)")])]},
+   {"h": "Halaman terkait", "blocks": [("related", [("pertanian", "SSW pertanian"), ("makanan", "SSW pengolahan makanan dan minuman"), ("jft", "Prometric JFT-Basic: biaya dan cara daftar"), ("ssw", "Apa itu Tokutei Ginou (SSW)"), ("test", "Cara ikut JFT-Basic dan JLPT"), ("kaigo", "Tokutei Ginou bidang kaigo"), ("coe", "Dari tawaran kerja sampai visa (COE)")])]},
   ]},
 }

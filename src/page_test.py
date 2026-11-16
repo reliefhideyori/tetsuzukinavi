@@ -36,7 +36,7 @@ PAGE = {
    {"h": "JLPTの受け方", "blocks": [
      ("p", "インドネシアでは、ジャカルタ、バンドン、スラバヤ、メダン、ジョグジャカルタ、デンパサール、スマラン、マカッサルなど16都市で、7月と12月に行われます。<sup><a href=\"#src\">[3]</a></sup>2026年の第2回は<b>12月6日（日）</b>です。<sup><a href=\"#src\">[6]</a></sup>申し込みの期間と方法は、インドネシアの実施機関のサイト（jlptonline.or.id）で確認してください。<sup><a href=\"#src\">[4]</a></sup>"),
    ]},
-   {"h": "関連するページ", "blocks": [("related", [("visa", "特定技能・技能実習・育成就労の違い"), ("gaji", "日本で本当に手元に残るお金（手取り計算）"), ("lpk", "LPK・仲介業者を選ぶ前に、公式情報で確認できること")])]},
+   {"h": "関連するページ", "blocks": [("related", [("jft", "JFT-Basic：受験料・申し込み・合格点（くわしく）"), ("jlpt", "JLPT 2026：インドネシアの日程・受験料（くわしく）"), ("visa", "特定技能・技能実習・育成就労の違い"), ("gaji", "日本で本当に手元に残るお金（手取り計算）"), ("lpk", "LPK・仲介業者を選ぶ前に、公式情報で確認できること")])]},
   ]},
  "id": {
   "title": "Cara Ikut JLPT 2026 dan JFT-Basic di Indonesia", "crumb_last": "Ujian bahasa Jepang",
@@ -67,6 +67,6 @@ PAGE = {
    {"h": "Cara ikut JLPT", "blocks": [
      ("p", "Di Indonesia, JLPT diadakan pada bulan Juli dan Desember di 16 kota, antara lain Jakarta, Bandung, Surabaya, Medan, Yogyakarta, Denpasar, Semarang, dan Makassar.<sup><a href=\"#src\">[3]</a></sup> Ujian kedua tahun 2026 diadakan pada <b>Minggu, 6 Desember 2026</b>.<sup><a href=\"#src\">[6]</a></sup> Cek masa dan cara pendaftaran di situs penyelenggara Indonesia (jlptonline.or.id).<sup><a href=\"#src\">[4]</a></sup>"),
    ]},
-   {"h": "Halaman terkait", "blocks": [("related", [("visa", "Perbedaan Tokutei Ginou, magang, dan Ikusei Shuro"), ("gaji", "Berapa uang yang benar-benar tersisa di Jepang (kalkulator gaji bersih)"), ("lpk", "Sebelum memilih LPK atau agen: yang bisa dicek dari sumber resmi")])]},
+   {"h": "Halaman terkait", "blocks": [("related", [("jft", "Prometric JFT-Basic: biaya, cara daftar, nilai lulus (lengkap)"), ("jlpt", "JLPT 2026 di Indonesia: jadwal dan biaya (lengkap)"), ("visa", "Perbedaan Tokutei Ginou, magang, dan Ikusei Shuro"), ("gaji", "Berapa uang yang benar-benar tersisa di Jepang (kalkulator gaji bersih)"), ("lpk", "Sebelum memilih LPK atau agen: yang bisa dicek dari sumber resmi")])]},
   ]},
 }

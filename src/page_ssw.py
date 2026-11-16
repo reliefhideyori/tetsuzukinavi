@@ -51,7 +51,7 @@ PAGE = {
        ("副業", "ほかの会社でアルバイトすることはできません", 3),
      ]),
    ]},
-   {"h": "関連するページ", "blocks": [("related", [("coe", "内定からビザまで：在留資格認定証明書（COE）"), ("test", "JLPTとJFT-Basicの受け方"), ("visa", "特定技能・技能実習・育成就労の違い"), ("kaigo", "介護分野の特定技能"), ("gaji", "日本で本当に手元に残るお金（手取り計算）")])]},
+   {"h": "関連するページ", "blocks": [("related", [("pertanian", "農業分野の特定技能"), ("makanan", "飲食料品製造業分野の特定技能"), ("coe", "内定からビザまで：在留資格認定証明書（COE）"), ("test", "JLPTとJFT-Basicの受け方"), ("visa", "特定技能・技能実習・育成就労の違い"), ("kaigo", "介護分野の特定技能"), ("gaji", "日本で本当に手元に残るお金（手取り計算）")])]},
   ]},
  "id": {
   "title": "Apa Itu Tokutei Ginou (SSW)", "crumb_last": "Tokutei Ginou",
@@ -96,6 +96,6 @@ PAGE = {
        ("Kerja sampingan", "Tidak boleh kerja paruh waktu di perusahaan lain", 3),
      ]),
    ]},
-   {"h": "Halaman terkait", "blocks": [("related", [("coe", "Dari tawaran kerja sampai visa: COE"), ("test", "Cara ikut JLPT dan JFT-Basic"), ("visa", "Perbedaan Tokutei Ginou, magang, dan Ikusei Shuro"), ("kaigo", "Tokutei Ginou bidang kaigo (perawatan lansia)"), ("gaji", "Kalkulator gaji bersih")])]},
+   {"h": "Halaman terkait", "blocks": [("related", [("pertanian", "SSW pertanian"), ("makanan", "SSW pengolahan makanan dan minuman"), ("coe", "Dari tawaran kerja sampai visa: COE"), ("test", "Cara ikut JLPT dan JFT-Basic"), ("visa", "Perbedaan Tokutei Ginou, magang, dan Ikusei Shuro"), ("kaigo", "Tokutei Ginou bidang kaigo (perawatan lansia)"), ("gaji", "Kalkulator gaji bersih")])]},
   ]},
 }

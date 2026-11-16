@@ -31,7 +31,7 @@ PAGE = {
        ("", "SISKOP2MIに登録する", "COEのあと、ビザの前に、本人がオンラインで登録します。", 2),
        ("", "ビザを申請して出発する", "ジャカルタのJVACで申請します。出発前のオリエンテーションのあと、E-PMIが出ます。"),
      ]),
-     ("related", [("ujian", "分野ごとの技能試験"), ("test", "JFT-BasicとJLPTの受け方"), ("coe", "内定からビザまで（COE）"), ("siskop2mi", "SISKOP2MIの登録")]),
+     ("related", [("ujian", "分野ごとの技能試験"), ("jft", "JFT-Basicの受け方"), ("jlpt", "JLPT 2026の日程"), ("coe", "内定からビザまで（COE）"), ("siskop2mi", "SISKOP2MIの登録")]),
    ]},
    {"h": "お金について", "blocks": [
      ("p", "特定技能で受け入れる会社は、保証金を取ったり、違約金の契約を結んだりしてはいけません。<sup><a href=\"#src\">[5]</a></sup>日本の最低賃金は外国人にも適用されます。"),
@@ -66,7 +66,7 @@ PAGE = {
        ("", "Daftar SISKOP2MI", "Setelah COE terbit dan sebelum mengajukan visa, daftar sendiri secara online.", 2),
        ("", "Ajukan visa dan berangkat", "Ajukan di JVAC Jakarta. Setelah orientasi pra-pemberangkatan, E-PMI diterbitkan."),
      ]),
-     ("related", [("ujian", "Ujian keterampilan per bidang"), ("test", "Cara ikut JFT-Basic dan JLPT"), ("coe", "Dari tawaran kerja sampai visa (COE)"), ("siskop2mi", "Daftar SISKOP2MI")]),
+     ("related", [("ujian", "Ujian keterampilan per bidang"), ("jft", "Prometric JFT-Basic: biaya dan cara daftar"), ("jlpt", "JLPT 2026: jadwal dan pendaftaran"), ("coe", "Dari tawaran kerja sampai visa (COE)"), ("siskop2mi", "Daftar SISKOP2MI")]),
    ]},
    {"h": "Soal uang", "blocks": [
      ("p", "Perusahaan penerima SSW tidak boleh memungut uang jaminan atau membuat perjanjian denda (penalti).<sup><a href=\"#src\">[5]</a></sup> Upah minimum Jepang juga berlaku untuk orang asing."),
