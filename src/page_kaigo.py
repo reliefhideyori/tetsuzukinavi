@@ -37,7 +37,7 @@ PAGE = {
    {"h": "訪問介護で働く条件", "blocks": [
      ("p", "2025年4月から、特定技能の人も訪問介護（利用者の家に行くサービス）で働けるようになりました。<sup><a href=\"#src\">[1]</a></sup>原則として、介護職員初任者研修を修了していて、介護施設で1年以上働いた経験が必要です。"),
    ]},
-   {"h": "関連するページ", "blocks": [("related", [("ssw", "特定技能（SSW）で日本で働く：条件と流れ"), ("test", "JLPTとJFT-Basicの受け方"), ("gaji", "日本で本当に手元に残るお金（手取り計算）")])]},
+   {"h": "関連するページ", "blocks": [("related", [("ssw", "特定技能（SSW）で日本で働く：条件と流れ"), ("jft", "JFT-Basicの受け方"), ("jlpt", "JLPT 2026の日程"), ("gaji", "日本で本当に手元に残るお金（手取り計算）")])]},
   ]},
  "id": {
   "title": "Tokutei Ginou Bidang Kaigo", "crumb_last": "Kaigo (SSW)",
@@ -72,6 +72,6 @@ PAGE = {
    {"h": "Syarat bekerja di layanan kunjungan rumah (homon kaigo)", "blocks": [
      ("p", "Mulai April 2025, pekerja SSW juga bisa bekerja di layanan kunjungan ke rumah lansia (homon kaigo).<sup><a href=\"#src\">[1]</a></sup> Pada dasarnya perlu menyelesaikan pelatihan dasar (kaigo shokuin shoninsha kenshu) dan punya pengalaman kerja minimal 1 tahun di panti perawatan."),
    ]},
-   {"h": "Halaman terkait", "blocks": [("related", [("ssw", "Bekerja di Jepang dengan Tokutei Ginou (SSW)"), ("test", "Cara ikut JLPT dan JFT-Basic"), ("gaji", "Kalkulator gaji bersih")])]},
+   {"h": "Halaman terkait", "blocks": [("related", [("ssw", "Bekerja di Jepang dengan Tokutei Ginou (SSW)"), ("jft", "Prometric JFT-Basic: biaya dan cara daftar"), ("jlpt", "JLPT 2026: jadwal dan pendaftaran"), ("gaji", "Kalkulator gaji bersih")])]},
   ]},
 }
