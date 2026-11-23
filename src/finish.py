@@ -14,6 +14,23 @@ TITLES = {  # 自動の見出しが合わないページだけ
  ("ja", "contact"): "お問い合わせ・間違いの報告", ("id", "contact"): "Kontak dan Laporan Kesalahan",
  ("ja", "thanks"): "送信しました", ("id", "thanks"): "Pesan terkirim",
 }
+
+SEO = {  # 検索結果に出るタイトルと説明文（h1/lead と別にしたいページだけ）。2026-11-23 Search Console の表示回数上位を改善
+ ("id", "mynumber"): ("My Number Orang Asing: Kapan Diterima dan Cara Buat Kartu | Tetsuzuki Navi",
+   "Surat My Number dikirim lewat pos tercatat sekitar 2–3 minggu setelah lapor alamat. Kartu pertama saat ini gratis. Cara daftar, masa berlaku, dan jika hilang."),
+ ("id", "visa"): ("SSW, Magang, atau Ikusei Shuro? Perbedaan Visa Kerja Jepang | Tetsuzuki Navi",
+   "Magang (Ginou Jisshu) direncanakan diganti Ikusei Shuro mulai April 2027. Bandingkan lama tinggal, keluarga, bahasa Jepang, dan pindah kerja dalam satu tabel."),
+ ("id", "hak"): ("Upah Lembur, Cuti, dan Hari Libur di Jepang: Hak Pekerja Asing | Tetsuzuki Navi",
+   "Upah lembur minimal 25% lebih tinggi. Setelah 6 bulan kerja, dapat 10 hari cuti berbayar. Sama untuk SSW dan magang. Juga aturan gaji, PHK, tempat konsultasi."),
+ ("id", "epa"): ("Program G to G (EPA) Perawat dan Kaigo ke Jepang: Syarat dan Alur | Tetsuzuki Navi",
+   "EPA (G to G): direkrut dan diseleksi pemerintah Indonesia, bekerja sambil belajar di Jepang agar lulus ujian nasional perawat/kaigo. Syarat, alur, lama tinggal."),
+ ("id", "kesehatan"): ("Biaya Berobat di Jepang: Bayar 30% dengan Asuransi Kesehatan | Tetsuzuki Navi",
+   "Dengan asuransi, Anda bayar 30% biaya berobat (usia 6–69). Untuk rawat inap atau biaya mahal, ada batas per bulan (kogaku ryoyohi). Asuransi apa yang diikuti?"),
+ ("id", "pindah"): ("Pindah Kerja dengan SSW (Tokutei Ginou): Syarat dan Lapor 14 Hari | Tetsuzuki Navi",
+   "SSW boleh pindah perusahaan jika memenuhi syarat. Perlu permohonan perubahan status izin tinggal dan lapor dalam 14 hari. Alur dan hal penting saat belum kerja."),
+ ("ja", "test"): ("JLPTとJFT-Basicの違いと受け方｜インドネシアでの日程・申し込み | 手続きナビ",
+   "特定技能1号に必要な日本語はA2くらい。JFT-Basic（ほぼ毎月・結果はすぐ）とJLPT（インドネシアは7月と12月）の違い、申し込み方、点数をまとめました。"),
+}
 PRIVACY = {
 "ja": ("プライバシーポリシー", "このサイトが集める情報と、その使い方です。", [
  ("集める情報", "<p>このサイトは会員登録がなく、名前や住所を入力する場所はありません。集めるのは、お問い合わせフォームに書かれた内容と、任意で書かれた返信用のメールアドレスだけです。</p>"),
@@ -88,14 +105,15 @@ for p in [q for q in sorted(ROOT.glob("*/*.html")) if "</head>" in q.read_text(e
     lang, slug = p.parent.name, p.stem
     s = p.read_text(encoding="utf-8")
     h1 = re.sub(r"<[^>]+>", "", re.search(r"<h1>(.*?)</h1>", s, re.S).group(1)).strip()
-    title = TITLES.get((lang, slug)) or f"{h1} | {SITE[lang]}"
+    title = (SEO.get((lang, slug)) or (None,))[0] or TITLES.get((lang, slug)) or f"{h1} | {SITE[lang]}"
     s = re.sub(r"<title>[^<]*</title>", f"<title>{title}</title>", s, count=1)
     m = re.search(r'<p class="lead">(.*?)</p>', s, re.S)
     s = re.sub(r'<meta name="description"[^>]*>\n?', "", s)
     if m:
-        desc = re.sub(r"<[^>]+>", "", m.group(1)).replace('"', "&quot;").strip()
+        desc = (SEO[(lang, slug)][1] if (lang, slug) in SEO else re.sub(r"<[^>]+>", "", m.group(1))).replace('"', "&quot;").strip()
         s = s.replace("</title>", f'</title>\n<meta name="description" content="{desc}">', 1)
     s = re.sub(r'(<nav class="crumb".*?</nav>)', lambda m: re.sub(r'<li><a href="(#|[^"]*contact[^"]*)">([^<]*)</a></li>', r'<li>\2</li>', m.group(1)), s, count=1, flags=re.S)
+    s = re.sub(r'href="(/(?:ja|id)/[a-z0-9-]+)\.html', r'href="\1', s)  # .html へのリンクはリダイレクトになるので拡張子なしに
     head, rest = s.split("</head>", 1)
     head = re.sub(r"<style>.*?</style>\n?", "", head, flags=re.S)
     head = re.sub(r'<link rel="stylesheet" href="/assets/site.css[^>]*>\n?', "", head)
